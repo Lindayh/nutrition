@@ -6,6 +6,9 @@ app = Flask(__name__)
 def start():
     return render_template("index.html")
 
-#test
+@app.route("/test")
+def test():
+    return "Test endpoint"
+
 if __name__ == "__main__":
     app.run(debug=True)
