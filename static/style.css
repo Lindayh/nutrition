@@ -5,12 +5,3 @@
     margin: 0;
     padding: 0;
 }
-.container {
-    background: url("../static/images/fresh-cucumbers-sliced-marble-background.jpg") no-repeat fixed center;
-    background-size: 100%;
-    min-height: 100svh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-}
