@@ -123,3 +123,10 @@ footer p {
     margin: 0 0.6rem;
     background-color: var(--accent-color2);
 }
+.route-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+}

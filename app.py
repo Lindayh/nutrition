@@ -6,5 +6,14 @@ app = Flask(__name__)
 def home():
     return render_template("index.html")
 
+@app.route("/vitaminer")
+def vitaminer():
+    return render_template("vitaminer.html")
+
+@app.route("/mineraler")
+def mineraler():
+    return render_template("mineraler.html")
+
+
 if __name__ == "__main__":
     app.run(debug=True)
