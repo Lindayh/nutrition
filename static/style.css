@@ -47,33 +47,43 @@ body{
 }
 footer{
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 2em;
+    height: 3em;
     background-color: var(--accent-color1);
     color: var(--main-bg-color);
-    margin-top: auto;
+    margin-top: auto 0;
+}
+footer a {
+    text-decoration: none;
+    color: var(--main-bg-color);
+    margin-left: 0.75rem;
+}
+footer p {
+    margin-top: 0.2rem;
+    font-size: 0.7rem;
 }
 /* ----------------- Styling index ----------------*/
 .home-container{
     background-image: url("images/backround.webp");
     background-size: cover;
     background-repeat: no-repeat;
-    flex: 1;
     display: flex;
-    align-items: center;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
+    flex: 1;
 }
 
 .home-section {
-    display: flex;
-    flex-direction: column;
     background-color: white;
     border-left: 2px solid #126650a5;
     border-right: 2px solid #126650a5;
     text-align: center;
-    height: 87vh;
-    margin: 0 10%;
+    width: 75%;
+    padding: 2rem;
+    flex: 1;
 }
 .home-section h1{
     font-size: 3.5rem;
