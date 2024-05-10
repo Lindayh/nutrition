@@ -7,10 +7,10 @@
 }
 /* ---------------- Color styling -------------------*/
 :root{
-    --main-bg-color:#F2E8CF;
-    --text-color:rgb(10,10,10);
-    --accent-color1:#6A994E;
-    --accent-color2:#C9696B;
+    --main-bg-color:#F1F1F1;
+    --text-color:#252525;
+    --accent-color1:#12664F;
+    --accent-color2:#62A8AC;
 }
 /* ---------------- General styling -------------------*/
 .page-container{
@@ -35,10 +35,11 @@ body{
 }
 .logo{
     margin-left: 2rem;
+    color: var(--main-bg-color);
 }
 .main-nav a{
     text-decoration: none;
-    color: black;
+    color: var(--main-bg-color);
     padding: 0 2rem;
 }
 footer{
@@ -46,20 +47,27 @@ footer{
     height: 10vh;
     line-height: 5vh;
     background-color: var(--accent-color1);
+    color: var(--main-bg-color);
 }
 footer a{
-    color: var(--text-color);
+    color: var(--main-bg-color);
     text-decoration: none;
     margin: 0 10px;
     padding: 10px;
     font-size: 1.2rem;
 }
 /* ----------------- Styling index ----------------*/
+.home-container{
+    background-image: url("images/Background1.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
 
 .home-section {
     padding-top: 2rem;
     text-align: center;
     height: 80vh;
+    margin: 0 10%;
 }
 .home-section h1{
     font-size: 3rem;
