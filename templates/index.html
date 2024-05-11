@@ -1,14 +1,29 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="/static/style.css" rel="stylesheet" type="text/css"> 
-    <title>Document</title>
-</head>
-<body>
-    <div class="container">
-        <h1>Hello</h1>
-    </div>
-</body>
-</html>
+{% extends "base.html"%}
+
+{% block title %}home{% endblock %}
+
+{% block content %}
+<main class="home-container">
+    <section class="home-section">
+        <div class="info-container">
+            <h1>Välkommen till Wiki Greens</h1>
+            <p>Här kan du läsa om vitaminer och mineraler och även se vilka frukter, 
+                grönsaker och nötter som innehåller störst mängd av respektive vitamin 
+                och mineral. Du kan även söka efter specifika frukter och grönsaker för 
+                att få fullständig information om näringsämnen i just det livsmedlet.
+            </p>
+        </div>
+        <div class="info-container">
+            <h2>Varför vi behöver vitaminer och mineraler</h2>
+            <p>Både vitaminer och mineraler behövs för att vi ska må bra. De behövs i små 
+                mängder men är livsnödvändiga eftersom vi inte kan tillverka de flesta av 
+                dem själva.
+            </p>
+        </div>
+        <div class="btn-container">
+            <a href="/vitaminer">Vitaminer</a>
+            <a href="/mineraler">Mineraler</a>
+        </div>
+    </section>
+</main>
+{% endblock %}
