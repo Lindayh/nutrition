@@ -10,17 +10,21 @@
 <body>
     <header class="header">
         
-        <nav class="main-nav">
-            <div class="logo">
-                <Img src="/static/images/WikiGreensV1.png" alt="WikiGreens" height="100%"></Img>
-            </div>
-            <div class="navbar-menu">
-                <a href="{{url_for('home')}}">Hem</a>
-                <a href="/vitaminer">Vitaminer</a>
-                <a href="/mineraler">Mineraler</a>
-                <a href="/search">Sök</a>
-            </div>
-        </nav>
+        <navbar>
+            <div class="main-nav">
+               <div class="logo">
+                   <Img src="/static/images/WikiGreensV1.png" alt="WikiGreens" height="100%"></Img>
+               </div>
+               <div class="navbar-menu">
+                   <a href="{{url_for('home')}}">Hem</a>
+                   <a href="/vitaminer">Vitaminer</a>
+                   <a href="/mineraler">Mineraler</a>
+                   <a href="/search">Sök</a>
+               </div>
+            </div> 
+               {% block navbar_submenu %}                
+               {% endblock %}
+        </navbar>
     </header>
     {% block content %}
     {% endblock %}
