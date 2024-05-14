@@ -123,10 +123,75 @@ footer p {
     margin: 0 0.6rem;
     background-color: var(--accent-color2);
 }
-.route-container {
+.route-container{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     flex: 1;
+}
+.team-container {
+    background: url("/static/images/team-bg.jpg") no-repeat top;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1;
+}
+.team-container h2 {
+    margin-top: 70px;
+    font-size: 3em;
+    font-weight: normal;
+}
+.team-info {
+    margin-top: 80px;
+    width: 70%;
+    height: 370px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.card {
+    background: linear-gradient(rgb(31, 196, 89),rgb(55, 107, 86));
+    box-shadow: 0 0 20px 0;
+    width: 17%;
+    height: 95%;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.card h4 {
+    margin-top: 8px;
+}
+.card p {
+    margin-top: 2px;
+    font-size: 0.9em;
+}
+.brands {
+    margin-top: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.card i {
+    font-size: 1.8em;
+    color: rgba(0, 0, 0, 0.564);
+}
+.card i:hover {
+    color: #bdf4c2;
+}
+.card-image {
+    width: 95%;
+    height: 55%;
+    margin-top: 5px;
+    border-radius: 3px;
+}
+.card-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border: 1.5px solid rgba(0, 0, 0, 0.285);
 }
