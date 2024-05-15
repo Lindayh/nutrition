@@ -130,3 +130,35 @@ footer p {
     align-items: center;
     flex: 1;
 }
+/* ----------------- vitamin sida ----------------*/
+.container {
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.nutrition-info table {
+    width: 100%;
+    margin-top: 20px;
+    border-collapse: collapse;
+}
+
+.nutrition-info th, .nutrition-info td {
+    text-align: left;
+    padding: 8px;
+    border-bottom: 1px solid #ddd;
+}
+
+.image-placeholder p {
+    text-align: center;
+}
+
+.image-placeholder img {
+    width: 100%;
+    height: auto;
+    display: block; /* Change to 'none' if you want to hide it */
+    margin-top: 20px;
+}

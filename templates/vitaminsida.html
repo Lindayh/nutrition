@@ -1,0 +1,76 @@
+{% extends "base.html" %}
+
+{% block title %}Vitaminer{% endblock %}
+
+{% block content %}
+<div class="container">
+    <h1>fakta om näringsvärde</h1>
+    <div class="nutrition-info">
+        <table>
+            <thead>
+                <tr>
+                    <th>Vitamin</th>
+                    <th>mängd</th>
+                    <th>% Dagling intag</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Vitamin C</td>
+                    <td>69.7 mg</td>
+                    <td>77%</td>
+                </tr>
+                <tr>
+                    <td>Folate (Vitamin B9)</td>
+                    <td>39 mcg</td>
+                    <td>10%</td>
+                </tr>
+                <tr>
+                    <td>Thiamine (Vitamin B1)</td>
+                    <td>0.114 mg</td>
+                    <td>10%</td>
+                </tr>
+                <tr>
+                    <td>Pantothenic acid (Vitamin B5)</td>
+                    <td>0.328 mg</td>
+                    <td>7%</td>
+                </tr>
+                <tr>
+                    <td>Pyridoxine (Vitamin B6)</td>
+                    <td>0.079 mg</td>
+                    <td>5%</td>
+                </tr>
+                <tr>
+                    <td>Riboflavin (Vitamin B2)</td>
+                    <td>0.052 mg</td>
+                    <td>4%</td>
+                </tr>
+                <tr>
+                    <td>Vitamin A</td>
+                    <td>14 mcg</td>
+                    <td>2%</td>
+                </tr>
+                <tr>
+                    <td>Niacin (Vitamin B3)</td>
+                    <td>0.369 mg</td>
+                    <td>2%</td>
+                </tr>
+                <tr>
+                    <td>Vitamin E</td>
+                    <td>0.24 mg</td>
+                    <td>2%</td>
+                </tr>
+                <tr>
+                    <td>Vitamin K</td>
+                    <td>0.2 mcg</td>
+                    <td>Less than 1%</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div class="image-placeholder">
+        <p>Image of an Orange will go here.</p>
+        <img src="/static/images/png.naranja.png" alt="Orange Picture" style="display:none;">
+    </div>
+</div>
+{% endblock %}
