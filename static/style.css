@@ -9,6 +9,7 @@
 :root {
   --main-bg-color: #f1f1f1;
   --text-color: #252525;
+  --shadow-color: #25252533;
   --accent-color1: #12664f;
   --accent-color2: #62a8ac;
 }
@@ -77,9 +78,11 @@ footer p {
 }
 
 .home-section {
-  background-color: white;
-  border-left: 2px solid #126650a5;
-  border-right: 2px solid #126650a5;
+  background-color: var(--main-bg-color);
+  border-left: 2px solid var(--accent-color1);
+  box-shadow: 0 0 10px 0 var(--shadow-color);
+  border-right: 2px solid var(--accent-color);
+  box-shadow: 0 0 10px 0 var(--shadow-color);
   text-align: center;
   width: 75%;
   padding: 2rem;
@@ -117,8 +120,8 @@ footer p {
   text-decoration: none;
   font-size: 1.2rem;
   padding: 0.5rem;
-  color: black;
-  border: 1px solid black;
+  color: var(--text-color);
+  border: 1px solid var(--text-color);
   border-radius: 8px;
   margin: 0 0.6rem;
   background-color: var(--accent-color2);
@@ -148,9 +151,9 @@ footer p {
 .info-section {
   background-color: var(--main-bg-color);
   border-left: 2px solid var(--accent-color1);
-  box-shadow: 0 0 10px 0 #25252575;
+  box-shadow: 0 0 10px 0 var(--shadow-color);
   border-right: 2px solid var(--accent-color1);
-  box-shadow: 0 0 10px 0 #25252575;
+  box-shadow: 0 0 10px 0 var(--shadow-color);
   text-align: center;
   width: 75%;
   padding: 2.5rem;
