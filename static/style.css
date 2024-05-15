@@ -143,8 +143,9 @@ footer p {
     font-size: 3em;
     font-weight: normal;
     background: linear-gradient(rgb(31, 196, 89),rgb(55, 107, 86));
-    box-shadow: 0 0 20px 0;
-    text-shadow: 0 0 5px rgb(48, 171, 48);
+    box-shadow: 0 0 20px 0 black;
+    color: #ffffff;
+    text-shadow: 1px 1px rgba(0, 0, 0, 0.5);
     width: 30%;
     text-align: center;
     border-radius: 5px;
