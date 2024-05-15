@@ -1,0 +1,36 @@
+{% extends "base.html"%}
+
+{% block title %}vitamine_a{% endblock %}
+
+{% block content %}
+
+    <h1 class="vitamines-h1">Vitamin A</h1>
+    <p class="vitamines-p">A-vitamin behövs för att syn, hud och slemhinnor ska fungera normalt. 
+        A-vitamin har en grundläggande betydelse för utveckling, 
+        tillväxt och differentiering av embryot under den tidigaste 
+        delen av graviditeten, för att fostret ska utvecklas normalt 
+        och få en fullgod syn. Nedan följer de 10 frukter och grönsaker som
+        innehåller mest Vitamin A.
+
+    </p>
+
+    <table class="vitamines-table">
+        <thead>
+            <tr>
+                <th>Frukt/Grönsak</th>
+                <th>Kcal per 100 g</th>
+                <th>Vitamin A, mikrogram</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for frukt in frukter %}
+            <tr>
+                <td>{{ frukt.Namn }}</td>
+                <td>{{ frukt.Energi_kcal }}</td>
+                <td>{{ frukt.Vitamin_A_RE_per_mikrog }}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+
+{% endblock %}
