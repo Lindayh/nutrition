@@ -45,6 +45,17 @@ body{
     color: var(--main-bg-color);
     padding: 0 2rem;
 }
+.navbar-submenu{
+    text-align: center;
+    background-color: #1e775f;
+}
+.navbar-submenu a{
+    text-decoration: none;
+    color: var(--main-bg-color);
+    height: 5vh;
+    line-height: 5vh;
+    padding: 0 1.5rem;
+}
 footer{
     display: flex;
     flex-direction: column;
