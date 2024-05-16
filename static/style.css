@@ -55,6 +55,47 @@ footer {
   background-color: var(--accent-color1);
   color: var(--main-bg-color);
   margin-top: auto 0;
+=======
+    font-size: 2rem;
+    text-align: center;
+    height: 10vh;
+    line-height: 10vh;
+    background-color: var(--accent-color1);
+    display: flex;
+    flex-direction: row;
+}
+.navbar-menu{
+    margin: auto;
+}
+.logo{
+    margin-left: 2rem;
+    color: var(--main-bg-color);
+}
+.main-nav a{
+    text-decoration: none;
+    color: var(--main-bg-color);
+    padding: 0 2rem;
+}
+.navbar-submenu{
+    text-align: center;
+    background-color: #1e775f;
+}
+.navbar-submenu a{
+    text-decoration: none;
+    color: var(--main-bg-color);
+    height: 5vh;
+    line-height: 5vh;
+    padding: 0 1.5rem;
+}
+footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 3em;
+    background-color: var(--accent-color1);
+    color: var(--main-bg-color);
+    margin-top: auto 0;
 }
 footer a {
   text-decoration: none;
