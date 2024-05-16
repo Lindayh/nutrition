@@ -244,3 +244,31 @@ footer p {
     object-position: left;
     border-left: 3px solid var(--accent-color1);
 }
+.kontakt-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    flex: 1;
+}
+.kontakt-container h1 {
+    font-size: 10em;
+    margin-top: 10%;
+}
+.kontakt-info {
+    border-top: 10px solid var(--accent-color1);
+    border-left: 5px solid var(--accent-color1);
+    border-right: 5px solid var(--accent-color1);
+    width: 100%;
+    height: 150px;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 15px;
+}
+.kontakt-info h4 {
+    margin-bottom: 10px;
+}
+.kontakt-info p {
+    margin-bottom: 3px;
+    max-width: 400px;
+}
