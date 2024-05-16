@@ -25,5 +25,12 @@ def search():
 def team():
     return render_template("team.html")
 
+@app.route("/om")
+def about():
+    return render_template("about.html")
+
+@app.route("/kontakt")
+def kontakt():
+    return render_template("kontakt.html")
 if __name__ == "__main__":
     app.run(debug=True)
