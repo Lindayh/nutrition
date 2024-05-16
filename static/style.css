@@ -92,7 +92,7 @@ footer p {
   background-color: var(--main-bg-color);
   border-left: 2px solid var(--accent-color1);
   box-shadow: 0 0 10px 0 var(--shadow-color);
-  border-right: 2px solid var(--accent-color);
+  border-right: 2px solid var(--accent-color1);
   box-shadow: 0 0 10px 0 var(--shadow-color);
   text-align: center;
   width: 75%;
