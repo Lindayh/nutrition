@@ -223,9 +223,9 @@ footer p {
 /* ----------------- General info page styling  ----------------*/
 
 .info-page-container {
-  background-image: url("/static/images/Background1.png"); /*temp file calling replace with file in map*/
+  background-image: url("/static/images/Background1.png");
   color: var(--text-color);
-  background-size: cover;
+  background-size: auto;
   background-repeat: no-repeat;
   display: flex;
   flex-direction: column;
