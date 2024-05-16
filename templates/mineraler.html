@@ -1,9 +1,50 @@
-{% extends "base.html"%}
-
-{% block title %}mineraler{% endblock %}
-
-{% block content %}
-<div class="route-container">
-    <h1>Under Development!</h1>
+{% extends "base.html"%} {% block title %}mineraler{% endblock %}{% block
+navbar_submenu %}
+<div class="navbar-submenu">
+  <a href="#">Fosfor</a>
+  <a href="#">Jod</a>
+  <a href="#">Järn</a>
+  <a href="#">Kalcium</a>
+  <a href="#">Kalium</a>
+  <a href="#">Magnesium</a>
+  <a href="#">Natrium/Salt</a>
+  <a href="#">Selen</a>
+  <a href="#">Zink</a>
 </div>
+{% endblock %} {% block content %}
+
+<main class="info-page-container">
+  <!--reusing info-container class to have same styling-->
+  <section class="info-section">
+    <!--reusing home section class to have same styling-->
+    <h1>Mineraler</h1>
+    <div class="info-container">
+      <!--reusing info-container class to have same styling-->
+      <h2>Varför är de bra för dig?</h2>
+      <p>
+        Vi behöver mineraler för att må bra. Mineraler behövs i små mängder men
+        de är livsnödvändiga eftersom vi inte kan tillverka dem själva.
+      </p>
+      <p>
+        Vår kropp byggs upp av ett 20-tal olika grundämnen. I så gott som alla
+        organiska ämnen ingår kol, syre, väte och kväve. Natrium, kalium, klorid
+        och fosfater finns lösta i alla kroppsvätskor. Dessutom ingår ett antal
+        mineralämnen och spårelement som finns i olika enzymsystem.
+      </p>
+    </div>
+
+    <div class="info-container">
+      <!--reusing info-container class to have same styling-->
+      <h2>Obalans på mineraler</h2>
+      <p>
+        Brist på mineraler kan ofta ge specifika sjukdomssymtom samtidigt som
+        stora mängder också kan vara skadligt. För vissa ämnen är det relativt
+        liten marginal mellan vad som är nyttigt och vad som kan vara skadligt
+        för kroppen och leda till negativa effekter. Exempel på det senare är
+        koppar, jod och selen. Det är ofta svårt att komma upp i för höga intag
+        från livsmedel men det kan ske med kosttillskott.
+      </p>
+    </div>
+  </section>
+</main>
 {% endblock %}

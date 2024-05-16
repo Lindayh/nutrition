@@ -1,9 +1,51 @@
-{% extends "base.html"%}
-
-{% block title %}vitaminer{% endblock %}
-
-{% block content %}
-<div class="route-container">
-    <h1>Under Development!</h1>
+{% extends "base.html"%} {% block title %}vitaminer{% endblock %}{% block
+navbar_submenu %}
+<div class="navbar-submenu">
+  <a href="#">Vitamin A</a>
+  <a href="#">Vitamin C</a>
+  <a href="#">Vitamin D</a>
+  <a href="#">Vitamin E</a>
+  <a href="#">Folat</a>
+  <a href="#">Vitamin K</a>
+  <a href="#">Niancin</a>
+  <a href="#">Riboflavin</a>
+  <a href="#">Tiamin</a>
+  <a href="#">Vitamin B6</a>
+  <a href="#">Vitamin B12</a>
 </div>
+{% endblock %} {% block content %}
+
+<main class="info-page-container">
+  <!--reusing info-container class to have same styling-->
+  <section class="info-section">
+    <!--reusing home section class to have same styling-->
+    <h1>Vitaminer</h1>
+    <div class="info-container">
+      <!--reusing info-container class to have same styling-->
+      <h2>Varför är de bra för dig?</h2>
+      <p>
+        Vi behöver vitaminer för att må bra. De behövs i mycket små mängder men
+        är livsnödvändiga eftersom vi själva inte kan tillverka de flesta av
+        dem. Det finns 13 livsnödvändiga vitaminer och de brukar delas upp i
+        fettlösliga och vattenlösliga vitaminer. De fettlösliga är A-, D-, E-
+        och K-vitamin och de vattenlösliga är vitamin B6, vitamin B12,
+        C-vitamin, biotin, folat, niacin, pantotensyra, riboflavin och tiamin.
+      </p>
+    </div>
+
+    <div class="info-container">
+      <!--reusing info-container class to have same styling-->
+      <h2>Obalans av vitaminer</h2>
+      <p>
+        Brist på vitaminer kan ofta ge specifika sjukdomssymtom samtidigt som
+        stora mängder också kan vara skadligt. För en del vitaminer är det en
+        relativt liten marginal mellan vad som är nyttigt och vad som kan vara
+        skadligt, exempelvis vitamin A. Flera vitaminer fungerar även som
+        antioxidanter, till exempel E-vitamin, C-vitamin och kartenoider.
+        Gemensamt för dem är att de ingår i kroppens mekanismer för att ta hand
+        om överskottet av fria radikaler.
+      </p>
+    </div>
+  </section>
+</main>
 {% endblock %}
