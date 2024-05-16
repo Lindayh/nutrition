@@ -25,5 +25,9 @@ def search():
 def team():
     return render_template("team.html")
 
+@app.route("/om")
+def about():
+    return render_template("about.html")
+
 if __name__ == "__main__":
     app.run(debug=True)
