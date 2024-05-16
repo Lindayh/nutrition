@@ -142,12 +142,6 @@ footer p {
     margin-top: 70px;
     font-size: 3em;
     font-weight: normal;
-    background: linear-gradient(rgb(31, 196, 89),rgb(55, 107, 86));
-    box-shadow: 0 0 20px 0 black;
-    color: #ffffff;
-    text-shadow: 1px 1px rgba(0, 0, 0, 0.5);
-    width: 30%;
-    text-align: center;
     border-radius: 5px;
 }
 .team-info {
@@ -179,6 +173,7 @@ footer p {
 .quote {
     margin-top: 22px;
     display: flex;
+    justify-content: center;
     font-style: italic;
     font-size: 0.9em;
     color: #042108;
@@ -194,11 +189,10 @@ footer p {
     width: 95%;
     height: 55%;
     margin-top: 5px;
-    border-radius: 3px;
 }
 .card-image img {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    border: 1.5px solid rgba(8, 135, 57, 0.463);
+    border: 1.5px solid rgba(8, 135, 57, 0.566);
 }
