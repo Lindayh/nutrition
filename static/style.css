@@ -280,7 +280,7 @@ footer p {
 /* ----------------- General info page styling  ----------------*/
 
 .info-page-container {
-  background-image: url("/static/images/Background1.png");
+  background-image: url("/static/images/backround.webp");
   color: var(--text-color);
   background-size: auto;
   background-repeat: no-repeat;
