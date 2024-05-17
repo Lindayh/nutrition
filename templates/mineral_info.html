@@ -1,10 +1,10 @@
 {% extends "base.html"%} 
-{% block title %}{{vitamin}}{% endblock %}
+{% block title %}{{mineral}}{% endblock %}
 
 {% block navbar_submenu %}
 <div class="navbar-submenu">
-  {% for item in vitamins %}
-  <a href="/vitaminer/{{ item }}"> {{ item }} </a>
+  {% for item in minerals %}
+  <a href="/mineraler/{{ item }}"> {{ item }} </a>
   {% endfor %}
 </div>
 {% endblock %} 
@@ -14,12 +14,12 @@
   <!--reusing info-container class to have same styling-->
   <section class="info-section">
     <!--reusing home section class to have same styling-->
-    <h1>{{vitamin}}</h1>
+    <h1>{{mineral}}</h1>
 
     <div class="info-container">
       <!--reusing info-container class to have same styling-->
       <h2>Coming soon!</h2>
-      <p> Här kommer du kunna läsa mer info om {{vitamin}}.    
+      <p> Här kommer du kunna läsa mer info om {{mineral}}.    
       </p>
     </div>
   </section>
