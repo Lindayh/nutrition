@@ -286,7 +286,7 @@ footer p {
 .info-page-container {
   background-image: url("/static/images/backround.webp");
   color: var(--text-color);
-  background-size: auto;
+  background-size: cover;
   background-repeat: no-repeat;
   display: flex;
   flex-direction: column;
