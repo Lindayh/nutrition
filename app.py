@@ -24,11 +24,17 @@ def vitaminer():
 
 @app.route("/vitaminer/<vitamin>")
 def vitamin_info(vitamin):
-    return render_template("vitamin_info.html", vitamins = vitamins_list, vitamin=vitamin)
+    if vitamin in vitamins_list:
+        return render_template("vitamin_info.html", vitamins = vitamins_list, vitamin=vitamin)
+    else:
+        return render_template("vitaminer.html", vitamins = vitamins_list)
 
 @app.route("/mineraler/<mineral>")
 def mineral_info(mineral):
-    return render_template("mineral_info.html", minerals=minerals_list, mineral=mineral)
+    if mineral in minerals_list:        
+        return render_template("mineral_info.html", minerals=minerals_list, mineral=mineral)
+    else:
+        return render_template("mineraler.html", minerals=minerals_list)
 
 @app.route("/search")
 def search():
