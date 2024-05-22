@@ -2,7 +2,7 @@ from flask import Flask, render_template
 from models import db, Fruit
 from minerals_info import minerals_info
 from vitamins_info import vitamins_info
-from RDI_info_ import RDI_list
+from RDI_info import RDI_list_vit
 
 
 app = Flask(__name__)
@@ -74,8 +74,8 @@ def vitamin_info(vitamin):
             #endregion
             
 
-            if vitamin in RDI_list.keys():
-                vitamin_RDI = RDI_list[vitamin]
+            if vitamin in RDI_list_vit.keys():
+                vitamin_RDI = RDI_list_vit[vitamin]
 
             return render_template("vitamin_info.html", vitamins = vitamins_list, vitamin=vitamin, top_10=data, vitamin_text=vitamin_text, vitamin_RDI=vitamin_RDI)
 

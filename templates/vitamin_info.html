@@ -22,11 +22,11 @@
       <p>  {{ item }} </p>
       {% endfor %}
 
+      {% if vitamin != "Vitamin B12" %}
       <div class="container">
         <h2>Topp 10 frukt/grönsaker med {{ vitamin }}</h2>
 
         <div class="nutrition-info">
-        {% if vitamin != "Vitamin B12" %}
         <table>
           <thead>
             <th>Namn</th>
