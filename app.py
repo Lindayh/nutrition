@@ -9,7 +9,7 @@ db.init_app(app)
 
 vitamins_list = ["Vitamin A", "Vitamin C", "Vitamin D", "Vitamin E", "Folat", "Vitamin K", "Niancin", "Riboflavin", "Tiamin", "Vitamin B6", "Vitamin B12"]
 
-minerals_list = ["Fosfor","Jod","Järn","Kalcium","Kalium","Magnesium","Salt","Selen","Zink"]
+minerals_list = ["Fosfor","Jod","Järn","Kalcium","Kalium","Magnesium","Natrium","Selen","Zink"]
 
 @app.route("/")
 def home():
