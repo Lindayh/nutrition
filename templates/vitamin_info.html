@@ -18,9 +18,9 @@
 
     <div class="info-container">
       <!--reusing info-container class to have same styling-->
-      <h2>Coming soon!</h2>
-      <p> Här kommer du kunna läsa mer info om {{vitamin}}.    
-      </p>
+      {% for item in vitamin_text %}
+      <p>  {{ item }} </p>
+      {% endfor %}
 
       {% if vitamin != "Vitamin B12" %}
       <table>
