@@ -38,6 +38,7 @@ body {
   margin: auto;
 }
 .logo {
+  height: 100%;
   margin-left: 2rem;
   color: var(--main-bg-color);
 }
@@ -323,4 +324,48 @@ footer p {
   line-height: 1.7rem;
   width: 75%;
   text-align: left;
+}
+
+/* ----------------- Mobile Specific styling  ----------------*/
+
+@media only screen and (max-width: 600px) {
+  /* CSS rules for mobile devices */
+
+  .main-nav {
+    display: flex;
+    flex: 1;
+    font-size: 1rem;
+    align-items: center;
+    font-weight: 600;
+  }
+
+  .navbar-menu {
+    width: 100%;
+    gap: 0;
+    justify-content: space-evenly;
+    display: flex;
+  }
+
+  .logo {
+    margin: 0 4px;
+    height: 100%;
+  }
+  .main-nav a {
+    padding: 0 4px;
+  }
+  .info-section {
+    display: flex;
+    flex-direction: column;
+    width: 75%;
+    height: 80%;
+    align-items: center;
+  }
+
+  .info-section h1 {
+    font-size: 3rem;
+  }
+
+  .info-container {
+    width: 100%;
+  }
 }
