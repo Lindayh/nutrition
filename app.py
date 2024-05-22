@@ -2,7 +2,7 @@ from flask import Flask, render_template
 from models import db, Fruit
 from minerals_info import minerals_info
 from vitamins_info import vitamins_info
-from RDI_info import RDI_list_vit
+from RDI_info import RDI_list_vit, RDI_list_min
 
 
 app = Flask(__name__)
@@ -73,16 +73,15 @@ def vitamin_info(vitamin):
                 data.append(temp_dict)
             #endregion
             
-
             if vitamin in RDI_list_vit.keys():
                 vitamin_RDI = RDI_list_vit[vitamin]
 
             return render_template("vitamin_info.html", vitamins = vitamins_list, vitamin=vitamin, top_10=data, vitamin_text=vitamin_text, vitamin_RDI=vitamin_RDI)
 
 
-    if vitamin in vitamins_list:
+    if vitamin in vitamins_list:  
         return render_template("vitamin_info.html", vitamins = vitamins_list, vitamin=vitamin)
-    else:
+    else:   # Prevent user to create random path. E.g. vitaminer/blabla
         return render_template("vitaminer.html", vitamins = vitamins_list)
 
 @app.route("/mineraler/<mineral>")
@@ -106,7 +105,11 @@ def mineral_info(mineral):
 
     top_fruits = Fruit.query.order_by(getattr(Fruit, column_name).desc()).limit(10).all()
 
-    return render_template("mineral_info.html", minerals=minerals_list, mineral=mineral_info, top_fruits=top_fruits)
+    if mineral in RDI_list_min.keys():
+        mineral_RDI = RDI_list_min[mineral]
+
+    print(mineral)
+    return render_template("mineral_info.html", minerals=minerals_list, mineral=mineral_info, top_fruits=top_fruits, mineral_RDI=mineral_RDI)
 
 @app.route("/search")
 def search():

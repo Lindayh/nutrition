@@ -1,5 +1,5 @@
 {% extends "base.html"%} 
-{% block title %}{{mineral}}{% endblock %}
+{% block title %}{{mineral ["name"]}}{% endblock %}
 
 {% block navbar_submenu %}
 <div class="navbar-submenu">
@@ -18,13 +18,20 @@
 
     <div class="info-container">
       <!--reusing info-container class to have same styling-->
-      <p> {{mineral["info"] }}</p>
-      <p>{{ mineral["info1"] }}</p>
-      <p>{{ mineral["info2"] }}</p>
-      <p>{{ mineral["info3"] }}</p>
-      {% if mineral["info4"] %}
+      {# 
+        <p> {{mineral["info"] }}</p>
+        <p>{{ mineral["info1"] }}</p>
+        <p>{{ mineral["info2"] }}</p>
+        <p>{{ mineral["info3"] }}</p>
+        {% if mineral["info4"] %}
         <p>{{ mineral["info4"] }}</p>
-      {% endif %}
+        {% endif %}
+        #}
+
+      {% for key in mineral %}
+      {% if key!="name" %}
+      <p> {{mineral[key]}} </p>
+      {% endif %}{% endfor %}
 
       <div class="container">
         <h2>Topp 10 frukt/grönsaker med {{ mineral["name"] }}</h2>
@@ -94,6 +101,26 @@
           <p>*Källa; Livsmedelsverkets livsmedelsdatabas version 2023-06-13</p>
         </div>
       </div>
+    
+      <div class="container">
+        <h2>RDI</h2>
+        <div class="RDI-info">
+          <table>
+            <thead>
+              <th>Målgrupp</th>
+              <th> {{ mineral_RDI['rek'] }} </th>
+            </thead>
+            <tbody>
+              {% for key in mineral_RDI['target'] %}
+              <tr>
+                <td> {{key}} </td>
+                <td> {{mineral_RDI['target'][key]}}  </td>
+              </tr>
+              {% endfor %}
+            </tbody>
+          </table>
+        </div>
+    
     </div>
   </section>
 </main>

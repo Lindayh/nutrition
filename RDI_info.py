@@ -160,7 +160,7 @@ RDI_list_min = {
     "Gravida och ammande": 200}
     },
     "Järn":{
-    "rek": "Rekommenderat intag per dag i milligram",
+    "rek": "RDI i milligram",
     "target" : {"Spädbarn 7-11 mån": 10,
     "Barn 1-6 år": 7,
     "Barn 7-10 år": 9,
@@ -176,7 +176,7 @@ RDI_list_min = {
     },
 
     "Kalcium":{
-    "rek":"Rekommenderat intag per dag i milligram",
+    "rek":"RDI i milligram",
     "target" : {"Spädbarn 7-11 mån": 310,
     "Barn 1-3 år": 450,
     "Barn 4-10 år": 800,
@@ -239,7 +239,7 @@ RDI_list_min = {
     },
 
     "Zink":{
-    "rek":"Rekommenderat intag per dag i milligram",
+    "rek":"RDI i milligram",
     "target" : {"Spädbarn 7-11 mån": 3,
     "Barn 1-3 år": 4.5,
     "Barn 4-6 år": 5.8,
