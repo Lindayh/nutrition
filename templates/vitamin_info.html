@@ -22,11 +22,17 @@
       <p>  {{ item }} </p>
       {% endfor %}
 
-      {% if vitamin != "Vitamin B12" %}
-      <table>
-        <thead>
-          <th>Namn</th>
-          <th>{{ top_10[0].unit }}</th>
+      <div class="container">
+        <h2>Topp 10 frukt/grönsaker med {{ vitamin }}</h2>
+
+
+        <div class="nutrition-info">
+
+        {% if vitamin != "Vitamin B12" %}
+        <table>
+          <thead>
+            <th>Namn</th>
+            <th>{{ top_10[0].unit }}</th>
         </thead>
         <tbody>
           {% for item in top_10 %}
@@ -40,10 +46,10 @@
         </tbody>
       </table>
       {% endif %}
+      <p>*Källa; Livsmedelsverkets livsmedelsdatabas version 2023-06-13</p>
     </div>
+    </div>
+  </div>
   </section>
-
-  
-  
 </main>
 {% endblock %}
