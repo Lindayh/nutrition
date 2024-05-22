@@ -2,6 +2,7 @@ from flask import Flask, render_template
 from models import db, Fruit
 from minerals_info import minerals_info
 from vitamins_info import vitamins_info
+from RDI_info_ import RDI_list
 
 
 app = Flask(__name__)
@@ -31,8 +32,9 @@ def vitamin_info(vitamin):
     table = Fruit.__table__
     column_names = [column.name for column in table.columns]
 
+        #region Vitamin top 10
     for index,col_name in enumerate(column_names):
-        if col_name.startswith(vitamin_) or col_name.startswith(vitamin):
+        if col_name.startswith(vitamin_) or col_name.startswith(vitamin):                   
             data = []
             print(f"Column name: {col_name}")
 
@@ -69,7 +71,13 @@ def vitamin_info(vitamin):
                              "unit": "Niacin (Niacinekvivalenter per mg)"}
 
                 data.append(temp_dict)
-            return render_template("vitamin_info.html", vitamins = vitamins_list, vitamin=vitamin, top_10=data, vitamin_text=vitamin_text)
+            #endregion
+            
+
+            if vitamin in RDI_list.keys():
+                vitamin_RDI = RDI_list[vitamin]
+
+            return render_template("vitamin_info.html", vitamins = vitamins_list, vitamin=vitamin, top_10=data, vitamin_text=vitamin_text, vitamin_RDI=vitamin_RDI)
 
 
     if vitamin in vitamins_list:

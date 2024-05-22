@@ -25,9 +25,7 @@
       <div class="container">
         <h2>Topp 10 frukt/grönsaker med {{ vitamin }}</h2>
 
-
         <div class="nutrition-info">
-
         {% if vitamin != "Vitamin B12" %}
         <table>
           <thead>
@@ -48,6 +46,27 @@
       {% endif %}
       <p>*Källa; Livsmedelsverkets livsmedelsdatabas version 2023-06-13</p>
     </div>
+    </div>
+
+    <div class="container">
+      <h2>RDI</h2>
+      <div class="RDI-info">
+        <table>
+          <thead>
+            <th>Målgrupp</th>
+            <th> {{ vitamin_RDI['rek'] }} </th>
+          </thead>
+          <tbody>
+            {% for key in vitamin_RDI['target'] %}
+            <tr>
+              <td> {{key}} </td>
+              <td> {{vitamin_RDI['target'][key]}}  </td>
+            </tr>
+            {% endfor %}
+          </tbody>
+        </table>
+      </div>
+
     </div>
   </div>
   </section>

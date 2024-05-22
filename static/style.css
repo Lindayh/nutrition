@@ -336,18 +336,20 @@ footer p {
   margin-top: 2rem;
 }
 
-.nutrition-info table {
+.nutrition-info, .RDI-info table {
   width: 100%;
   margin-top: 20px;
   border-collapse: collapse;
 }
 
-.nutrition-info th, .nutrition-info td {
+.nutrition-info th, .nutrition-info td,
+.RDI-info th, .RDI-info td {
   text-align: left;
   padding: 8px;
   border-bottom: 1px solid #ddd;
 }
-.nutrition-info p{
+.nutrition-info p,
+.RDI-info p{
   font-size: 0.7rem;
   line-height: 1rem;
 }
