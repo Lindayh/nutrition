@@ -36,7 +36,6 @@ minerals_info = [
         "info1":"Kalium finns i princip i alla livsmedel. Lite högre halter finns i nötter, frön, torkad frukt, potatis, färska frukter och grönsaker. Men även animaliska livsmedel som kött, fisk och mejeriprodukter är viktiga källor till kalium.",
         "info2":"Kaliumbrist är mycket ovanligt men kan uppstå exempelvis vid långvariga diaréer eller användande av vätskedrivande läkemedel. Kaliumbrist leder till trötthet, muskelsvaghet och rubbningar av hjärtrytmen. Det kan även leda till depression och förvirring.",
         "info3":"Ett långvarigt högt intag av kalium kan påverka hjärtfunktionen hos individer med nedsatt njurfunktion. Kosttillskott kan bidra till ett för högt intag vilket kan leda till hyperkalemi vilket är ett livsfarligt tillstånd som orsakar rubbningar i hjärtrytmen vilket i sin tur kan utgöra en risk för hjärtstillestånd.",
-        "info4":"",
     },
     {
         "name": "Magnesium",
@@ -44,7 +43,6 @@ minerals_info = [
         "info1":"Magnesium finns främst i baljväxter, bladgrönsaker, fullkornsprodukter och kött, fisk och skaldjur. Det finns även i dricksvatten, framförallt om det är hårt vatten.",
         "info2":"Magnesiumbrist är ytterst ovanligt men kan uppstå vid kostrestriktion eller vid vissa sjukdomar. Det kan ge hämmad tillväxt, beteendestörningar och störningar i hjärtfunktionen. Allvarlig magnesiumbrist kan ge kramp.",
         "info3":"Ett högt intag av magnesium från kosttillskott kan ge diarré. Därför har en övre gräns för säkert intag satt till 250 mg per dag.",
-        "info4":"",
     },
     {
         "name": "Natrium",
@@ -60,7 +58,6 @@ minerals_info = [
         "info1":"Selen är ett grundämne som finns i jorden och finns i nästan all mat även om halterna varierar. I Sverige är marken selenfattig och vegetabilier odlade i Sverige har därför låga halter. De livsmedel som innehåller mest selen är fisk, skaldjur, inälvsmat, nötter/fröer, linser, ägg och ost. Vuxna får i sig ungefär 40 till 50 mikrogram selen per dag. ",
         "info2":"Allvarlig brist på selen kan leda till hjärtmuskelförändringar, men selenbrist är ovanligt. Det finns även studier som visar att det kan vara förknippat med vissa cancerformer, dock saknas kliniska studier i västvärlden för att bekräfta detta.",
         "info3":"Selen i högre doser är giftigt. Ett för högt selenintag kan påverka mag- och tarmkanalen samt försämra tillväxt av hår och naglar. Dagsintaget bör inte överskrida 255 mikrogram.",
-        "info4":"",
     },
     {
         "name": "Zink",

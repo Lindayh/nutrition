@@ -22,11 +22,12 @@
       <p>{{ mineral["info1"] }}</p>
       <p>{{ mineral["info2"] }}</p>
       <p>{{ mineral["info3"] }}</p>
+      {% if info4 %}
       <p>{{ mineral["info4"] }}</p>
-      <p>{{ mineral["info5"] }}</p>
+      {% endif %}
 
       <div class="container">
-        <h2>Högst {{ mineral["name"] }}-innehåll</h2>
+        <h2>Topp 10 frukt/grönsaker med {{ mineral["name"] }}</h2>
         <div class="nutrition-info">
           <table>
             <thead>
