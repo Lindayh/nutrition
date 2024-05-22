@@ -14,13 +14,86 @@
   <!--reusing info-container class to have same styling-->
   <section class="info-section">
     <!--reusing home section class to have same styling-->
-    <h1>{{mineral}}</h1>
+    <h1>{{mineral ["name"]}}</h1>
 
     <div class="info-container">
       <!--reusing info-container class to have same styling-->
-      <h2>Coming soon!</h2>
-      <p> Här kommer du kunna läsa mer info om {{mineral}}.    
-      </p>
+      <p> {{mineral["info"] }}</p>
+      <p>{{ mineral["info1"] }}</p>
+      <p>{{ mineral["info2"] }}</p>
+      <p>{{ mineral["info3"] }}</p>
+      {% if mineral["info4"] %}
+        <p>{{ mineral["info4"] }}</p>
+      {% endif %}
+
+      <div class="container">
+        <h2>Topp 10 frukt/grönsaker med {{ mineral["name"] }}</h2>
+        <div class="nutrition-info">
+          <table>
+            <thead>
+              <tr>
+                <th>Namn</th>
+                {% if mineral["name"] in ["Fosfor", "Järn", "Kalcium", "Kalium", "Magnesium", "Natrium", "Zink"]%}
+                  <th>{{ mineral["name"] }} (mg)</th>
+                {% elif mineral["name"] in ["Jod", "Selen"]%}
+                  <th>{{ mineral["name"] }} (mikrogram)</th>
+                {% endif %}
+              </tr>
+            </thead>
+            <tbody>
+            {% for fruit in top_fruits %}
+              {% if mineral["name"] == "Fosfor" %}
+                <tr>
+                  <td>{{ fruit.Namn }}</td>
+                  <td>{{ fruit.Fosfor_mg }}</td>
+                </tr>                
+              {% elif mineral["name"] == "Jod" %}
+                <tr>
+                  <td>{{ fruit.Namn }}</td>
+                  <td>{{ fruit.Jod_mikrog }}</td>
+                </tr>
+              {% elif mineral["name"] == "Järn" %}
+                <tr>
+                  <td>{{ fruit.Namn }}</td>
+                  <td>{{ fruit.Järn_mg }}</td>
+                </tr>
+              {% elif mineral["name"] == "Kalcium" %}
+                <tr>
+                  <td>{{ fruit.Namn }}</td>
+                  <td>{{ fruit.Kalcium_mg }}</td>
+                </tr>
+              {% elif mineral["name"] == "Kalium" %}
+                <tr>
+                  <td>{{ fruit.Namn }}</td>
+                  <td>{{ fruit.Kalium_mg }}</td>
+                </tr>
+              {% elif mineral["name"] == "Magnesium" %}
+                <tr>
+                  <td>{{ fruit.Namn }}</td>
+                  <td>{{ fruit.Magnesium_mg }}</td>
+                </tr>
+              {% elif mineral["name"] == "Natrium" %}
+                <tr>
+                  <td>{{ fruit.Namn }}</td>
+                  <td>{{ fruit.Natrium_mg }}</td>
+                </tr>
+              {% elif mineral["name"] == "Selen" %}
+                <tr>
+                  <td>{{ fruit.Namn }}</td>
+                  <td>{{ fruit.Selen_mikrog }}</td>
+                </tr>
+              {% elif mineral["name"] == "Zink" %}
+                <tr>
+                  <td>{{ fruit.Namn }}</td>
+                  <td>{{ fruit.Zink_mg }}</td>
+                </tr>
+              {% endif %}
+            {% endfor %}
+            </tbody>
+          </table>
+          <p>*Källa; Livsmedelsverkets livsmedelsdatabas version 2023-06-13</p>
+        </div>
+      </div>
     </div>
   </section>
 </main>
