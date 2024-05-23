@@ -19,13 +19,14 @@ def test_vitaminA():
     assert data.Namn == "Morot"
 
 def test_vitaminA_online():
-    response = requests.get('http://127.0.0.1:5000/vitaminer/Vitamin A')
-    assert response.status_code == 200
+     client = app.test_client()
+     response = client.get('/vitaminer/Vitamin A')
+     assert response.status_code == 200
 
-    with app.app_context():
+     with app.app_context():
         data = Fruit.query.order_by((getattr(Fruit, "Vitamin_A_RE_per_mikrog")).desc()).limit(10).all() 
 
-    for element in data:
+     for element in data:
         assert element.Namn in response.text
 
 
