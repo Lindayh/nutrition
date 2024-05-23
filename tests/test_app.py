@@ -3,7 +3,6 @@ import requests
 from models import Fruit, db
 from app import app
 
-
 def test_route_home_local():
     response = requests.get('http://127.0.0.1:5000')
     assert response.status_code == 200
@@ -28,10 +27,9 @@ def test_vitaminA_online():
     assert response.status_code == 200
 
     with app.app_context():
-        data = Fruit.query.order_by((getattr(Fruit, "Vitamin_A_RE_per_mikrog")).desc()).limit(10).first() 
+        data = Fruit.query.order_by((getattr(Fruit, "Vitamin_A_RE_per_mikrog")).desc()).limit(10).all() 
 
-    print(data.Namn, type(response.text))
-
-    assert "Morot" in response.text
+    for element in data:
+        assert element.Namn in response.text
 
 
