@@ -3,10 +3,6 @@ import requests
 from models import Fruit, db
 from app import app
 
-def test_route_home_local():
-    response = requests.get('http://127.0.0.1:5000')
-    assert response.status_code == 200
-
 def test_route_home_test_client():
 	client = app.test_client()
 	response = client.get('/')
