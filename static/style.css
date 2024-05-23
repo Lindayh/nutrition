@@ -353,3 +353,26 @@ footer p {
   font-size: 0.7rem;
   line-height: 1rem;
 }
+
+.table-container
+{
+  display: flex;
+  flex-direction: row;
+  width: 80%;
+  
+}
+
+.table-container table
+{
+  width: 100%;
+}
+
+.table-container td, .table-container th
+{
+  text-align: center;
+}
+
+.container
+{
+  width: 45%;
+}
