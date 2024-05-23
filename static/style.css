@@ -348,7 +348,7 @@ footer p {
   }
 
   .logo {
-    margin: 0 4px;
+    margin: 0;
     height: 100%;
   }
   .main-nav a {
@@ -424,5 +424,6 @@ footer p {
     justify-content: center;
     flex-wrap: wrap;
     font-size: 1rem;
+    font-weight: 400;
   }
 }
