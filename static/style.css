@@ -423,3 +423,55 @@ footer p {
 
 
 
+
+/* ----------------- vitamin sida ----------------*/
+.container {
+  max-width: 800px;
+  margin: auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  margin-top: 2rem;
+}
+
+.nutrition-info, .RDI-info table {
+  width: 100%;
+  margin-top: 20px;
+  border-collapse: collapse;
+}
+
+.nutrition-info th, .nutrition-info td,
+.RDI-info th, .RDI-info td {
+  text-align: left;
+  padding: 8px;
+  border-bottom: 1px solid #ddd;
+}
+.nutrition-info p,
+.RDI-info p{
+  font-size: 0.7rem;
+  line-height: 1rem;
+}
+
+.table-container
+{
+  display: flex;
+  flex-direction: row;
+  width: 80%;
+  
+}
+
+.table-container table
+{
+  width: 100%;
+}
+
+.table-container td, .table-container th
+{
+  text-align: center;
+}
+
+.container
+{
+  width: 45%;
+}
