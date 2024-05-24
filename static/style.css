@@ -145,6 +145,7 @@ footer p {
   align-items: center;
   flex: 1;
 }
+/*--------team container_ Our team----------*/
 .team-container {
   background: url("/static/images/team-bg.jpg") center;
   background-size: cover;
@@ -211,32 +212,71 @@ footer p {
   object-fit: cover;
   border: 1.5px solid rgba(8, 135, 57, 0.566);
 }
+/* --------Mobile-Specific Styles___Our team ----------*/
+@media (max-width: 767px) {
+  .team-container {
+    align-items: center;
+  }
+  .team-container h2 {
+    font-size: 2em; 
+    margin-top: 20px;
+  }
+
+  .team-info {
+    flex-direction: column; 
+    width: 100%; 
+    height: auto;
+    margin-top: 20px; 
+  }
+
+  .card {
+    width: 80%; 
+    height: auto; 
+    margin-bottom: 20px; 
+  }
+
+  .card h4, .card p, .quote {
+    padding: 0 10px; 
+  }
+
+  .card-image {
+    height: auto; 
+  }
+
+  .card-image img {
+    object-fit: contain; 
+  }
+}
+
+/*-------about ------*/
 .about-container {
   display: flex;
   flex: 1;
   justify-content: space-between;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1); 
 }
+
 .about-container article {
   float: left;
-  width: 40%;
+  width: 40%; 
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 20px;
+  padding: 20px; 
 }
 .about-container h1 {
-  font-size: 3.5em;
+  font-size: 3.5em; 
   margin: 30px 0 15px 0;
   text-align: left;
-  width: 91%;
+  width: 91%; 
 }
 .about-container p {
-  font-size: 1.4em;
-  width: 90%;
+  font-size: 1.4em; 
+  width: 90%; 
 }
 .about-container aside {
   float: right;
-  width: 55%;
+  width: 55%; 
   display: flex;
   align-items: center;
   justify-content: center;
@@ -246,8 +286,46 @@ footer p {
   height: 100%;
   object-fit: cover;
   object-position: left;
-  border-left: 3px solid var(--accent-color1);
+  border-left: 3px solid var(--accent-color1); 
 }
+
+/* -------About_____Mobile enheter ---------*/
+@media (max-width: 767px) {
+  .about-container {
+    flex-direction: column; 
+    align-items: center;
+  }
+
+  .about-container article,
+  .about-container aside {
+    width: 100%; 
+    float: none;
+  }
+
+  .about-container article {
+    padding: 10px; 
+  }
+
+  .about-container h1 {
+    font-size: 2em; 
+    text-align: center;
+    margin: 10px 0; 
+  }
+
+  .about-container p {
+    font-size: 1em; 
+    padding: 0 5%;
+    text-align: justify;
+  }
+
+  .about-container aside img {
+    object-position: center; 
+    height: auto;
+    border: none;
+  }
+}
+
+/*_____kontakt___container____*/
 .kontakt-container {
   display: flex;
   flex-direction: column;
@@ -280,6 +358,24 @@ footer p {
   margin-bottom: 3px;
   max-width: 400px;
 }
+/*___________kontakt____mobile_______*/
+@media (max-width: 767px) {
+  .kontakt-rubrik {
+    font-size: 1.5em;
+  }
+
+  .kontakt-info {
+    flex-direction: column; 
+    height: auto;
+  }
+
+  .kontakt-info h4,
+  .kontakt-info p {
+    text-align: center;
+    padding: 5px; 
+  }
+}
+
 
 /* ----------------- General info page styling  ----------------*/
 
@@ -324,3 +420,6 @@ footer p {
   width: 75%;
   text-align: left;
 }
+
+
+
