@@ -7,7 +7,7 @@
 }
 /* ---------------- Color styling -------------------*/
 :root {
-  --main-bg-color: #f1f1f1;
+  --main-bg-color: #f7f7f7;
   --text-color: #252525;
   --shadow-color: #25252533;
   --accent-color1: #12664f;
@@ -92,13 +92,13 @@ footer {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 5rem;
+  height: 3.5rem;
   background-color: var(--accemt-color1B);
   color: var(--main-bg-color);
   margin-top: auto 0;
 }
 footer a {
-  font-size: 1.5rem;
+  font-size: 1.4rem;
   font-weight: 450;
   text-decoration: none;
   color: var(--main-bg-color);
@@ -626,3 +626,108 @@ footer p {
 .container {
   width: 45%;
 }
+
+/*  --- Search ---  */
+
+.search-container,
+#default-section,
+.table-article {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 1;
+}
+#default-section {
+  justify-content: center;
+  width: 100%;
+  height: 450px;
+}
+#default-section h2 {
+  font-size: 2.1em;
+}
+#default-section p {
+  font-size: 1.7em;
+  width: 90%;
+  font-weight: 300;
+}
+#home-search {
+  padding: 8px;
+}
+.container-search {
+  max-width: 1000px;
+  margin: auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  border: 2px solid rgba(0, 0, 0, 0.372);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  margin-top: 2rem;
+}
+.search-section {
+  min-width: 100%;
+  min-height: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  padding: 30px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  border: 2px solid rgba(0, 0, 0, 0.142);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  margin-top: 1rem;
+}
+.search-section h1 {
+  padding: 0;
+}
+
+.input-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 25px;
+  margin-top: 30px;
+  padding: 10px;
+}
+
+.input-container input {
+  width: 400px;
+  height: 45px;
+  border-radius: 10px;
+  font-size: 1.4em;
+  padding: 8px;
+}
+
+.info-article {
+  width: 60%;
+  text-align: center;
+}
+.info-article img {
+  width: 320px;
+  height: 250px;
+  object-fit: cover;
+  object-position: center;
+  border: 2px solid rgba(0, 0, 0, 0.667);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  margin-top: 15px;
+}
+.info-article h1 {
+  margin-bottom: 20px;
+  border-bottom: 1px solid black;
+}
+
+.api-info {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-height: fit-content;
+  margin-top: 20px;
+
+}
+
+.table-article {
+  width: 40%;
+  align-items: center;
+  justify-content: center;
+}
+
+
