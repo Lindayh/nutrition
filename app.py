@@ -1,8 +1,9 @@
-from flask import Flask, render_template
+from flask import Flask, render_template, request, jsonify
 from models import db, Fruit
 from minerals_info import minerals_info
 from vitamins_info import vitamins_info
 from RDI_info import RDI_list_vit, RDI_list_min
+import requests
 
 
 app = Flask(__name__)
@@ -12,6 +13,33 @@ db.init_app(app)
 vitamins_list = ["Vitamin A", "Vitamin C", "Vitamin D", "Vitamin E", "Folat", "Vitamin K", "Niacin", "Riboflavin", "Tiamin", "Vitamin B6", "Vitamin B12"]
 
 minerals_list = ["Fosfor","Jod","Järn","Kalcium","Kalium","Magnesium","Natrium","Selen","Zink"]
+
+mineral_mapping = {
+    "Fosfor": "Fosfor_mg",
+    "Jod": "Jod_mikrog",
+    "Järn": "Järn_mg",
+    "Kalcium": "Kalcium_mg",
+    "Kalium": "Kalium_mg",
+    "Magnesium": "Magnesium_mg",
+    "Natrium": "Natrium_mg",
+    "Selen": "Selen_mikrog",
+    "Zink": "Zink_mg",
+}
+vitamin_mapping = {
+    "Vitamin A": "Vitamin_A_RE_per_mikrog",
+    "Vitamin C": "Vitamin_C_mg",
+    "Vitamin D": "Vitamin_D_mikrog",
+    "Vitamin E": "Vitamin_E_mg",
+    "Folat": "Folat_mikrog",
+    "Vitamin K": "Vitamin_K_mikrog",
+    "Niacin": "Niacin_mg",
+    "Riboflavin": "Riboflavin_mg",
+    "Tiamin": "Tiamin_mg",
+    "Vitamin B6": "Vitamin_B6_mg",
+    "Vitamin B12": "Vitamin_B12_mikrog"
+}
+
+nutrient_mapping = {**mineral_mapping, **vitamin_mapping}
 
 @app.route("/")
 def home():
@@ -88,19 +116,6 @@ def vitamin_info(vitamin):
 def mineral_info(mineral):
     mineral_info = next((mineral_name for mineral_name in minerals_info if mineral_name["name"]==mineral), None)
     
-    mineral_mapping = {
-    "Fosfor": "Fosfor_mg",
-    "Jod": "Jod_mikrog",
-    "Järn": "Järn_mg",
-    "Kalcium": "Kalcium_mg",
-    "Kalium": "Kalium_mg",
-    "Magnesium": "Magnesium_mg",
-    "Natrium": "Natrium_mg",
-    "Selen": "Selen_mikrog",
-    "Zink": "Zink_mg",
-    "Vitamin B6": "Vitamin_B6_mg",
-    "Vitamin B12": "Vitamin_B12_mikrog"
-    }
     column_name = mineral_mapping.get(mineral)
 
     top_fruits = Fruit.query.order_by(getattr(Fruit, column_name).desc()).limit(10).all()
@@ -111,9 +126,35 @@ def mineral_info(mineral):
     print(mineral)
     return render_template("mineral_info.html", minerals=minerals_list, mineral=mineral_info, top_fruits=top_fruits, mineral_RDI=mineral_RDI)
 
-@app.route("/search")
+@app.route('/search')
 def search():
-    return render_template("search.html") 
+    search_query = request.args.get("search")
+    if not search_query:
+        return render_template("search.html")
+    
+    check = Fruit.query.filter(Fruit.Namn.startswith(search_query)).first()
+
+    if check:
+        query_name = check.Namn.split()[0]
+        api_query = requests.get(f"https://sv.wikipedia.org/api/rest_v1/page/summary/{query_name}")
+        api_data = api_query.json()
+        api_summary = api_data.get("extract")
+        api_image = api_data.get("thumbnail", {}).get("source")       
+        filtered_data = {}
+        if query_name == "Basilika":
+            api_image = "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/Ocimum_basilicum_001.JPG/375px-Ocimum_basilicum_001.JPG"
+        print(api_data)
+        for nutrient_name, column_name in nutrient_mapping.items():
+            value = getattr(check, column_name)
+            if isinstance(value, (int, float)) and value > 0:
+                if nutrient_name not in filtered_data:
+                    filtered_data[nutrient_name] = []
+                filtered_data[nutrient_name].append(value)
+        return render_template("search.html", results=filtered_data, query_name=query_name, message=None, api_summary=api_summary, api_image=api_image)
+    
+    else:
+        return render_template("search.html", message="Oops! det du sökte på existerar inte i vår databas. Testa att söka på en frukt eller grönsak.")
+
 
 @app.route("/team")
 def team():
@@ -126,5 +167,6 @@ def about():
 @app.route("/kontakt")
 def kontakt():
     return render_template("kontakt.html")
+
 if __name__ == "__main__":
     app.run(debug=True)
