@@ -18,10 +18,66 @@
 
     <div class="info-container">
       <!--reusing info-container class to have same styling-->
-      <h2>Coming soon!</h2>
-      <p> Här kommer du kunna läsa mer info om {{vitamin}}.    
-      </p>
-    </div>
+      {% for item in vitamin_text %}
+      <p>  {{ item }} </p>
+      {% endfor %}
+
+      <div class="table-container">
+  
+        {% if vitamin != "Vitamin B12" %}
+        <div class="container">
+          <h2>Topp 10 frukt/grönsaker</h2>
+          <h2>{{ vitamin }} per 100g</h2>
+  
+          <div class="nutrition-info">
+          <table>
+            <thead>
+              <th>Livsmedel</th>
+              <th>{{ top_10[0].unit }}</th>
+          </thead>
+          <tbody>
+            {% for item in top_10 %}
+            {% if item.vitamin_value > 0 %}
+            <tr>
+              <td>{{ item.name }}</td>
+              <td>{{ item.vitamin_value }} </td>
+            </tr>
+            {% endif %}
+            {% endfor %}
+          </tbody>
+        </table>
+        <p>*Källa; Livsmedelsverkets livsmedelsdatabas version 2023-06-13</p>
+        {% endif %}
+      </div>
+        </div>
+        
+        {% if vitamin=="Niacin" %}
+        {% elif vitamin=="Tiamin" %}
+        {% else %}
+        <div class="container">
+          <h2>RDI</h2>
+          <div class="RDI-info">
+            <table>
+              <thead>
+                <th>Målgrupp</th>
+                <th> {{ vitamin_RDI['rek'] }} </th>
+              </thead>
+              <tbody>
+                {% for key in vitamin_RDI['target'] %}
+                <tr>
+                  <td> {{key}} </td>
+                  <td> {{vitamin_RDI['target'][key]}}  </td>
+                </tr>
+                {% endfor %}
+              </tbody>
+            </table>
+        </div>
+        {% endif %}
+        </div>
+        
+</div class="table-container">
+
+      </div>
   </section>
 </main>
 {% endblock %}
