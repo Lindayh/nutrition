@@ -651,7 +651,7 @@ footer p {
   font-weight: 300;
 }
 #home-search {
-  padding: 8px;
+  padding: 0;
 }
 .container-search {
   max-width: 1000px;
@@ -659,7 +659,6 @@ footer p {
   padding: 20px;
   background-color: #f9f9f9;
   border-radius: 8px;
-  border: 2px solid rgba(0, 0, 0, 0.372);
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
   margin-top: 2rem;
 }
@@ -671,8 +670,6 @@ footer p {
   padding: 30px;
   background-color: #f9f9f9;
   border-radius: 8px;
-  border: 2px solid rgba(0, 0, 0, 0.142);
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
   margin-top: 1rem;
 }
 .search-section h1 {
@@ -680,20 +677,56 @@ footer p {
 }
 
 .input-container {
+  background-color: #1e775f;
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 25px;
-  margin-top: 30px;
+  flex-direction: column;
+  height: 120px;
+  margin: auto;
   padding: 10px;
+  border-bottom: 2px solid #12664f;
 }
 
 .input-container input {
-  width: 400px;
-  height: 45px;
-  border-radius: 10px;
+  width: 600px;
+  height: 40px;
+  border-radius: 5px;
   font-size: 1.4em;
   padding: 8px;
+  border: 1px solid #042108;
+  margin-top: 15px;
+  color: black;
+  
+}
+.input-container form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.input-container button {
+  border: 0;
+  width: 42px;
+  height: 42px;
+  background-color: #12664f;
+  border-radius: 25%;
+  margin: 15px 0 0 5px;
+  border: 2px solid rgba(0, 0, 0, 0.187);
+}
+.input-container i {
+  font-size: 2em;
+  color: white;
+  text-shadow: 1px 1px var(--shadow-color);
+}
+.input-container i:hover {
+  transition: 0.2s;
+  color: var(--accent-color2);
+  cursor: pointer;
+}
+.input-container h3 {
+  color: white;
+  text-shadow: 1px 1px var(--shadow-color);
+  font-size: 1.3em;
 }
 
 .info-article {

@@ -1,8 +1,9 @@
-from flask import Flask, render_template, request, jsonify
+from flask import Flask, render_template, request
 from models import db, Fruit
 from minerals_info import minerals_info
 from vitamins_info import vitamins_info
 from RDI_info import RDI_list_vit, RDI_list_min
+from fakta_info import veg_fruit_info, get_fact
 import requests
 
 
@@ -126,7 +127,7 @@ def mineral_info(mineral):
     print(mineral)
     return render_template("mineral_info.html", minerals=minerals_list, mineral=mineral_info, top_fruits=top_fruits, mineral_RDI=mineral_RDI)
 
-@app.route('/search')
+@app.route("/search")
 def search():
     search_query = request.args.get("search")
     if not search_query:
@@ -135,14 +136,23 @@ def search():
     check = Fruit.query.filter(Fruit.Namn.startswith(search_query)).first()
 
     if check:
-        query_name = check.Namn.split()[0]
+        query_name = check.Namn
         api_query = requests.get(f"https://sv.wikipedia.org/api/rest_v1/page/summary/{query_name}")
         api_data = api_query.json()
-        api_summary = api_data.get("extract")
-        api_image = api_data.get("thumbnail", {}).get("source")       
+        api_image = api_data.get("thumbnail", {}).get("source")
+
+        if not api_image:
+            query_name = check.Namn 
+
+        fact_data = get_fact(veg_fruit_info, check.Namn)
+
+        if isinstance(fact_data, tuple):
+            fact, img = fact_data
+        else:
+            fact = fact_data
+            img = None
+
         filtered_data = {}
-        if query_name == "Basilika":
-            api_image = "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/Ocimum_basilicum_001.JPG/375px-Ocimum_basilicum_001.JPG"
         print(api_data)
         for nutrient_name, column_name in nutrient_mapping.items():
             value = getattr(check, column_name)
@@ -150,7 +160,7 @@ def search():
                 if nutrient_name not in filtered_data:
                     filtered_data[nutrient_name] = []
                 filtered_data[nutrient_name].append(value)
-        return render_template("search.html", results=filtered_data, query_name=query_name, message=None, api_summary=api_summary, api_image=api_image)
+        return render_template("search.html", results=filtered_data, query_name=query_name, message=None, fact=fact, img=img, api_image=api_image)
     
     else:
         return render_template("search.html", message="Oops! det du sökte på existerar inte i vår databas. Testa att söka på en frukt eller grönsak.")

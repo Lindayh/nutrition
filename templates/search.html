@@ -6,17 +6,23 @@
 <div class="info-page-container">
     <div class="home-section" id="home-search">
         <div class="input-container">
+            <h3>Sök igenom vår databas genom att söka på en frukt eller grönsak!</h3>
             <form action="/search" method="GET">
                 <input type="search" placeholder="Sök igenom vår databas" name="search">
+                <button><i class="fa-solid fa-magnifying-glass"></i></button>
             </form>
         </div>
         {% if results %}
             <section class="search-section">          
                 <article class="info-article">
                     <h1>{{ query_name }}</h2>
+                    {% if img %}
+                    <img src="{{ img }}">
+                    {% elif api_image %}
                     <img src="{{ api_image }}">
+                    {% endif %}
                     <div class="api-info">
-                        <p><strong>Fakta: </strong>{{ api_summary }}</p>
+                        <p><strong>Fakta: </strong>{{ fact }}</p>
                     </div>
                 </article>
                 <article class="table-article">
@@ -27,7 +33,7 @@
                                     <thead>
                                         <tr>
                                             <th>Vitamin/Mineral</th>
-                                            <th>per 100(mikrog)</th>
+                                            <th>per 100(gram)</th>
                                         </tr>
                                     </thead>
                                     <tbody>
