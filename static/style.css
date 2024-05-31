@@ -149,7 +149,7 @@ footer p {
   text-align: left;
 }
 .home-section h2 {
-  font-size: 2.5rem;
+  font-size: 1.8rem;
   padding-top: 1.5rem;
 }
 .info-container {
@@ -161,7 +161,7 @@ footer p {
 
 .btn-container {
   display: flex;
-  margin-top: 5rem;
+  margin-top: 3rem;
   height: 3em;
   justify-content: center;
 }
@@ -191,7 +191,7 @@ footer p {
 }
 /*--------team container_ Our team----------*/
 .team-container {
-  background: url("/static/images/team-bg.jpg") center;
+  /* background: url("/static/images/team-bg.jpg") center; */
   background-size: cover;
   display: flex;
   flex-direction: column;
@@ -311,13 +311,13 @@ footer p {
   padding: 20px;
 }
 .about-container h1 {
-  font-size: 3.5em;
-  margin: 30px 0 15px 0;
+  font-size: 3rem;
+  margin: 20px 0 15px 0;
   text-align: left;
   width: 91%;
 }
 .about-container p {
-  font-size: 1.4em;
+  font-size: 1.1em;
   width: 90%;
 }
 .about-container aside {
@@ -385,7 +385,11 @@ footer p {
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 5em;
+  font-size: 4.5em;
+}
+.kontakt-rubrik h1
+{
+  font-weight: 600;
 }
 .kontakt-info {
   border-top: 10px solid var(--accent-color1);
@@ -445,12 +449,15 @@ footer p {
   text-align: center;
   width: 75%;
   padding: 2.5rem;
+  padding-top: 1.5rem;
   flex: 1;
 }
 
 .info-section h1 {
-  font-size: 2.3rem;
+  font-size: 2.7rem;
   font-weight: 800;
+  border-bottom: 1px solid black;
+  padding-bottom: 1.5rem;
 }
 
 .info-container h2 {
@@ -458,12 +465,12 @@ footer p {
   font-weight: 600;
 }
 .info-container p {
-  font-size: 1.1rem;
-  font-weight: 450;
+  font-size: 1.2rem;
+  font-weight: 400;
   padding-top: 1.5rem;
   line-height: 1.7rem;
   width: 75%;
-  text-align: left;
+  text-align: justify;
 }
 
 /* ----------------- Mobile Specific styling  ----------------*/
@@ -651,7 +658,7 @@ footer p {
   font-weight: 300;
 }
 #home-search {
-  padding: 8px;
+  padding: 0;
 }
 .container-search {
   max-width: 1000px;
@@ -659,7 +666,6 @@ footer p {
   padding: 20px;
   background-color: #f9f9f9;
   border-radius: 8px;
-  border: 2px solid rgba(0, 0, 0, 0.372);
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
   margin-top: 2rem;
 }
@@ -671,8 +677,6 @@ footer p {
   padding: 30px;
   background-color: #f9f9f9;
   border-radius: 8px;
-  border: 2px solid rgba(0, 0, 0, 0.142);
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
   margin-top: 1rem;
 }
 .search-section h1 {
@@ -680,20 +684,56 @@ footer p {
 }
 
 .input-container {
+  background-color: #1e775f;
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 25px;
-  margin-top: 30px;
+  flex-direction: column;
+  height: 120px;
+  margin: auto;
   padding: 10px;
+  border-bottom: 2px solid #12664f;
 }
 
 .input-container input {
-  width: 400px;
-  height: 45px;
-  border-radius: 10px;
+  width: 600px;
+  height: 40px;
+  border-radius: 5px;
   font-size: 1.4em;
   padding: 8px;
+  border: 1px solid #042108;
+  margin-top: 15px;
+  color: black;
+  
+}
+.input-container form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.input-container button {
+  border: 0;
+  width: 42px;
+  height: 42px;
+  background-color: #12664f;
+  border-radius: 25%;
+  margin: 15px 0 0 5px;
+  border: 2px solid rgba(0, 0, 0, 0.187);
+}
+.input-container i {
+  font-size: 2em;
+  color: white;
+  text-shadow: 1px 1px var(--shadow-color);
+}
+.input-container i:hover {
+  transition: 0.2s;
+  color: var(--accent-color2);
+  cursor: pointer;
+}
+.input-container h3 {
+  color: white;
+  text-shadow: 1px 1px var(--shadow-color);
+  font-size: 1.3em;
 }
 
 .info-article {
