@@ -135,7 +135,8 @@ veg_fruit_info = [
       {
         "titel": "Paprika röd",
         "namn": "Röd paprika",
-        "fakta": "Röd paprika är rik på vitamin C och A samt antioxidanter som betakaroten. Den har en sötare smak än grön paprika och kan ätas rå eller tillagad. Röd paprika är en mångsidig ingrediens i sallader, såser och grytor."
+        "fakta": "Röd paprika är rik på vitamin C och A samt antioxidanter som betakaroten. Den har en sötare smak än grön paprika och kan ätas rå eller tillagad. Röd paprika är en mångsidig ingrediens i sallader, såser och grytor.",
+        "bild": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Capsicum_annuum_2008.jpg/1280px-Capsicum_annuum_2008.jpg"
       },
       {
         "titel": "Persilja blad",
