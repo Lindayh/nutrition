@@ -6,17 +6,23 @@
 <div class="info-page-container">
     <div class="home-section" id="home-search">
         <div class="input-container">
+            <h3>Sök igenom vår databas genom att söka på en frukt eller grönsak!</h3>
             <form action="/search" method="GET">
                 <input type="search" placeholder="Sök igenom vår databas" name="search">
+                <button><i class="fa-solid fa-magnifying-glass"></i></button>
             </form>
         </div>
         {% if results %}
             <section class="search-section">          
                 <article class="info-article">
-                    <h1>{{ query_name }}</h2>
+                    <h1>{{ query_name }}</h1>
+                    {% if img %}
+                    <img src="{{ img }}">
+                    {% elif api_image %}
                     <img src="{{ api_image }}">
+                    {% endif %}
                     <div class="api-info">
-                        <p><strong>Fakta: </strong>{{ api_summary }}</p>
+                        <p><strong>Fakta: </strong>{{ fact }}</p>
                     </div>
                 </article>
                 <article class="table-article">
@@ -27,7 +33,7 @@
                                     <thead>
                                         <tr>
                                             <th>Vitamin/Mineral</th>
-                                            <th>per 100(mikrog)</th>
+                                            <th>per 100(gram)</th>
                                         </tr>
                                     </thead>
                                     <tbody>
@@ -55,8 +61,10 @@
         {% endif %}
         {% if not results and not message %}
             <div id="default-section">
-                <h2>Sök igenom vår databas genom att söka på en frukt eller grönsak!</h2>
+                <h2>Sökfunktionen</h2>
                 <p>Genom att använda sökrutan kan du snabbt och enkelt få mer detaljerad information om frukt och grönt från vår omfattande databas. Skriv in namnet på den frukt eller grönsak du är intresserad av, och du kommer att få tillgång till detaljerade fakta, näringsvärden.</p>
+                <h2>Databasen</h2>
+                <p>All information kommer direkt ifrån livsmedelsverket så om den frukten/grönsaken du söker på inte dyker upp skulle vi rekommendera att du kollar så att det är korrekt stavat enligt hur det är skrivet på livsmedelsverkets hemsida!</p>
             </div>
         {% endif %}
     </div>

@@ -5,9 +5,9 @@ name: Python application
 
 on:
   push:
-    branches: [ "sprint03_pytest" ]
+    branches: [ "main", "sprint03_pytest" ]
   pull_request:
-    branches: [ "sprint03_pytest" ]
+    branches: [ "main", "sprint03_pytest" ]
 
 permissions:
   contents: read

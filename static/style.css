@@ -149,7 +149,7 @@ footer p {
   text-align: left;
 }
 .home-section h2 {
-  font-size: 2.5rem;
+  font-size: 1.8rem;
   padding-top: 1.5rem;
 }
 .info-container {
@@ -161,7 +161,7 @@ footer p {
 
 .btn-container {
   display: flex;
-  margin-top: 5rem;
+  margin-top: 3rem;
   height: 3em;
   justify-content: center;
 }
@@ -191,7 +191,7 @@ footer p {
 }
 /*--------team container_ Our team----------*/
 .team-container {
-  background: url("/static/images/team-bg.jpg") center;
+  /* background: url("/static/images/team-bg.jpg") center; */
   background-size: cover;
   display: flex;
   flex-direction: column;
@@ -256,43 +256,6 @@ footer p {
   object-fit: cover;
   border: 1.5px solid rgba(8, 135, 57, 0.566);
 }
-/* --------Mobile-Specific Styles___Our team ----------*/
-@media (max-width: 767px) {
-  .team-container {
-    align-items: center;
-  }
-  .team-container h2 {
-    font-size: 2em;
-    margin-top: 20px;
-  }
-
-  .team-info {
-    flex-direction: column;
-    width: 100%;
-    height: auto;
-    margin-top: 20px;
-  }
-
-  .card {
-    width: 80%;
-    height: auto;
-    margin-bottom: 20px;
-  }
-
-  .card h4,
-  .card p,
-  .quote {
-    padding: 0 10px;
-  }
-
-  .card-image {
-    height: auto;
-  }
-
-  .card-image img {
-    object-fit: contain;
-  }
-}
 
 /*-------about ------*/
 .about-container {
@@ -311,13 +274,13 @@ footer p {
   padding: 20px;
 }
 .about-container h1 {
-  font-size: 3.5em;
-  margin: 30px 0 15px 0;
+  font-size: 3rem;
+  margin: 20px 0 15px 0;
   text-align: left;
   width: 91%;
 }
 .about-container p {
-  font-size: 1.4em;
+  font-size: 1.1em;
   width: 90%;
 }
 .about-container aside {
@@ -333,93 +296,6 @@ footer p {
   object-fit: cover;
   object-position: left;
   border-left: 3px solid var(--accent-color1);
-}
-
-/* -------About_____Mobile enheter ---------*/
-@media (max-width: 767px) {
-  .about-container {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .about-container article,
-  .about-container aside {
-    width: 100%;
-    float: none;
-  }
-
-  .about-container article {
-    padding: 10px;
-  }
-
-  .about-container h1 {
-    font-size: 2em;
-    text-align: center;
-    margin: 10px 0;
-  }
-
-  .about-container p {
-    font-size: 1em;
-    padding: 0 5%;
-    text-align: justify;
-  }
-
-  .about-container aside img {
-    object-position: center;
-    height: auto;
-    border: none;
-  }
-}
-
-/*_____kontakt___container____*/
-.kontakt-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
-  flex: 1;
-}
-.kontakt-rubrik {
-  width: 100%;
-  flex: 1;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 5em;
-}
-.kontakt-info {
-  border-top: 10px solid var(--accent-color1);
-  border-left: 6.5px solid var(--accent-color1);
-  border-right: 6.5px solid var(--accent-color1);
-  width: 100%;
-  height: 150px;
-  display: flex;
-  justify-content: space-evenly;
-  padding: 15px;
-}
-.kontakt-info h4 {
-  margin-bottom: 10px;
-}
-.kontakt-info p {
-  margin-bottom: 3px;
-  max-width: 400px;
-}
-/*___________kontakt____mobile_______*/
-@media (max-width: 767px) {
-  .kontakt-rubrik {
-    font-size: 1.5em;
-  }
-
-  .kontakt-info {
-    flex-direction: column;
-    height: auto;
-  }
-
-  .kontakt-info h4,
-  .kontakt-info p {
-    text-align: center;
-    padding: 5px;
-  }
 }
 
 /* ----------------- General info page styling  ----------------*/
@@ -445,12 +321,15 @@ footer p {
   text-align: center;
   width: 75%;
   padding: 2.5rem;
+  padding-top: 1.5rem;
   flex: 1;
 }
 
 .info-section h1 {
-  font-size: 2.3rem;
+  font-size: 2.7rem;
   font-weight: 800;
+  border-bottom: 1px solid black;
+  padding-bottom: 1.5rem;
 }
 
 .info-container h2 {
@@ -458,17 +337,208 @@ footer p {
   font-weight: 600;
 }
 .info-container p {
-  font-size: 1.1rem;
-  font-weight: 450;
+  font-size: 1.2rem;
+  font-weight: 400;
   padding-top: 1.5rem;
   line-height: 1.7rem;
   width: 75%;
+  text-align: justify;
+}
+
+/* ----------------- vitamin sida ----------------*/
+.container {
+  max-width: 800px;
+  margin: auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-top: 2rem;
+}
+
+.nutrition-info,
+.RDI-info table {
+  width: 100%;
+  margin-top: 20px;
+  border-collapse: collapse;
+}
+
+.nutrition-info th,
+.nutrition-info td,
+.RDI-info th,
+.RDI-info td {
   text-align: left;
+  padding: 8px;
+  border-bottom: 1px solid #ddd;
+}
+.nutrition-info p,
+.RDI-info p {
+  font-size: 0.7rem;
+  line-height: 1rem;
+}
+
+.table-container {
+  display: flex;
+  flex-direction: row;
+  width: 80%;
+}
+
+.table-container table {
+  width: 100%;
+}
+
+.table-container td,
+.table-container th {
+  text-align: center;
+}
+
+.container {
+  width: 45%;
+}
+
+/*  --- Search ---  */
+
+.search-container,
+#default-section,
+.table-article {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 1;
+}
+#default-section {
+  align-items: center;
+  width: 100%;
+  height: 300px;
+}
+#default-section h2 {
+  margin-top: 40px;
+  font-size: 2.1em;
+  width: 90%;
+  text-align: left;
+  font-weight: 600;
+}
+#default-section p {
+  padding-top: 8px;
+  font-size: 1.2em;
+  width: 90%;
+  font-weight: 400;
+}
+#home-search {
+  padding: 0;
+}
+.container-search {
+  max-width: 1000px;
+  margin: auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  margin-top: 2rem;
+}
+.search-section {
+  min-width: 100%;
+  min-height: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  padding: 25px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  margin-top: 1rem;
+}
+.search-section h1 {
+  padding: 0;
+}
+
+.input-container {
+  background-color: #1e775f;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 120px;
+  margin: auto;
+  padding: 10px;
+  border-bottom: 2px solid #12664f;
+}
+
+.input-container input {
+  width: 600px;
+  height: 40px;
+  border-radius: 5px;
+  font-size: 1.4em;
+  padding: 8px;
+  border: 1px solid #042108;
+  margin-top: 15px;
+  color: black;
+}
+.input-container form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.input-container button {
+  border: 0;
+  width: 42px;
+  height: 42px;
+  background-color: #12664f;
+  border-radius: 25%;
+  margin: 15px 0 0 5px;
+  border: 2px solid rgba(0, 0, 0, 0.187);
+}
+.input-container i {
+  font-size: 2em;
+  color: white;
+  text-shadow: 1px 1px var(--shadow-color);
+}
+.input-container i:hover {
+  transition: 0.2s;
+  color: var(--accent-color2);
+  cursor: pointer;
+}
+.input-container h3 {
+  color: white;
+  text-shadow: 1px 1px var(--shadow-color);
+  font-size: 1.3em;
+}
+
+.info-article {
+  width: 60%;
+  text-align: center;
+}
+.info-article img {
+  width: 320px;
+  height: 250px;
+  object-fit: cover;
+  object-position: center;
+  border: 2px solid rgba(0, 0, 0, 0.667);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  margin-top: 15px;
+}
+.info-article h1 {
+  margin-bottom: 25px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid black;
+}
+
+.api-info {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-height: fit-content;
+  margin-top: 20px;
+}
+
+.table-article {
+  width: 40%;
+  align-items: center;
+  justify-content: center;
 }
 
 /* ----------------- Mobile Specific styling  ----------------*/
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 767px) {
   /* CSS rules for mobile devices */
 
   /* ----------------- Mobile Specific main navbar  ----------------*/
@@ -537,15 +607,15 @@ footer p {
   }
 
   .info-container h1 {
-    font-size: 2.9rem;
+    font-size: 2.1rem;
     font-weight: 800;
     padding-top: 2rem;
   }
 
   .info-container h2 {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     font-weight: 600;
-    width: 100%;
+    width: 93%;
     padding-top: 1rem;
   }
 
@@ -553,6 +623,7 @@ footer p {
     font-size: 1.1rem;
     font-weight: 450;
     width: 80%;
+    text-align: left;
   }
   /* ----------------- Mobile Specific subnavbar  ----------------*/
 
@@ -565,6 +636,10 @@ footer p {
   }
   /* ----------------- Mobile Specific footer  ----------------*/
 
+  footer {
+    height: 4rem;
+  }
+
   footer a {
     font-size: 1rem;
     font-weight: 400;
@@ -574,160 +649,248 @@ footer p {
     margin-top: 1rem;
     font-size: 0.7rem;
   }
+
+  /* ----------------- mobile vitamin sida ----------------*/
+  .table-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    width: 95%;
+    padding-left: 7px;
+  }
+
+  .nutrition-info th {
+    font-size: 0.8rem;
+    text-align: left;
+  }
+
+  .nutrition-info td {
+    font-size: 0.8rem;
+    text-align: center;
+  }
+
+  .RDI-info th {
+    font-size: 0.8rem;
+    text-align: left;
+    padding-left: 20px;
+  }
+
+  .RDI-info td {
+    font-size: 0.8rem;
+    text-align: center;
+    padding-left: 20px;
+    padding-right: 34px;
+  }
+
+  .nutrition-info p {
+    font-size: 0.8rem;
+    text-align: left;
+  }
+
+  /* ---------------------- phone search -------------------------- */
+
+  .input-container {
+    display: flex;
+    align-items: stretch;
+    flex-direction: column;
+    padding: 10px;
+    border-bottom: 2px solid #12664f;
+    width: 100%;
+    height: 180px;
+  }
+
+  .input-container h3 {
+    font-size: 1.1em;
+    font-weight: 450;
+  }
+
+  .input-container form {
+    display: flex;
+    width: 100%;
+    align-items: flex-end;
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 8px;
+  }
+
+  .input-container input {
+    width: 90%;
+    height: 40px;
+    border-radius: 5px;
+    font-size: 1.2em;
+    padding: 5px;
+    margin-top: 15px;
+  }
+
+  #default-section h2 {
+    margin-top: 5px;
+    font-size: 2.1em;
+    width: 90%;
+    text-align: left;
+    font-weight: 600;
+  }
+
+  #default-section p {
+    padding-top: 10px;
+    font-size: 1.1rem;
+    width: 90%;
+    font-weight: 450;
+  }
+
+  .search-section {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 25px;
+    border-radius: 8px;
+    margin-top: 1rem;
+    flex-direction: column;
+  }
+
+  .info-article {
+    width: 100%;
+    text-align: center;
+  }
+
+  .info-article img {
+    width: 95%;
+    height: auto;
+    object-fit: cover;
+    object-position: center;
+    margin-top: 15px;
+  }
 }
 
-/* ----------------- vitamin sida ----------------*/
-.container {
-  max-width: 800px;
-  margin: auto;
-  padding: 20px;
-  background-color: #f9f9f9;
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  margin-top: 2rem;
+/* -------About_____Mobile enheter ---------*/
+@media (max-width: 767px) {
+  .about-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .about-container article,
+  .about-container aside {
+    width: 100%;
+    float: none;
+  }
+
+  .about-container article {
+    padding: 10px;
+  }
+
+  .about-container h1 {
+    font-size: 2em;
+    text-align: center;
+    margin: 10px 0;
+  }
+
+  .about-container p {
+    font-size: 1.1em;
+    font-weight: 450;
+    padding: 0 5%;
+    text-align: left;
+  }
+
+  .about-container aside img {
+    object-position: center;
+    height: auto;
+    border: none;
+  }
 }
 
-.nutrition-info,
-.RDI-info table {
-  width: 100%;
-  margin-top: 20px;
-  border-collapse: collapse;
-}
-
-.nutrition-info th,
-.nutrition-info td,
-.RDI-info th,
-.RDI-info td {
-  text-align: left;
-  padding: 8px;
-  border-bottom: 1px solid #ddd;
-}
-.nutrition-info p,
-.RDI-info p {
-  font-size: 0.7rem;
-  line-height: 1rem;
-}
-
-.table-container {
-  display: flex;
-  flex-direction: row;
-  width: 80%;
-}
-
-.table-container table {
-  width: 100%;
-}
-
-.table-container td,
-.table-container th {
-  text-align: center;
-}
-
-.container {
-  width: 45%;
-}
-
-/*  --- Search ---  */
-
-.search-container,
-#default-section,
-.table-article {
+/*_____kontakt___container____*/
+.kontakt-container {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: space-between;
   flex: 1;
 }
-#default-section {
-  justify-content: center;
+.kontakt-rubrik {
   width: 100%;
-  height: 450px;
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 4.5em;
 }
-#default-section h2 {
-  font-size: 2.1em;
+.kontakt-rubrik h1 {
+  font-weight: 600;
 }
-#default-section p {
-  font-size: 1.7em;
-  width: 90%;
-  font-weight: 300;
-}
-#home-search {
-  padding: 8px;
-}
-.container-search {
-  max-width: 1000px;
-  margin: auto;
-  padding: 20px;
-  background-color: #f9f9f9;
-  border-radius: 8px;
-  border: 2px solid rgba(0, 0, 0, 0.372);
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
-  margin-top: 2rem;
-}
-.search-section {
-  min-width: 100%;
-  min-height: 100%;
+.kontakt-info {
+  border-top: 10px solid var(--accent-color1);
+  border-left: 6.5px solid var(--accent-color1);
+  border-right: 6.5px solid var(--accent-color1);
+  width: 100%;
+  height: 150px;
   display: flex;
   justify-content: space-evenly;
-  padding: 30px;
-  background-color: #f9f9f9;
-  border-radius: 8px;
-  border: 2px solid rgba(0, 0, 0, 0.142);
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
-  margin-top: 1rem;
+  padding: 15px;
 }
-.search-section h1 {
-  padding: 0;
+.kontakt-info h4 {
+  margin-bottom: 10px;
+}
+.kontakt-info p {
+  margin-bottom: 3px;
+  max-width: 400px;
+}
+/*___________kontakt____mobile_______*/
+@media (max-width: 767px) {
+  .kontakt-rubrik {
+    font-size: 1.5em;
+  }
+
+  .kontakt-info {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .kontakt-info h4,
+  .kontakt-info p {
+    text-align: center;
+    padding: 5px;
+  }
 }
 
-.input-container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 25px;
-  margin-top: 30px;
-  padding: 10px;
-}
+/* --------Mobile-Specific Styles___Our team ----------*/
+@media (max-width: 767px) {
+  .team-container {
+    align-items: center;
+  }
+  .team-container h2 {
+    font-size: 2em;
+    margin-top: 20px;
+  }
 
-.input-container input {
-  width: 400px;
-  height: 45px;
-  border-radius: 10px;
-  font-size: 1.4em;
-  padding: 8px;
-}
+  .team-info {
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    margin-top: 20px;
+  }
 
-.info-article {
-  width: 60%;
-  text-align: center;
-}
-.info-article img {
-  width: 320px;
-  height: 250px;
-  object-fit: cover;
-  object-position: center;
-  border: 2px solid rgba(0, 0, 0, 0.667);
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
-  margin-top: 15px;
-}
-.info-article h1 {
-  margin-bottom: 20px;
-  border-bottom: 1px solid black;
-}
+  .card {
+    width: 80%;
+    height: auto;
+    margin-bottom: 20px;
+  }
 
-.api-info {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-  max-height: fit-content;
-  margin-top: 20px;
+  .card h4,
+  .card p,
+  .quote {
+    padding: 0 10px;
+  }
 
+  .card-image {
+    height: auto;
+  }
+
+  .card-image img {
+    object-fit: contain;
+  }
 }
-
-.table-article {
-  width: 40%;
-  align-items: center;
-  justify-content: center;
-}
-
-
