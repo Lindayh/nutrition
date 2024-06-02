@@ -645,15 +645,20 @@ footer p {
   flex: 1;
 }
 #default-section {
-  justify-content: center;
+  align-items: center;
   width: 100%;
-  height: 450px;
+  height: 300px;
 }
 #default-section h2 {
+  margin-top: 40px;
   font-size: 2.1em;
+  width: 90%;
+  text-align: left;
+  font-weight: 600;
 }
 #default-section p {
-  font-size: 1.7em;
+  padding-top: 8px;
+  font-size: 1.5em;
   width: 90%;
   font-weight: 300;
 }
@@ -674,7 +679,7 @@ footer p {
   min-height: 100%;
   display: flex;
   justify-content: space-evenly;
-  padding: 30px;
+  padding: 25px;
   background-color: #f9f9f9;
   border-radius: 8px;
   margin-top: 1rem;
@@ -750,7 +755,8 @@ footer p {
   margin-top: 15px;
 }
 .info-article h1 {
-  margin-bottom: 20px;
+  margin-bottom: 25px;
+  padding-bottom: 10px;
   border-bottom: 1px solid black;
 }
 
