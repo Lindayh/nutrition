@@ -387,8 +387,7 @@ footer p {
   justify-content: center;
   font-size: 4.5em;
 }
-.kontakt-rubrik h1
-{
+.kontakt-rubrik h1 {
   font-weight: 600;
 }
 .kontakt-info {
@@ -471,116 +470,6 @@ footer p {
   line-height: 1.7rem;
   width: 75%;
   text-align: justify;
-}
-
-/* ----------------- Mobile Specific styling  ----------------*/
-
-@media only screen and (max-width: 600px) {
-  /* CSS rules for mobile devices */
-
-  /* ----------------- Mobile Specific main navbar  ----------------*/
-  .main-nav {
-    font-size: 1.1rem;
-    font-weight: 450;
-    height: 10svh;
-    display: flex;
-    /* flex-direction: row; */
-    justify-content: space-evenly;
-  }
-  .navbar-menu {
-    display: flex;
-    justify-content: space-evenly;
-    width: 80%;
-  }
-
-  .logo {
-    display: flex;
-    height: 100%;
-    width: 20%;
-  }
-
-  /* ----------------- Mobile Specific Info sections  ----------------*/
-  .info-section {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 0;
-    padding-bottom: 2rem;
-    width: 80%;
-  }
-
-  .info-section h1 {
-    font-size: 3rem;
-    font-weight: 800;
-    width: 100%;
-    padding-top: 2rem;
-  }
-
-  .info-section h2 {
-    font-size: 1.5rem;
-    font-weight: 600;
-    width: 100%;
-    padding-top: 1rem;
-  }
-
-  .info-section p {
-    font-size: 1.1rem;
-    font-weight: 450;
-    width: 80%;
-  }
-
-  .home-section {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 0;
-    padding-bottom: 2rem;
-    width: 80%;
-  }
-
-  .info-container {
-    width: 100%;
-  }
-
-  .info-container h1 {
-    font-size: 2.9rem;
-    font-weight: 800;
-    padding-top: 2rem;
-  }
-
-  .info-container h2 {
-    font-size: 1.5rem;
-    font-weight: 600;
-    width: 100%;
-    padding-top: 1rem;
-  }
-
-  .info-container p {
-    font-size: 1.1rem;
-    font-weight: 450;
-    width: 80%;
-  }
-  /* ----------------- Mobile Specific subnavbar  ----------------*/
-
-  .navbar-submenu {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    font-size: 1rem;
-    font-weight: 400;
-  }
-  /* ----------------- Mobile Specific footer  ----------------*/
-
-  footer a {
-    font-size: 1rem;
-    font-weight: 400;
-  }
-
-  footer p {
-    margin-top: 1rem;
-    font-size: 0.7rem;
-  }
 }
 
 /* ----------------- vitamin sida ----------------*/
@@ -709,7 +598,6 @@ footer p {
   border: 1px solid #042108;
   margin-top: 15px;
   color: black;
-  
 }
 .input-container form {
   display: flex;
@@ -767,7 +655,6 @@ footer p {
   width: 100%;
   max-height: fit-content;
   margin-top: 20px;
-
 }
 
 .table-article {
@@ -776,4 +663,159 @@ footer p {
   justify-content: center;
 }
 
+/* ----------------- Mobile Specific styling  ----------------*/
 
+@media only screen and (max-width: 600px) {
+  /* CSS rules for mobile devices */
+
+  /* ----------------- Mobile Specific main navbar  ----------------*/
+  .main-nav {
+    font-size: 1.1rem;
+    font-weight: 450;
+    height: 10svh;
+    display: flex;
+    /* flex-direction: row; */
+    justify-content: space-evenly;
+  }
+  .navbar-menu {
+    display: flex;
+    justify-content: space-evenly;
+    width: 80%;
+  }
+
+  .logo {
+    display: flex;
+    height: 100%;
+    width: 20%;
+  }
+
+  /* ----------------- Mobile Specific Info sections  ----------------*/
+  .info-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+    padding-bottom: 2rem;
+    width: 80%;
+  }
+
+  .info-section h1 {
+    font-size: 3rem;
+    font-weight: 800;
+    width: 100%;
+    padding-top: 2rem;
+  }
+
+  .info-section h2 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    width: 100%;
+    padding-top: 1rem;
+  }
+
+  .info-section p {
+    font-size: 1.1rem;
+    font-weight: 450;
+    width: 80%;
+  }
+
+  .home-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    padding-bottom: 2rem;
+    width: 80%;
+  }
+
+  .info-container {
+    width: 100%;
+  }
+
+  .info-container h1 {
+    font-size: 2.5rem;
+    font-weight: 800;
+    padding-top: 2rem;
+  }
+
+  .info-container h2 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    width: 100%;
+    padding-top: 1rem;
+  }
+
+  .info-container p {
+    font-size: 1.1rem;
+    font-weight: 450;
+    width: 80%;
+    text-align: left;
+  }
+  /* ----------------- Mobile Specific subnavbar  ----------------*/
+
+  .navbar-submenu {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    font-size: 1rem;
+    font-weight: 400;
+  }
+  /* ----------------- Mobile Specific footer  ----------------*/
+
+  footer {
+    height: 4rem;
+  }
+
+  footer a {
+    font-size: 1rem;
+    font-weight: 400;
+  }
+
+  footer p {
+    margin-top: 1rem;
+    font-size: 0.7rem;
+  }
+
+  /* ----------------- mobile vitamin sida ----------------*/
+  .table-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    width: 95%;
+    padding-left: 7px;
+  }
+
+  .nutrition-info th {
+    font-size: 0.8rem;
+    text-align: left;
+  }
+
+  .nutrition-info td {
+    font-size: 0.8rem;
+    text-align: center;
+  }
+
+  .RDI-info th {
+    font-size: 0.8rem;
+    text-align: left;
+    padding-left: 20px;
+  }
+
+  .RDI-info td {
+    font-size: 0.8rem;
+    text-align: center;
+    padding-left: 20px;
+    padding-right: 34px;
+  }
+
+  .nutrition-info p {
+    font-size: 0.8rem;
+    text-align: left;
+  }
+}
