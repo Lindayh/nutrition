@@ -741,6 +741,29 @@ footer p {
     width: 90%;
     font-weight: 450;
   }
+
+  .search-section {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 25px;
+    border-radius: 8px;
+    margin-top: 1rem;
+    flex-direction: column;
+  }
+
+  .info-article {
+    width: 100%;
+    text-align: center;
+  }
+
+  .info-article img {
+    width: 95%;
+    height: auto;
+    object-fit: cover;
+    object-position: center;
+    margin-top: 15px;
+  }
 }
 
 /* -------About_____Mobile enheter ---------*/
