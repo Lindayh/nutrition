@@ -472,6 +472,10 @@ footer p {
   margin-top: 15px;
   color: black;
 }
+.input-container input::placeholder {
+  font-size: 0.9em;
+  opacity: 65%;
+}
 .input-container form {
   display: flex;
   align-items: center;
@@ -540,6 +544,9 @@ footer p {
 
 @media only screen and (max-width: 767px) {
   /* CSS rules for mobile devices */
+  .home-container {
+    background-position: top;
+  }
 
   /* ----------------- Mobile Specific main navbar  ----------------*/
   .main-nav {
@@ -728,7 +735,8 @@ footer p {
   }
 
   #default-section h2 {
-    margin-top: 5px;
+    padding-top: 0;
+    margin-top: 10px;
     font-size: 2.1em;
     width: 90%;
     text-align: left;
@@ -737,6 +745,7 @@ footer p {
 
   #default-section p {
     padding-top: 10px;
+    padding-bottom: 5px;
     font-size: 1.1rem;
     width: 90%;
     font-weight: 450;
@@ -759,10 +768,13 @@ footer p {
 
   .info-article img {
     width: 95%;
-    height: auto;
+    height: 200px;
     object-fit: cover;
     object-position: center;
     margin-top: 15px;
+  }
+  .api-info p { 
+    width: 100%;
   }
 }
 

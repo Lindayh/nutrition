@@ -532,6 +532,10 @@ veg_fruit_info = [
           "titel": "Kiwi gul",
           "fakta": "Gula kiwifrukter är en variant av den mer vanliga gröna kiwin. De har en söt och saftig smak och är lika näringsrika som de gröna kiwifrukterna. Gul kiwi är rik på C-vitamin, kalium och fiber. Dessutom innehåller de naturliga ämnen som kan hjälpa till att främja matsmältningen och stödja immunsystemet.",
           "bild": "https://jeppastradgard.se/wp-content/uploads/2023/12/KLK004_gul-kiwi-hona-lv.jpg"
+      },
+      {
+          "titel": "Pistaschnötter",
+          "fakta": "Pistaschnötter är en källa till hälsosamma fetter, protein, fiber, vitaminer och mineraler, särskilt vitamin B6, koppar och mangan. De innehåller också antioxidanter och har förknippats med hälsofördelar som att främja hjärthälsa, reglera blodsockernivåer och stödja viktkontroll. Pistaschnötter kan ätas råa, rostade eller användas i olika rätter som desserter och sallader."
       }
     ]
 

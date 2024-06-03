@@ -8,7 +8,7 @@
         <div class="input-container">
             <h3>Sök igenom vår databas genom att söka på en frukt eller grönsak!</h3>
             <form action="/search" method="GET">
-                <input type="search" placeholder="Sök igenom vår databas" name="search">
+                <input type="search" placeholder="Sök på t.ex tomat, gurka..." name="search">
                 <button><i class="fa-solid fa-magnifying-glass"></i></button>
             </form>
         </div>
@@ -33,7 +33,7 @@
                                     <thead>
                                         <tr>
                                             <th>Vitamin/Mineral</th>
-                                            <th>per 100(gram)</th>
+                                            <th>per 100g</th>
                                         </tr>
                                     </thead>
                                     <tbody>
@@ -42,7 +42,11 @@
                                                 <td>{{ nutrient }}</td>
                                                 <td>
                                                     {% for value in values %}
-                                                        {{ value }}<br>
+                                                        {% if nutrient in ["Jod", "Selen", "Vitamin A", "Vitamin D", "Folat", "Vitamin K"] %}
+                                                            {{ value }}<span style="font-size: 0.9em;">&micro;g</span>
+                                                        {% else %}
+                                                            {{ value }}<span style="font-size: 0.9em;">mg</span>
+                                                        {% endif %}
                                                     {% endfor %}
                                                 </td>
                                             </tr>
