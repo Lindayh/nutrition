@@ -92,7 +92,7 @@ def vitamin_info(vitamin):
                 if vitamin == "Vitamin A":
                     temp_dict = {"name" : fruit_cls.Namn,
                              "vitamin_value" : getattr(fruit_cls, col_name),
-                             "unit": "Vitamin A (Retinolekvivalenter per mikgrogram)"}
+                             "unit": "Vitamin A (Retinolekvivalenter per mikrogram)"}
                 
                 if vitamin == "Niacin":
                     temp_dict = {"name" : fruit_cls.Namn,
