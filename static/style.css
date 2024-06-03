@@ -544,7 +544,9 @@ footer p {
 
 @media only screen and (max-width: 767px) {
   /* CSS rules for mobile devices */
-  .home-container {
+  .home-container,
+  .info-page-container
+   {
     background-position: top;
   }
 
@@ -776,6 +778,11 @@ footer p {
   .api-info p { 
     width: 100%;
   }
+  .table-article {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
 }
 
 /* -------About_____Mobile enheter ---------*/
