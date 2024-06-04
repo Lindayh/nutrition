@@ -709,7 +709,9 @@ footer p {
   }
 
   /* ---------------------- phone search -------------------------- */
-
+  .table-article {
+    width: 100%;
+  }
   .input-container {
     display: flex;
     align-items: stretch;
@@ -763,7 +765,7 @@ footer p {
   .search-section {
     width: 100%;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
     padding: 25px;
     border-radius: 8px;
     margin-top: 1rem;
