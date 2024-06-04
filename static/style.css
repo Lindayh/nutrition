@@ -721,7 +721,6 @@ footer p {
     width: 100%;
     height: 180px;
   }
-
   .input-container h3 {
     font-size: 1.1em;
     font-weight: 450;
@@ -743,6 +742,10 @@ footer p {
     font-size: 1.2em;
     padding: 5px;
     margin-top: 15px;
+  }
+  .input-container button {
+    margin: 0;
+    height: 40px;
   }
 
   #default-section h2 {
