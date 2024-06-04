@@ -169,6 +169,7 @@ veg_fruit_info = [
       {
         "titel": "Squash",
         "fakta": "Squash är låg i kalorier och rik på vitamin C och mangan. Den har en mild smak och kan användas i en mängd olika rätter, både rå och tillagad. Squash är också en bra källa till fiber som kan hjälpa till att förbättra matsmältningen."
+        "bild": "https://www.allrecipes.com/thmb/9gJhrEQlONkxa3ueoR1Wa5Tckxg=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/RM-159433-baked-butternut-squash-ddmfs-1x2-2486-8c384bdaa7b34b848d5f3cdc6f97b92e.jpg"
       },
       {
         "titel": "Tomat",
@@ -310,6 +311,7 @@ veg_fruit_info = [
       {
         "titel": "Papaya",
         "fakta": "Papaya är rik på vitamin C, A och enzymer som papain. Den har en söt och mjuk smak och används ofta i sallader, smoothies och desserter. Papaya kan också bidra till att förbättra matsmältningen och stärka immunförsvaret."
+        "bild": "https://www.heart.org/-/media/Images/News/2023/October-2023/1013EIOLIPapaya_SC.jpg"
       },
       {
         "titel": "Persika",
@@ -536,6 +538,123 @@ veg_fruit_info = [
       {
           "titel": "Pistaschnötter",
           "fakta": "Pistaschnötter är en källa till hälsosamma fetter, protein, fiber, vitaminer och mineraler, särskilt vitamin B6, koppar och mangan. De innehåller också antioxidanter och har förknippats med hälsofördelar som att främja hjärthälsa, reglera blodsockernivåer och stödja viktkontroll. Pistaschnötter kan ätas råa, rostade eller användas i olika rätter som desserter och sallader."
+      },
+      {
+          "titel": "Småcitrus clementin mandarin tangerin satsumas",
+          "fakta": "Småcitrus inkluderar flera varianter som clementiner, mandariner, tangeriner och satsumas. Dessa citrusfrukter är kända för sin sötma och saftighet. De är rika på vitamin C, fiber och antioxidanter. Småcitrus är ett populärt mellanmål och används ofta i sallader, desserter och juicer."
+      },
+      {
+          "titel": "Fikon",
+          "fakta": "Fikon är en näringsrik frukt med en söt smak och mjuk textur. De är rika på kostfiber, vitaminer (särskilt vitamin B6 och K), mineraler som kalium och magnesium samt antioxidanter. Fikon kan ätas färska eller torkade och används i en mängd olika rätter, inklusive bakverk och sallader."
+      },
+      {
+          "titel": "Kaktusfikon",
+          "fakta": "Kaktusfikon, även kända som prickly pears, är frukter från olika arter av kaktus. De har en söt och något syrlig smak och är rika på vitamin C, magnesium och kalium. Kaktusfikon används ofta i sylt, geléer, sallader och drycker."
+      },
+      {
+          "titel": "Vinbär svarta",
+          "fakta": "Svarta vinbär är små, mörklila bär som är rika på vitamin C, kalium och antioxidanter. De har en syrlig smak och används ofta i sylt, geléer, saft och bakverk. Svarta vinbär har också antiinflammatoriska egenskaper."
+      },
+      {
+          "titel": "Vindruvor",
+          "fakta": "Vindruvor är saftiga bär som kan vara gröna, röda eller svarta. De är rika på vitaminer (särskilt vitamin K och C), antioxidanter och naturliga sockerarter. Vindruvor kan ätas färska, torkade som russin eller användas i juice och vinproduktion."
+      },
+      {
+          "titel": "Cashewnötter rostade u. salt",
+          "fakta": "Cashewnötter är näringsrika och har en krämig konsistens. Rostade cashewnötter utan salt är rika på protein, hälsosamma fetter, vitaminer (särskilt E och B6) och mineraler som magnesium och järn. De används i matlagning, bakning och som snacks."
+      },
+      {
+          "titel": "Hasselnötter",
+          "fakta": "Hasselnötter är rika på hälsosamma fetter, protein, fiber, vitaminer (särskilt E) och mineraler som magnesium och koppar. De har en söt och mild smak och används ofta i bakverk, choklad och som snacks."
+          "bild": "https://images.pexels.com/photos/7676099/pexels-photo-7676099.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+      },
+      {
+          "titel": "Jordnötter torkade",
+          "fakta": "Torkade jordnötter är rika på protein, hälsosamma fetter, fiber och flera vitaminer och mineraler, inklusive niacin och magnesium. De används ofta som snacks eller i matlagning och bakning."
+      },
+      {
+          "titel": "Jordnötter rostade",
+          "fakta": "Rostade jordnötter har en rikare smak jämfört med råa jordnötter. De är rika på protein, hälsosamma fetter och fiber samt vitaminer och mineraler som niacin och magnesium. Rostade jordnötter används ofta som snacks eller i matlagning."
+      },
+      {
+          "titel": "Kastanjer",
+          "fakta": "Kastanjer är rika på kolhydrater, fiber, vitaminer (särskilt C och B6) och mineraler som kalium och magnesium. De har en söt och mild smak och används ofta i matlagning, bakning och som rostade snacks."
+      },
+      {
+          "titel": "Kokosflingor",
+          "fakta": "Kokosflingor är torkade och strimlade bitar av kokosnötkött. De är rika på fiber, hälsosamma fetter och mineraler som mangan och koppar. Kokosflingor används i bakning, matlagning och som topping på desserter och frukostprodukter."
+      },
+      {
+          "titel": "Kokosnöt",
+          "fakta": "Kokosnöt är en näringsrik frukt som är rik på fiber, hälsosamma fetter och mineraler som mangan och koppar. Kokosnötköttet kan ätas färskt eller torkat, och kokosmjölk används i många matlagningsrecept."
+      },
+      {
+          "titel": "Linfrö hela",
+          "fakta": "Hela linfrön är rika på fiber, omega-3 fettsyror och lignaner. De har hälsofrämjande egenskaper, inklusive förbättrad matsmältning och hjärthälsa. Linfrön används ofta i bakning, smoothies och som topping på frukostprodukter."
+      },
+      {
+          "titel": "Paranötter",
+          "fakta": "Paranötter är rika på selen, hälsosamma fetter, protein, vitaminer och mineraler. De har en mild och krämig smak och används ofta som snacks eller i matlagning och bakning."
+      },
+      {
+          "titel": "Pekannötter",
+          "fakta": "Pekannötter är rika på hälsosamma fetter, protein, fiber, vitaminer (särskilt E) och mineraler som magnesium och zink. De har en söt och smörig smak och används ofta i bakverk, desserter och som snacks."
+      },
+      {
+          "titel": "Pumpafrö",
+          "fakta": "Pumpafrön är rika på protein, hälsosamma fetter, fiber, vitaminer och mineraler som magnesium och zink. De har en mild och nötaktig smak och används ofta som snacks eller i matlagning och bakning."
+      },
+      {
+          "titel": "Chiafrö",
+          "fakta": "Chiafrön är rika på fiber, omega-3 fettsyror, protein och antioxidanter. De har många hälsofördelar, inklusive förbättrad matsmältning och hjärthälsa. Chiafrön används ofta i smoothies, puddingar och bakning."
+      },
+      {
+          "titel": "Hampafrö m. skal",
+          "fakta": "Hampafrön med skal är rika på protein, omega-3 och omega-6 fettsyror, fiber och mineraler som magnesium och järn. De har en mild, nötaktig smak och används ofta i smoothies, bakning och som topping på sallader och frukostprodukter."
+      },
+      {
+          "titel": "Hampafrö u. skal",
+          "fakta": "Skalade hampafrön är rika på protein, omega-3 och omega-6 fettsyror samt mineraler som magnesium och järn. De har en mild, nötaktig smak och används ofta i smoothies, bakning och som topping på sallader och frukostprodukter."
+      },
+      {
+          "titel": "Vallmofrö",
+          "fakta": "Vallmofrön är rika på protein, fiber, hälsosamma fetter och mineraler som kalcium och magnesium. De har en mild och nötaktig smak och används ofta i bakning och matlagning, särskilt i bröd och bakverk."
+      },
+      {
+          "titel": "Vindruvor gröna",
+          "fakta": "Gröna vindruvor är rika på vitaminer (särskilt K och C), antioxidanter och naturliga sockerarter. De har en söt och saftig smak och används ofta som snacks, i sallader och i vinproduktion."
+      },
+      {
+          "titel": "Vindruvor röda",
+          "fakta": "Röda vindruvor är rika på vitaminer (särskilt K och C), antioxidanter och naturliga sockerarter. De har en söt och saftig smak och används ofta som snacks, i sallader och i vinproduktion."
+      },
+      {
+          "titel": "Mullbär",
+          "fakta": "Mullbär är små, näringsrika bär som är rika på vitamin C, järn och antioxidanter. De har en söt och mild smak och används ofta torkade som snacks eller i bakning och matlagning."
+      },
+      {
+          "titel": "Wasabirot",
+          "fakta": "Wasabirot är känd för sin starka, skarpa smak och används ofta som krydda till sushi och andra japanska rätter. Den har antibakteriella egenskaper och är rik på antioxidanter."
+      },
+      {
+          "titel": "Macadamianötter",
+          "fakta": "Macadamianötter är rika på hälsosamma fetter, fiber, vitaminer (särskilt B1) och mineraler som magnesium och mangan. De har en smörig smak och används ofta i bakverk, desserter och som snacks."
+      },
+      {
+          "titel": "Shiitakesvamp",
+          "fakta": "Shiitakesvamp är rik på B-vitaminer, mineraler och antioxidanter. Den har en köttig konsistens och en rik, umamismak. Shiitakesvamp används ofta i asiatiska rätter, soppor och såser."
+      },
+      {
+          "titel": "Ostronskivling",
+          "fakta": "Ostronskivling är en näringsrik svamp som är rik på protein, fiber, B-vitaminer och antioxidanter. Den har en mild smak och en köttig konsistens och används ofta i matlagning, särskilt i vegetariska rätter."
+      },
+      {
+          "titel": "Blåbär amerikanska",
+          "fakta": "Amerikanska blåbär är rika på vitaminer (särskilt C och K), antioxidanter och kostfiber. De har en söt och saftig smak och används ofta i bakning, smoothies och som snacks."
+      },
+      {
+          "titel": "Ärtskott",
+          "fakta": "Ärtskott är unga ärtväxter som är rika på vitaminer (särskilt C och K), mineraler och antioxidanter. De har en mild, söt smak och används ofta i sallader, smörgåsar och som garnering."
       }
     ]
 
