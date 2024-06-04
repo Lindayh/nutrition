@@ -545,7 +545,6 @@ veg_fruit_info = [
       {
           "titel": "Ärtskott",
           "fakta": "Ärtskott är de unga skotten av ärtväxter och är en näringsrik ingrediens som ofta används i sallader, smörgåsar och som garnering. De har en söt, mild smak som påminner om färska ärtor och är rika på vitaminer som vitamin C, vitamin A och flera B-vitaminer. Dessutom innehåller ärtskott mineraler som järn, kalcium och magnesium samt fibrer som främjar matsmältningen. De odlas enkelt inomhus eller utomhus och skördas när de är cirka 10-15 cm långa. Även om de är bäst att äta färska kan ärtskott också användas i olika rätter för att tillföra en krispig textur och en färsk smak.",
-          "bild": ""
       },
       {
           "titel": "Blåbär amerikanska",
@@ -605,6 +604,91 @@ veg_fruit_info = [
           "titel": "Chiafrö",
           "fakta": "Chiafrön är små frön som kommer från växten Salvia hispanica, ursprungligen från Mexiko. Dessa frön är rika på näringsämnen som omega-3-fettsyror, fiber, protein, antioxidanter och mineraler som kalcium och magnesium. När de kommer i kontakt med vätska bildar chiafrön en geléliknande konsistens, vilket gör dem användbara som ett naturligt förtjockningsmedel eller för att göra chiapuddingar och drycker. Chiafrön är också kända för sina fördelar för matsmältningen och för att hjälpa till att reglera blodsockernivåerna och minska inflammation i kroppen. Dessutom är de ett utmärkt alternativ för veganer och vegetarianer som letar efter källor till omega-3-fettsyror.",
           "bild": "https://images.pexels.com/photos/938699/pexels-photo-938699.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+      },
+      {
+          "titel": "Pumpafrö",
+          "fakta": "",
+          "bild": None
+      },
+      {
+          "titel": "Pistaschnötter",
+          "fakta": "",
+          "bild": None
+      },
+      {
+          "titel": "Pekannötter",
+          "fakta": "",
+          "bild": None
+      },
+      {
+          "titel": "Paranötter",
+          "fakta": "",
+          "bild": None
+      },
+      {
+          "titel": "Linfrö hela",
+          "fakta": "",
+          "bild": None
+      },
+      {
+          "titel": "Kokosnöt",
+          "fakta": "",
+          "bild": None
+      },
+      {
+          "titel": "Kokosflingor",
+          "fakta": "",
+          "bild": None
+      },
+      {
+          "titel": "Kastanjer",
+          "fakta": "",
+          "bild": None
+      },
+      {
+          "titel": "Jordnötter rostade",
+          "fakta": "",
+          "bild": None
+      },
+      {
+          "titel": "Jordnötter torkade",
+          "fakta": "",
+          "bild": None
+      },
+      {
+          "titel": "Hasselnötter",
+          "fakta": "",
+          "bild": "https://images.pexels.com/photos/7676099/pexels-photo-7676099.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+      },
+      {
+          "titel": "Cashewnötter rostade u. salt",
+          "fakta": "",
+          "bild": "https://images.pexels.com/photos/4663476/pexels-photo-4663476.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+      },
+      {
+          "titel": "Vindruvor",
+          "fakta": "",
+          "bild": "https://images.pexels.com/photos/708777/pexels-photo-708777.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+      },
+      {
+          "titel": "Vinbär svarta",
+          "fakta": "",
+          "bild": "https://images.pexels.com/photos/10067663/pexels-photo-10067663.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+      },
+      {
+          "titel": "Kaktusfikon",
+          "fakta": "",
+          "bild": None
+      },
+      {
+          "titel": "Småcitrus clementin mandarin tangerin satsumas",
+          "fakta": "",
+          "bild": "https://images.pexels.com/photos/327098/pexels-photo-327098.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+      },
+      {
+          "titel": "Fikon",
+          "fakta": "",
+          "bild": "https://images.pexels.com/photos/15552848/pexels-photo-15552848/free-photo-of-half-of-fig.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
       }
 ]
 
