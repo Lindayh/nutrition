@@ -548,6 +548,8 @@ footer p {
   .info-page-container
    {
     background-position: top;
+    background-repeat: repeat-y;
+    background-size: auto;
   }
 
   /* ----------------- Mobile Specific main navbar  ----------------*/
