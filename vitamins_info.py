@@ -36,7 +36,7 @@ vitamins_info = [
         "info":"Folat behövs för att bilda nya celler och röda blodkroppar. När cellbildningen ökar, exempelvis då man växer eller är gravid ökar behovet av folat.",
         "info1":"Folat finns i nästan all mat i mycket små mängder. Folat och folsyra är olika former av samma B-vitamin. Folat finns naturligt i mat medan folsyra är ett konstgjort framställt folat som används vid berikning och i kosttillskott. Mörkgröna bladgrönsaker och olika slag av kål, bönor, kikärtor, linser, frukt och bär är livsmedel som innehåller mycket folat. Även fullkornsprodukter, filmjölk och yoghurt innehåller förhållandevis mycket folat.",
         "info2":"Brist på folat/folsyra ger blodbrist, anemi, eftersom kroppen inte kan tillverka röda blodkroppar på rätt sätt. Många får idag i sig för lite folat från maten. Om mamman har för låga halter folat i blodet före och under första veckorna i graviditeten ökar risken för ryggmärgsbråck hos fostret. Låga folathalter ökar även risken för missfall.",
-        "info3":"Det finns ingen risk att få i sig för mycket folat genom att äta mycket folatrik mat. Däremot kan högt intag av folsyra via tillskott maskera symtom som uppkommer av vitamin B12-brist. Den europeiska livsmedelssäkerhetsmyndigheten har därför satt en övre gräns för intag av folsyra till 1000 mikrogram per dag för vuxna.",
+        "info3":"Det finns ingen risk att få i sig för mycket folat genom att äta mycket folatrik mat. Däremot kan högt intag av folsyra via tillskott maskera symtom som uppkommer av vitamin B12-brist. Den europeiska livsmedelssäkerhets-myndigheten har därför satt en övre gräns för intag av folsyra till 1000 mikrogram per dag för vuxna.",
     },
             {
         "name": "Vitamin K",
@@ -67,7 +67,7 @@ vitamins_info = [
         "info1":"Vi får i oss tiamin via kosten och det finns i exempelvis frukostflingor och müsli, fläskkött, inälvsmat, vetegroddar, solrosfrön och bröd.",
         "info2":"Brist på tiamin är ovanligt i Sverige sett till hela befolkningen, men kan ofta ses vid alkoholmissbruk. Allvarlig brist ger sjukdomen beriberi.",
         "info3":"Det finns inget som tyder på att tiamin ger negativa hälsoeffekter vid intag via maten och intag av upp till 500 mg per dag över flera veckor har inte kunnat kopplas till negativa effekter.",
-        "info4":"Det rekommenderade dagliga behovet varierar med kön och ålder. I nordiska näringsrekommendationerna2023 anges det rekommenderade intaget av tiamin som milligram per megajoule, dvs relation till det totala energiintaget. För alla oberoende av ålder så är det rekommenderade intaget satt till 0,1 milligram/MJ.",
+        "info4":"Det rekommenderade dagliga behovet varierar med kön och ålder. I nordiska näringsrekommendationerna 2023 anges det rekommenderade intaget av tiamin som milligram per megajoule, dvs relation till det totala energiintaget. För alla oberoende av ålder så är det rekommenderade intaget satt till 0,1 milligram/MJ.",
     },
                 {
         "name": "Vitamin B6",

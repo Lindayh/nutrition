@@ -65,6 +65,6 @@ minerals_info = [
         "info1":"Zink finns i kött, mejeriprodukter, fullkornsprodukter och inälvsmat. Upptag av zink underlättas av animaliska proteiner. Även musslor, ost och nötter är rika på zink.",
         "info2":"Det rekommenderade intaget av zink varierar med kön och ålder och rekommendationerna gäller för en blandad animalisk-vegetabilisk kost. De som äter strikt vegetarisk och cerealiebasera kost rekommenderas ett intag som är 25-30% högre.",
         "info3":"Zinkbrist är ovanligt i Sverige. Brist på zink hos barn ger tillväxthämning och störd utveckling. Brist hos vuxna ger hudförändringar, försämrad sårläkning och försämrad aptit.",
-        "info4":"Europeiska Livsmedelssäkerhetsmyndigheten har fastställt en övre gräns för säkert intag för vuxna till 25 mg zink per dag.",
+        "info4":"Europeiska Livsmedelssäkerhets-myndigheten har fastställt en övre gräns för säkert intag för vuxna till 25 mg zink per dag.",
     },
 ]
