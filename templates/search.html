@@ -43,9 +43,9 @@
                                                 <td>
                                                     {% for value in values %}
                                                         {% if nutrient in ["Jod", "Selen", "Vitamin A", "Vitamin D", "Folat", "Vitamin K"] %}
-                                                            {{ value }}<span style="font-size: 0.9em;">&micro;g</span>
+                                                            {{ value }}<span style="font-size: 0.9em; padding-left: 2px;">&micro;g</span>
                                                         {% else %}
-                                                            {{ value }}<span style="font-size: 0.9em;">mg</span>
+                                                            {{ value }}<span style="font-size: 0.9em; padding-left: 2px;">mg</span>
                                                         {% endif %}
                                                     {% endfor %}
                                                 </td>
