@@ -168,7 +168,7 @@ veg_fruit_info = [
       },
       {
         "titel": "Squash",
-        "fakta": "Squash är låg i kalorier och rik på vitamin C och mangan. Den har en mild smak och kan användas i en mängd olika rätter, både rå och tillagad. Squash är också en bra källa till fiber som kan hjälpa till att förbättra matsmältningen."
+        "fakta": "Squash är låg i kalorier och rik på vitamin C och mangan. Den har en mild smak och kan användas i en mängd olika rätter, både rå och tillagad. Squash är också en bra källa till fiber som kan hjälpa till att förbättra matsmältningen.",
         "bild": "https://www.allrecipes.com/thmb/9gJhrEQlONkxa3ueoR1Wa5Tckxg=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/RM-159433-baked-butternut-squash-ddmfs-1x2-2486-8c384bdaa7b34b848d5f3cdc6f97b92e.jpg"
       },
       {
@@ -310,7 +310,7 @@ veg_fruit_info = [
       },
       {
         "titel": "Papaya",
-        "fakta": "Papaya är rik på vitamin C, A och enzymer som papain. Den har en söt och mjuk smak och används ofta i sallader, smoothies och desserter. Papaya kan också bidra till att förbättra matsmältningen och stärka immunförsvaret."
+        "fakta": "Papaya är rik på vitamin C, A och enzymer som papain. Den har en söt och mjuk smak och används ofta i sallader, smoothies och desserter. Papaya kan också bidra till att förbättra matsmältningen och stärka immunförsvaret.",
         "bild": "https://www.heart.org/-/media/Images/News/2023/October-2023/1013EIOLIPapaya_SC.jpg"
       },
       {
@@ -565,7 +565,7 @@ veg_fruit_info = [
       },
       {
           "titel": "Hasselnötter",
-          "fakta": "Hasselnötter är rika på hälsosamma fetter, protein, fiber, vitaminer (särskilt E) och mineraler som magnesium och koppar. De har en söt och mild smak och används ofta i bakverk, choklad och som snacks."
+          "fakta": "Hasselnötter är rika på hälsosamma fetter, protein, fiber, vitaminer (särskilt E) och mineraler som magnesium och koppar. De har en söt och mild smak och används ofta i bakverk, choklad och som snacks.",
           "bild": "https://images.pexels.com/photos/7676099/pexels-photo-7676099.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
       },
       {
