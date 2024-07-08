@@ -12,23 +12,59 @@
                 <button><i class="fa-solid fa-magnifying-glass"></i></button>
             </form>
         </div>
+        
         {% if results %}
+
             <section class="search-section">          
                 <article class="info-article">
+
+
+                    
+
+                    
+
+
+
+
                     <h1>{{ query_name }}</h1>
                     {% if img %}
                     <img src="{{ img }}">
                     {% elif api_image %}
                     <img src="{{ api_image }}">
                     {% endif %}
+                
+                {# 
                     <div class="api-info">
                         <p><strong>Fakta: </strong>{{ fact }}</p>
                     </div>
+                #}
+
                 </article>
                 <article class="table-article">
                     <div class="table-container">
                         <div class="container-search">
                             <div class="nutrition-info">
+                                
+                                <table>
+                                    <thead>
+                                        <th>Sökträffar</th>
+                                    </thead>
+                                    <tbody>
+                                        {% for item in results %}
+                                        <tr>
+                                            <td>
+                                                <a href="">{{item.Namn}} </a>
+                                            </td>
+                                        </tr>
+                                        {% endfor %} 
+            
+                                    </tbody>
+            
+                                </table>
+
+
+                        
+                                {#
                                 <table>
                                     <thead>
                                         <tr>
@@ -50,7 +86,9 @@
                                                     {% endfor %}
                                                 </td>
                                             </tr>
-                                        {% endfor %}
+                                            {% endfor %}
+                                            #}
+
                                     </tbody>
                                 </table>
                             </div>
@@ -58,6 +96,7 @@
                     </div>
                 </article>
             </section>
+
         {% elif message %}
             <div id="default-section">       
                 <h2>{{ message }}</h2>            

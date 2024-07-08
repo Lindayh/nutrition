@@ -139,16 +139,11 @@ def search():
         query_result.extend( Fruit.query.filter(func.lower(getattr(Fruit,'Namn')).startswith(search_query.title()) ).all()  )
         query_result.extend( Fruit.query.filter(func.lower(getattr(Fruit,'Namn')).contains(f'%{search_query.lower()}%')).all()  )
         
-        query_result = set(query_result)
-            
+        query_result = set(sorted(query_result, key= lambda x: x.Namn, reverse=True))
 
+        print(query_result)
 
-
-
-        return render_template('search.html', query_result=query_result)
-
-
-
+        return render_template('search.html', results=query_result)
 
 
     return render_template("search.html")
