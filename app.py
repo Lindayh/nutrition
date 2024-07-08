@@ -5,6 +5,7 @@ from vitamins_info import vitamins_info
 from RDI_info import RDI_list_vit, RDI_list_min
 from fakta_info import veg_fruit_info, get_fact
 import requests
+from sqlalchemy import func
 
 
 app = Flask(__name__)
@@ -130,40 +131,61 @@ def mineral_info(mineral):
 @app.route("/search")
 def search():
     search_query = request.args.get("search")
-    if not search_query:
-        return render_template("search.html")
+
+    if search_query:
+
+        query_result = []
+
+        query_result.extend( Fruit.query.filter(func.lower(getattr(Fruit,'Namn')).startswith(search_query.title()) ).all()  )
+        query_result.extend( Fruit.query.filter(func.lower(getattr(Fruit,'Namn')).contains(f'%{search_query.lower()}%')).all()  )
+        
+        query_result = set(query_result)
+            
+
+
+
+
+        return render_template('search.html', query_result=query_result)
+
+
+
+
+
+    return render_template("search.html")
+    # if not search_query:
+    #     return render_template("search.html")
     
-    check = Fruit.query.filter(Fruit.Namn.startswith(search_query)).first()
+    # check = Fruit.query.filter(Fruit.Namn.startswith(search_query)).first()
 
-    if check:
-        query_name = check.Namn
-        api_query = requests.get(f"https://sv.wikipedia.org/api/rest_v1/page/summary/{query_name}")
-        api_data = api_query.json()
-        api_image = api_data.get("thumbnail", {}).get("source")
+    # if check:
+    #     query_name = check.Namn
+    #     api_query = requests.get(f"https://sv.wikipedia.org/api/rest_v1/page/summary/{query_name}")
+    #     api_data = api_query.json()
+    #     api_image = api_data.get("thumbnail", {}).get("source")
 
-        if not api_image:
-            query_name = check.Namn 
+    #     if not api_image:
+    #         query_name = check.Namn 
 
-        fact_data = get_fact(veg_fruit_info, check.Namn)
+    #     fact_data = get_fact(veg_fruit_info, check.Namn)
 
-        if isinstance(fact_data, tuple):
-            fact, img = fact_data
-        else:
-            fact = fact_data
-            img = None
+    #     if isinstance(fact_data, tuple):
+    #         fact, img = fact_data
+    #     else:
+    #         fact = fact_data
+    #         img = None
 
-        filtered_data = {}
-        print(api_data)
-        for nutrient_name, column_name in nutrient_mapping.items():
-            value = getattr(check, column_name)
-            if isinstance(value, (int, float)) and value > 0:
-                if nutrient_name not in filtered_data:
-                    filtered_data[nutrient_name] = []
-                filtered_data[nutrient_name].append(value)
-        return render_template("search.html", results=filtered_data, query_name=query_name, message=None, fact=fact, img=img, api_image=api_image)
+    #     filtered_data = {}
+    #     print(api_data)
+    #     for nutrient_name, column_name in nutrient_mapping.items():
+    #         value = getattr(check, column_name)
+    #         if isinstance(value, (int, float)) and value > 0:
+    #             if nutrient_name not in filtered_data:
+    #                 filtered_data[nutrient_name] = []
+    #             filtered_data[nutrient_name].append(value)
+    #     return render_template("search.html", results=filtered_data, query_name=query_name, message=None, fact=fact, img=img, api_image=api_image)
     
-    else:
-        return render_template("search.html", message="Oops! det du sökte på existerar inte i vår databas. Testa att söka på en frukt eller grönsak.")
+    # else:
+    #     return render_template("search.html", message="Ingen sökträff hittades.")
 
 
 @app.route("/team")
