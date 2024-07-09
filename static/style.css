@@ -400,6 +400,12 @@ footer p {
   width: 45%;
 }
 
+.center-table
+{
+  left: 50%;
+  transform: translate(-100%, -1%);
+}
+
 /*  --- Search ---  */
 
 .search-container,
