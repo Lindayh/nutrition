@@ -37,7 +37,7 @@
                     <div class="table-container">
                         <div class="container-search">
                             <div class="nutrition-info">
-                                {% if results is not string %}
+                                {% if results and results is not integer %}
 
                                 <table>
                                     <thead>
@@ -92,8 +92,7 @@
            
 
                  
-        {% if not results and not searched_page %}
-
+        {% if not searched_page and results==False %}
         <div id="default-section">
             <h2>Sökfunktionen</h2>
             <p>Genom att använda sökrutan kan du snabbt och enkelt få mer detaljerad 
@@ -103,7 +102,7 @@
         </div> 
         {% endif %}
 
-        {% if results=='Nothing found' %}
+        {% if results is iterable and results|length==0 and not searched_page %}
         <h2>Ingen sökträff hittades</h2>   
         {% endif %}
     </div>

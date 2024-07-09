@@ -64,14 +64,14 @@ def vitamin_info(vitamin):
 
         #region Vitamin top 10
     for index,col_name in enumerate(column_names):
-        if col_name.startswith(vitamin_) or col_name.startswith(vitamin):                   
+        if col_name.startswith(vitamin_) or col_name.startswith(vitamin):
             data = []
             print(f"Column name: {col_name}")
 
             if col_name=="Niacin_mg" or col_name=="Niacinekvivalenter_NE_per_mg":
                 top_10 = Fruit.query.order_by((getattr(Fruit, "Niacinekvivalenter_NE_per_mg")).desc()).limit(10).all()
             else:
-                top_10 = Fruit.query.order_by((getattr(Fruit, col_name)).desc()).limit(10).all()  
+                top_10 = Fruit.query.order_by((getattr(Fruit, col_name)).desc()).limit(10).all()
 
             if "mg" in col_name.split("_"): unit = f"{vitamin} (mg)"
             if "mikrog" in col_name.split("_"): unit = f"{vitamin} (mikrog)"
@@ -89,12 +89,12 @@ def vitamin_info(vitamin):
                 temp_dict = {"name" : fruit_cls.Namn,
                              "vitamin_value" : getattr(fruit_cls, col_name),
                              "unit": unit}
-                
+
                 if vitamin == "Vitamin A":
                     temp_dict = {"name" : fruit_cls.Namn,
                              "vitamin_value" : getattr(fruit_cls, col_name),
                              "unit": "Vitamin A (Retinolekvivalenter per mikrogram)"}
-                
+
                 if vitamin == "Niacin":
                     temp_dict = {"name" : fruit_cls.Namn,
                              "vitamin_value" : getattr(fruit_cls, "Niacinekvivalenter_NE_per_mg"),
@@ -102,14 +102,14 @@ def vitamin_info(vitamin):
 
                 data.append(temp_dict)
             #endregion
-            
+
             if vitamin in RDI_list_vit.keys():
                 vitamin_RDI = RDI_list_vit[vitamin]
 
             return render_template("vitamin_info.html", vitamins = vitamins_list, vitamin=vitamin, top_10=data, vitamin_text=vitamin_text, vitamin_RDI=vitamin_RDI)
 
 
-    if vitamin in vitamins_list:  
+    if vitamin in vitamins_list:
         return render_template("vitamin_info.html", vitamins = vitamins_list, vitamin=vitamin)
     else:   # Prevent user to create random path. E.g. vitaminer/blabla
         return render_template("vitaminer.html", vitamins = vitamins_list)
@@ -117,7 +117,7 @@ def vitamin_info(vitamin):
 @app.route("/mineraler/<mineral>")
 def mineral_info(mineral):
     mineral_info = next((mineral_name for mineral_name in minerals_info if mineral_name["name"]==mineral), None)
-    
+
     column_name = mineral_mapping.get(mineral)
 
     top_fruits = Fruit.query.order_by(getattr(Fruit, column_name).desc()).limit(10).all()
@@ -131,6 +131,7 @@ def mineral_info(mineral):
 @app.route("/search")
 def search():
     search_query = request.args.get("search")
+    query_result = False
 
     if search_query:
 
@@ -138,22 +139,21 @@ def search():
 
         query_result.extend( Fruit.query.filter(func.lower(getattr(Fruit,'Namn')).startswith(search_query.title()) ).all()  )
         query_result.extend( Fruit.query.filter(func.lower(getattr(Fruit,'Namn')).contains(f'%{search_query.lower()}%')).all()  )
-        
-        query_result = set(sorted(query_result, key= lambda x: x.Namn, reverse=True))
 
-        if len(query_result)==0:
-            query_result = 'Nothing found'
+        query_result = list(set(sorted(query_result, key= lambda x: x.Namn, reverse=True)))
 
-        print(query_result)
+        # if len(query_result)==0:
+        print(type(query_result))
+
 
         return render_template('search.html', results=query_result)
-    
 
 
-    return render_template("search.html")
+
+    return render_template("search.html", results=query_result)
     # if not search_query:
     #     return render_template("search.html")
-    
+
     # check = Fruit.query.filter(Fruit.Namn.startswith(search_query)).first()
 
     # if check:
@@ -163,7 +163,7 @@ def search():
     #     api_image = api_data.get("thumbnail", {}).get("source")
 
     #     if not api_image:
-    #         query_name = check.Namn 
+    #         query_name = check.Namn
 
     #     fact_data = get_fact(veg_fruit_info, check.Namn)
 
@@ -182,7 +182,7 @@ def search():
     #                 filtered_data[nutrient_name] = []
     #             filtered_data[nutrient_name].append(value)
     #     return render_template("search.html", results=filtered_data, query_name=query_name, message=None, fact=fact, img=img, api_image=api_image)
-    
+
     # else:
     #     return render_template("search.html", message="Ingen sökträff hittades.")
 
@@ -200,7 +200,7 @@ def item_page(item):
     data = { 'name' : item,
             'object' : query
             }
-    
+
     print(type(data['object']['Riboflavin_mg']	), data['object'] )
 
     return render_template("search.html", searched_page=data)
