@@ -141,9 +141,13 @@ def search():
         
         query_result = set(sorted(query_result, key= lambda x: x.Namn, reverse=True))
 
+        if len(query_result)==0:
+            query_result = 'Nothing found'
+
         print(query_result)
 
         return render_template('search.html', results=query_result)
+    
 
 
     return render_template("search.html")
@@ -181,6 +185,25 @@ def search():
     
     # else:
     #     return render_template("search.html", message="Ingen sökträff hittades.")
+
+
+@app.route("/<item>")
+def item_page(item):
+
+    query = Fruit.query.filter(func.lower(getattr(Fruit,'Namn')).like(f'{item.lower()}')).first()
+
+    query = query.__dict__
+    del query['_sa_instance_state']
+    del query['Namn']
+
+
+    data = { 'name' : item,
+            'object' : query
+            }
+    
+    print(type(data['object']['Riboflavin_mg']	), data['object'] )
+
+    return render_template("search.html", searched_page=data)
 
 
 @app.route("/team")
