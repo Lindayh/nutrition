@@ -221,11 +221,18 @@ def item_page(item):
 
     img = '../static/images/placeholder.png'
 
+
+    for index,key in enumerate(veg_fruit_info):
+        name = veg_fruit_info[index]['titel']
+        print(name)
+        if name == item:
+            fact = veg_fruit_info[index]['fakta']
+
     data = { 'name' : item,
             'object' : query,
             'vitamins' : vitamin_mapping,
             'minerals' : mineral_mapping,
-            'fact' : 'wip',
+            'fact' : fact,
             'img' : img
             }
 
