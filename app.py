@@ -16,30 +16,57 @@ vitamins_list = ["Vitamin A", "Vitamin C", "Vitamin D", "Vitamin E", "Folat", "V
 
 minerals_list = ["Fosfor","Jod","Järn","Kalcium","Kalium","Magnesium","Natrium","Selen","Zink"]
 
-mineral_mapping = {
-    "Fosfor": "Fosfor_mg",
-    "Jod": "Jod_mikrog",
-    "Järn": "Järn_mg",
-    "Kalcium": "Kalcium_mg",
-    "Kalium": "Kalium_mg",
-    "Magnesium": "Magnesium_mg",
-    "Natrium": "Natrium_mg",
-    "Selen": "Selen_mikrog",
-    "Zink": "Zink_mg",
-}
+# mineral_mapping = {
+#     "Fosfor": "Fosfor_mg",
+#     "Jod": "Jod_mikrog",
+#     "Järn": "Järn_mg",
+#     "Kalcium": "Kalcium_mg",
+#     "Kalium": "Kalium_mg",
+#     "Magnesium": "Magnesium_mg",
+#     "Natrium": "Natrium_mg",
+#     "Selen": "Selen_mikrog",
+#     "Zink": "Zink_mg",
+# }
+# vitamin_mapping = {
+#     "Vitamin A": "Vitamin_A_RE_per_mikrog",
+#     "Vitamin C": "Vitamin_C_mg",
+#     "Vitamin D": "Vitamin_D_mikrog",
+#     "Vitamin E": "Vitamin_E_mg",
+#     "Folat": "Folat_mikrog",
+#     "Vitamin K": "Vitamin_K_mikrog",
+#     "Niacin": "Niacin_mg",
+#     "Riboflavin": "Riboflavin_mg",
+#     "Tiamin": "Tiamin_mg",
+#     "Vitamin B6": "Vitamin_B6_mg",
+#     "Vitamin B12": "Vitamin_B12_mikrog"
+# }
+
 vitamin_mapping = {
-    "Vitamin A": "Vitamin_A_RE_per_mikrog",
-    "Vitamin C": "Vitamin_C_mg",
-    "Vitamin D": "Vitamin_D_mikrog",
-    "Vitamin E": "Vitamin_E_mg",
-    "Folat": "Folat_mikrog",
-    "Vitamin K": "Vitamin_K_mikrog",
-    "Niacin": "Niacin_mg",
-    "Riboflavin": "Riboflavin_mg",
-    "Tiamin": "Tiamin_mg",
-    "Vitamin B6": "Vitamin_B6_mg",
-    "Vitamin B12": "Vitamin_B12_mikrog"
+    "Vitamin_A_RE_per_mikrog": "Vitamin A",
+    "Vitamin_C_mg": "Vitamin C",
+    "Vitamin_D_mikrog": "Vitamin D",
+    "Vitamin_E_mg": "Vitamin E",
+    "Folat_mikrog": "Folat",
+    "Vitamin_K_mikrog": "Vitamin K",
+    "Niacin_mg": "Niacin",
+    "Riboflavin_mg": "Riboflavin",
+    "Tiamin_mg": "Tiamin",
+    "Vitamin_B6_mg": "Vitamin B6",
+    "Vitamin_B12_mikrog": "Vitamin B12"
 }
+
+mineral_mapping = {
+    "Fosfor_mg": "Fosfor",
+    "Jod_mikrog": "Jod",
+    "Järn_mg": "Järn",
+    "Kalcium_mg": "Kalcium",
+    "Kalium_mg": "Kalium",
+    "Magnesium_mg": "Magnesium",
+    "Natrium_mg": "Natrium",
+    "Selen_mikrog": "Selen",
+    "Zink_mg": "Zink",
+}
+
 
 nutrient_mapping = {**mineral_mapping, **vitamin_mapping}
 
@@ -142,13 +169,9 @@ def search():
 
         query_result = list(set(sorted(query_result, key= lambda x: x.Namn, reverse=True)))
 
-        # if len(query_result)==0:
         print(type(query_result))
 
-
         return render_template('search.html', results=query_result)
-
-
 
     return render_template("search.html", results=query_result)
     # if not search_query:
@@ -196,12 +219,15 @@ def item_page(item):
     del query['_sa_instance_state']
     del query['Namn']
 
+    img = '../static/images/placeholder.png'
 
     data = { 'name' : item,
-            'object' : query
+            'object' : query,
+            'vitamins' : vitamin_mapping,
+            'minerals' : mineral_mapping,
+            'fact' : 'wip',
+            'img' : img
             }
-
-    print(type(data['object']['Riboflavin_mg']	), data['object'] )
 
     return render_template("search.html", searched_page=data)
 

@@ -21,14 +21,13 @@
             {% if searched_page %}
                 <h1> {{searched_page['name']}} </h1>
 
-                {% if img %}
-                <img src="{{ img }}">
-                {% elif api_image %}
+                <img src="{{ searched_page['img'] }}">
+                {% if api_image %}
                 <img src="{{ api_image }}">
                 {% endif %}
 
                 <div class="api-info">
-                <p><strong>Fakta: </strong>{{ fact }}</p>
+                <p><strong> Fakta: </strong> {{ searched_page['fact'] }}</p>
             </div>                
             {% endif %}
 
@@ -58,16 +57,36 @@
             {# <h2> {{ searched_page['name'] }} </h2> #}
             <table class="container-search">
                 <thead>
-                        <th>Vitamin/Mineral</th>
+                        <th>Vitaminer</th>
                         <th>Per 100g</th>
                 </thead>
                 <tbody>
                     {% for key in searched_page['object'] %}
                         
-                    {% if searched_page['object'][key] > 0 %}
+                    {% if searched_page['object'][key] > 0 and key in (searched_page['vitamins'].keys()|list)   %}
+                    {% set unit = key.split("_")[-1] %}
                     <tr>
-                        <td> {{key}} </td>
-                        <td> {{ searched_page['object'][key] }} </td>
+                        <td> {{ searched_page['vitamins'][key] }} </td>
+                        <td> {{ searched_page['object'][key] }} {{unit}} </td>
+                    </tr>
+                    {% endif %}
+                    {% endfor %}  
+                </tbody>
+            </table>
+
+            <table class="container-search">
+                <thead>
+                        <th>Mineraler</th>
+                        <th>Per 100g</th>
+                </thead>
+                <tbody>
+                    {% for key in searched_page['object'] %}
+                        
+                    {% if searched_page['object'][key] > 0 and key in (searched_page['minerals'].keys()|list)  %}
+                    {% set unit = key.split("_")[-1] %}
+                    <tr>
+                        <td> {{ searched_page['minerals'][key] }}  </td>
+                        <td> {{ searched_page['object'][key] }} {{ unit }} </td>
                     </tr>
                     {% endif %}
                     {% endfor %}  
