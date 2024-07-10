@@ -190,7 +190,12 @@ def item_page(item):
 
     query = Fruit.query.filter(func.lower(getattr(Fruit,'Namn')).like(f'{item.lower()}').is_not(None)).first()
 
-    type(query)
+    check = Fruit.query.filter(Fruit.Namn==item).first()
+
+    if check==None:
+        return render_template('search.html', not_page=True)
+
+    print(check)
 
     query = query.__dict__
     del query['_sa_instance_state']

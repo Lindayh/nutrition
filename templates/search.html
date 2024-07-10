@@ -121,7 +121,14 @@
         {% endif %}
 
         {% if results is iterable and results|length==0 and not searched_page %}
+        {% if not_page %}
+            <h2>Sidan existerar inte.</h2>
+        {% else %}
         <h2>Ingen sökträff hittades</h2>   
+        {% endif %}
+            
+
+
         {% endif %}
     </div>
 </div>
