@@ -188,16 +188,18 @@ def search():
 @app.route("/<item>")
 def item_page(item):
 
-    query = Fruit.query.filter(func.lower(getattr(Fruit,'Namn')).like(f'{item.lower()}').is_not(None)).first()
+    query = Fruit.query.filter(Fruit.Namn==item).first()
+    query = query.__dict__
 
-    check = Fruit.query.filter(Fruit.Namn==item).first()
-
-    if check==None:
+    if query==None:
         return render_template('search.html', not_page=True)
 
-    print(check)
+    print(f'Query result: {query['Namn']} | item: {item}')
 
-    query = query.__dict__
+    query = {key: value for key, value in query.items() if value is not None}
+
+
+
     del query['_sa_instance_state']
     del query['Namn']
 
@@ -217,8 +219,6 @@ def item_page(item):
             'img' : img
             }
     
-    # for idx, key in enumerate(data):
-    #     print( idx, key)
 
     return render_template("search.html", searched_page=data)
 
