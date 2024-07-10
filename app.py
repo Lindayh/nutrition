@@ -7,7 +7,6 @@ from fakta_info import veg_fruit_info, get_fact
 import requests
 from sqlalchemy import func
 
-
 app = Flask(__name__)
 app.config['SQLALCHEMY_DATABASE_URI']='sqlite:///fruit_and_veg.db'
 db.init_app(app)
@@ -15,31 +14,6 @@ db.init_app(app)
 vitamins_list = ["Vitamin A", "Vitamin C", "Vitamin D", "Vitamin E", "Folat", "Vitamin K", "Niacin", "Riboflavin", "Tiamin", "Vitamin B6", "Vitamin B12"]
 
 minerals_list = ["Fosfor","Jod","Järn","Kalcium","Kalium","Magnesium","Natrium","Selen","Zink"]
-
-# mineral_mapping = {
-#     "Fosfor": "Fosfor_mg",
-#     "Jod": "Jod_mikrog",
-#     "Järn": "Järn_mg",
-#     "Kalcium": "Kalcium_mg",
-#     "Kalium": "Kalium_mg",
-#     "Magnesium": "Magnesium_mg",
-#     "Natrium": "Natrium_mg",
-#     "Selen": "Selen_mikrog",
-#     "Zink": "Zink_mg",
-# }
-# vitamin_mapping = {
-#     "Vitamin A": "Vitamin_A_RE_per_mikrog",
-#     "Vitamin C": "Vitamin_C_mg",
-#     "Vitamin D": "Vitamin_D_mikrog",
-#     "Vitamin E": "Vitamin_E_mg",
-#     "Folat": "Folat_mikrog",
-#     "Vitamin K": "Vitamin_K_mikrog",
-#     "Niacin": "Niacin_mg",
-#     "Riboflavin": "Riboflavin_mg",
-#     "Tiamin": "Tiamin_mg",
-#     "Vitamin B6": "Vitamin_B6_mg",
-#     "Vitamin B12": "Vitamin_B12_mikrog"
-# }
 
 vitamin_mapping = {
     "Vitamin_A_RE_per_mikrog": "Vitamin A",
@@ -133,6 +107,7 @@ def vitamin_info(vitamin):
             if vitamin in RDI_list_vit.keys():
                 vitamin_RDI = RDI_list_vit[vitamin]
 
+
             return render_template("vitamin_info.html", vitamins = vitamins_list, vitamin=vitamin, top_10=data, vitamin_text=vitamin_text, vitamin_RDI=vitamin_RDI)
 
 
@@ -213,7 +188,9 @@ def search():
 @app.route("/<item>")
 def item_page(item):
 
-    query = Fruit.query.filter(func.lower(getattr(Fruit,'Namn')).like(f'{item.lower()}')).first()
+    query = Fruit.query.filter(func.lower(getattr(Fruit,'Namn')).like(f'{item.lower()}').is_not(None)).first()
+
+    type(query)
 
     query = query.__dict__
     del query['_sa_instance_state']
@@ -224,7 +201,6 @@ def item_page(item):
 
     for index,key in enumerate(veg_fruit_info):
         name = veg_fruit_info[index]['titel']
-        print(name)
         if name == item:
             fact = veg_fruit_info[index]['fakta']
 
@@ -235,6 +211,9 @@ def item_page(item):
             'fact' : fact,
             'img' : img
             }
+    
+    # for idx, key in enumerate(data):
+    #     print( idx, key)
 
     return render_template("search.html", searched_page=data)
 
