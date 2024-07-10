@@ -1,4 +1,4 @@
-from flask import Flask, render_template, request
+from flask import Flask, render_template, request, redirect
 from models import db, Fruit
 from minerals_info import minerals_info
 from vitamins_info import vitamins_info
@@ -146,7 +146,9 @@ def search():
 
         query_result = list(set(sorted(query_result, key= lambda x: x.Namn, reverse=True)))
 
-        print(type(query_result))
+        if len(query_result)==1:
+            item_name = query_result[0].__getattribute__('Namn')
+            return redirect(f"/{item_name}")
 
         return render_template('search.html', results=query_result)
 
