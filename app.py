@@ -120,14 +120,16 @@ def vitamin_info(vitamin):
 def mineral_info(mineral):
     mineral_info = next((mineral_name for mineral_name in minerals_info if mineral_name["name"]==mineral), None)
 
-    column_name = mineral_mapping.get(mineral)
+    for idx, key in enumerate(mineral_mapping):
+        value = mineral_mapping[key]
+        if mineral == value:
+            column_name = key
 
     top_fruits = Fruit.query.order_by(getattr(Fruit, column_name).desc()).limit(10).all()
 
     if mineral in RDI_list_min.keys():
         mineral_RDI = RDI_list_min[mineral]
 
-    print(mineral)
     return render_template("mineral_info.html", minerals=minerals_list, mineral=mineral_info, top_fruits=top_fruits, mineral_RDI=mineral_RDI)
 
 @app.route("/search")
