@@ -135,12 +135,10 @@ def mineral_info(mineral):
 @app.route("/search")
 def search():
     search_query = request.args.get("search")
-    query_result = False
+    query_result_list = False
+    page = request.args.get('page', 1, type=int)
 
     if search_query:
-
-        # to paginate i need sql type
-
         query = Fruit.query.filter(   
                                         Fruit.Namn.startswith(search_query.title()) |
                                         Fruit.Namn.contains(f'%{search_query.lower()}%')
@@ -156,18 +154,15 @@ def search():
             return redirect(f"/{item_name}")
         
         if int(query.count()) >10:
-
-            page = request.args.get('page', 1, type=int)
-
             paged_query = query.paginate(page=page, per_page=10, error_out=False)
 
             print("Paged query list", paged_query)
             print(paged_query.has_prev)
             return render_template('search.html', results=paged_query, search=search_query, page=page)
 
-        return render_template('search.html', results=query_result_list)
+        return render_template('search.html', results=query_result_list, page=page)
 
-    return render_template("search.html")
+    return render_template("search.html", results=query_result_list)
     # if not search_query:
     #     return render_template("search.html")
 
@@ -218,13 +213,10 @@ def item_page(item):
 
     query = {key: value for key, value in query.items() if value is not None}
 
-
-
     del query['_sa_instance_state']
     del query['Namn']
 
     img = '../static/images/placeholder.png'
-
 
     for index,key in enumerate(veg_fruit_info):
         name = veg_fruit_info[index]['titel']
@@ -239,7 +231,6 @@ def item_page(item):
             'img' : img
             }
     
-
     return render_template("search.html", searched_page=data)
 
 

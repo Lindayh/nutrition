@@ -12,9 +12,7 @@
                 <button><i class="fa-solid fa-magnifying-glass"></i></button>
             </form>
         </div>
-
-            
-        
+ 
         <section class="search-section">          
             <article class="info-article">
 
@@ -112,22 +110,11 @@
         {% endif %}
 
                             </div>
-                        <!-- </div> -->
                     </div>
                 </article>
             </section>
-
-            {% if condition %}
-            <div id="default-section">       
-                <h2>Message</h2>            
-            </div>
-            {% endif %}
-
-
-           
-
-                 
-        {% if not searched_page and results_list==False %}
+            
+        {% if not searched_page and results==False %}
         <div id="default-section">
             <h2>Sökfunktionen</h2>
             <p>Genom att använda sökrutan kan du snabbt och enkelt få mer detaljerad 
@@ -137,15 +124,13 @@
         </div> 
         {% endif %}
 
-        {% if results_list is iterable and results_list|length==0 and not searched_page %}
-        {% if not_page %}
-            <h2>Sidan existerar inte.</h2>
-        {% else %}
-        <h2>Ingen sökträff hittades</h2>   
-        {% endif %}
-            
-
-
+        {% if results_list is iterable and results_list|length==0 and not searched_page 
+            and results!=False %}
+            {% if not_page %}
+                <h2>Sidan existerar inte.</h2>
+            {% else %}
+                <h2>Ingen sökträff hittades</h2>   
+            {% endif %}
         {% endif %}
     </div>
 </div>
