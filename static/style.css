@@ -406,6 +406,16 @@ footer p {
   transform: translate(-100%, -1%);
 }
 
+.page-nav a:first-child
+{
+  float: left;
+}
+
+.page-nav a:nth-child(2)
+{
+  float: right;
+}
+
 /*  --- Search ---  */
 
 .search-container,

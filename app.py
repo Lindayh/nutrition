@@ -139,20 +139,35 @@ def search():
 
     if search_query:
 
-        query_result = []
+        # to paginate i need sql type
 
-        query_result.extend( Fruit.query.filter(func.lower(getattr(Fruit,'Namn')).startswith(search_query.title()) ).all()  )
-        query_result.extend( Fruit.query.filter(func.lower(getattr(Fruit,'Namn')).contains(f'%{search_query.lower()}%')).all()  )
+        query = Fruit.query.filter(   
+                                        Fruit.Namn.startswith(search_query.title()) |
+                                        Fruit.Namn.contains(f'%{search_query.lower()}%')
+                                            )
+        query_result = query.all()
+        
+        print(query_result, type(query_result))
 
-        query_result = list(set(sorted(query_result, key= lambda x: x.Namn, reverse=True)))
+        query_result_list = list(set(sorted(query_result, key= lambda x: x.Namn, reverse=True)))
 
-        if len(query_result)==1:
-            item_name = query_result[0].__getattribute__('Namn')
+        if int(query.count()) == 1:
+            item_name = query_result_list[0].__getattribute__('Namn')
             return redirect(f"/{item_name}")
+        
+        if int(query.count()) >10:
 
-        return render_template('search.html', results=query_result)
+            page = request.args.get('page', 1, type=int)
 
-    return render_template("search.html", results=query_result)
+            paged_query = query.paginate(page=page, per_page=10, error_out=False)
+
+            print("Paged query list", paged_query)
+            print(paged_query.has_prev)
+            return render_template('search.html', results=paged_query, search=search_query, page=page)
+
+        return render_template('search.html', results=query_result_list)
+
+    return render_template("search.html")
     # if not search_query:
     #     return render_template("search.html")
 
@@ -193,6 +208,7 @@ def search():
 def item_page(item):
 
     query = Fruit.query.filter(Fruit.Namn==item).first()
+
     query = query.__dict__
 
     if query==None:
