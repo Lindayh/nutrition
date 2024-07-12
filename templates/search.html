@@ -49,9 +49,9 @@
                                         </tr>
                                         {% endfor %} 
                                     </tbody>
+                                    {% if results.pages %}   
                                     <tfoot>
                                         <td class="page-nav">
-                                            
                                             <a href="{{ url_for('search', search=search, page=page-1)}}">
                                                 {% if results.has_prev %}
                                                 < Prev
@@ -60,9 +60,9 @@
                                             {% if results.has_next %}
                                             <a href="{{ url_for('search', search=search, page=page+1)}}">Next ></a>
                                             {% endif %}
-                                                
                                         </td>
                                     </tfoot>
+                                    {% endif %}
                                 </table>
                                 
 

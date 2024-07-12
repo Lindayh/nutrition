@@ -156,8 +156,6 @@ def search():
         if int(query.count()) >10:
             paged_query = query.paginate(page=page, per_page=10, error_out=False)
 
-            print("Paged query list", paged_query)
-            print(paged_query.has_prev)
             return render_template('search.html', results=paged_query, search=search_query, page=page)
 
         return render_template('search.html', results=query_result_list, page=page)
