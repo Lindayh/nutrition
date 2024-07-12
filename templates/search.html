@@ -54,9 +54,11 @@
                                     <tfoot>
                                         <td class="page-nav">
                                             
-                                            {% if results.has_prev %}
-                                            <a href="{{ url_for('search', search=search, page=page-1)}}">< Prev</a>
-                                            {% endif %}
+                                            <a href="{{ url_for('search', search=search, page=page-1)}}">
+                                                {% if results.has_prev %}
+                                                < Prev
+                                                {% endif %}
+                                            </a>
                                             {% if results.has_next %}
                                             <a href="{{ url_for('search', search=search, page=page+1)}}">Next ></a>
                                             {% endif %}
