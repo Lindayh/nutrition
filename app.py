@@ -4,8 +4,9 @@ from minerals_info import minerals_info
 from vitamins_info import vitamins_info
 from RDI_info import RDI_list_vit, RDI_list_min
 from fakta_info import veg_fruit_info, get_fact
+from googletrans import Translator
 import requests
-from sqlalchemy import func
+
 
 app = Flask(__name__)
 app.config['SQLALCHEMY_DATABASE_URI']='sqlite:///fruit_and_veg.db'
@@ -41,8 +42,30 @@ mineral_mapping = {
     "Zink_mg": "Zink",
 }
 
-
 nutrient_mapping = {**mineral_mapping, **vitamin_mapping}
+
+def fetch_img_API(search):
+    API_KEY = open('API_KEY').read()
+    SEARCH_ENGINE_ID = open('SEARCH_ENGINE_ID').read()
+
+    print(f'Function {fetch_img_API.__name__} search param: {search} | Type: {type(search)}')
+
+    # Translate to english ?
+    # translator = Translator()
+    # translated_search = translator.translate(search)
+    # print(translated_search)
+
+    q = {search}
+
+    url = f"https://www.googleapis.com/customsearch/v1?key={API_KEY}&cx={SEARCH_ENGINE_ID}&q={q}&searchType=image&safe=active"
+    print(url)
+
+    response = requests.get(url).json()
+
+    if 'items' in response:
+        img = response['items'][0]['link']
+        
+    return img
 
 @app.route("/")
 def home():
@@ -63,7 +86,6 @@ def vitamin_info(vitamin):
     table = Fruit.__table__
     column_names = [column.name for column in table.columns]
 
-        #region Vitamin top 10
     for index,col_name in enumerate(column_names):
         if col_name.startswith(vitamin_) or col_name.startswith(vitamin):
             data = []
@@ -102,7 +124,6 @@ def vitamin_info(vitamin):
                              "unit": "Niacin (Niacinekvivalenter per mg)"}
 
                 data.append(temp_dict)
-            #endregion
 
             if vitamin in RDI_list_vit.keys():
                 vitamin_RDI = RDI_list_vit[vitamin]
@@ -161,41 +182,6 @@ def search():
         return render_template('search.html', results=query_result_list, page=page)
 
     return render_template("search.html", results=query_result_list)
-    # if not search_query:
-    #     return render_template("search.html")
-
-    # check = Fruit.query.filter(Fruit.Namn.startswith(search_query)).first()
-
-    # if check:
-    #     query_name = check.Namn
-    #     api_query = requests.get(f"https://sv.wikipedia.org/api/rest_v1/page/summary/{query_name}")
-    #     api_data = api_query.json()
-    #     api_image = api_data.get("thumbnail", {}).get("source")
-
-    #     if not api_image:
-    #         query_name = check.Namn
-
-    #     fact_data = get_fact(veg_fruit_info, check.Namn)
-
-    #     if isinstance(fact_data, tuple):
-    #         fact, img = fact_data
-    #     else:
-    #         fact = fact_data
-    #         img = None
-
-    #     filtered_data = {}
-    #     print(api_data)
-    #     for nutrient_name, column_name in nutrient_mapping.items():
-    #         value = getattr(check, column_name)
-    #         if isinstance(value, (int, float)) and value > 0:
-    #             if nutrient_name not in filtered_data:
-    #                 filtered_data[nutrient_name] = []
-    #             filtered_data[nutrient_name].append(value)
-    #     return render_template("search.html", results=filtered_data, query_name=query_name, message=None, fact=fact, img=img, api_image=api_image)
-
-    # else:
-    #     return render_template("search.html", message="Ingen sökträff hittades.")
-
 
 @app.route("/<item>")
 def item_page(item):
@@ -215,6 +201,8 @@ def item_page(item):
     del query['Namn']
 
     img = '../static/images/placeholder.png'
+    img = fetch_img_API(item)
+
 
     for index,key in enumerate(veg_fruit_info):
         name = veg_fruit_info[index]['titel']
