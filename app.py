@@ -51,11 +51,11 @@ def fetch_img_API(search):
     print(f'Function {fetch_img_API.__name__} search param: {search} | Type: {type(search)}')
 
     # Translate to english ?
-    # translator = Translator()
-    # translated_search = translator.translate(search)
-    # print(translated_search)
+    translator = Translator()
+    translated_search = translator.translate(search).text
+    print(translated_search)
 
-    q = {search}
+    q = f'{translated_search} -products'
 
     url = f"https://www.googleapis.com/customsearch/v1?key={API_KEY}&cx={SEARCH_ENGINE_ID}&q={q}&searchType=image&safe=active"
     print(url)
