@@ -806,6 +806,16 @@ footer p {
   .api-info p { 
     width: 100%;
   }
+
+  .center-table{
+    left: 0%;
+    transform: translate(-0%, -10%);
+  }
+
+  .nutrition-info > table
+  {
+    width: 50%;
+  }
 }
 
 /* -------About_____Mobile enheter ---------*/

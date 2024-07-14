@@ -48,17 +48,12 @@ def fetch_img_API(search):
     API_KEY = open('API_KEY').read()
     SEARCH_ENGINE_ID = open('SEARCH_ENGINE_ID').read()
 
-    print(f'Function {fetch_img_API.__name__} search param: {search} | Type: {type(search)}')
-
-    # Translate to english ?
     translator = Translator()
     translated_search = translator.translate(search).text
-    print(translated_search)
 
     q = f'{translated_search} -products'
 
     url = f"https://www.googleapis.com/customsearch/v1?key={API_KEY}&cx={SEARCH_ENGINE_ID}&q={q}&searchType=image&safe=active"
-    print(url)
 
     response = requests.get(url).json()
 
@@ -89,7 +84,6 @@ def vitamin_info(vitamin):
     for index,col_name in enumerate(column_names):
         if col_name.startswith(vitamin_) or col_name.startswith(vitamin):
             data = []
-            print(f"Column name: {col_name}")
 
             if col_name=="Niacin_mg" or col_name=="Niacinekvivalenter_NE_per_mg":
                 top_10 = Fruit.query.order_by((getattr(Fruit, "Niacinekvivalenter_NE_per_mg")).desc()).limit(10).all()
@@ -166,8 +160,6 @@ def search():
                                             )
         query_result = query.all()
         
-        print(query_result, type(query_result))
-
         query_result_list = list(set(sorted(query_result, key= lambda x: x.Namn, reverse=True)))
 
         if int(query.count()) == 1:
@@ -192,8 +184,6 @@ def item_page(item):
 
     if query==None:
         return render_template('search.html', not_page=True)
-
-    print(f'Query result: {query['Namn']} | item: {item}')
 
     query = {key: value for key, value in query.items() if value is not None}
 
