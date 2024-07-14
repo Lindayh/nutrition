@@ -531,8 +531,8 @@ footer p {
   text-align: center;
 }
 .info-article img {
-  width: 320px;
-  height: 250px;
+  width: 30vw;
+  max-height: 50vh;
   object-fit: cover;
   object-position: center;
   border: 2px solid rgba(0, 0, 0, 0.667);
@@ -810,8 +810,8 @@ footer p {
   }
 
   .info-article img {
-    width: 95%;
-    height: 200px;
+    width: 60vw;
+    max-height: 100vh;
     object-fit: cover;
     object-position: center;
     margin-top: 15px;
