@@ -689,6 +689,8 @@ footer p {
   .table-container {
     display: flex;
     flex-direction: column;
+
+    align-items: center;
     width: 100%;
   }
 
@@ -696,12 +698,25 @@ footer p {
     display: flex;
     flex-direction: column;
     width: 95%;
-    padding-left: 7px;
+    
+    align-items: center;
   }
+
+  .nutrition-info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .nutrition-info table
+  {
+    width: 70%;
+  }
+
 
   .nutrition-info th {
     font-size: 0.8rem;
-    text-align: left;
+    text-align: center;
   }
 
   .nutrition-info td {
@@ -711,7 +726,7 @@ footer p {
 
   .RDI-info th {
     font-size: 0.8rem;
-    text-align: left;
+    text-align: center;
     padding-left: 20px;
   }
 
@@ -825,10 +840,6 @@ footer p {
     transform: translate(-0%, -10%);
   }
 
-  .nutrition-info > table
-  {
-    width: 50%;
-  }
 }
 
 /* -------About_____Mobile enheter ---------*/
