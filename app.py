@@ -1,9 +1,10 @@
-from flask import Flask, render_template, request
+from flask import Flask, render_template, request, redirect
 from models import db, Fruit
 from minerals_info import minerals_info
 from vitamins_info import vitamins_info
 from RDI_info import RDI_list_vit, RDI_list_min
 from fakta_info import veg_fruit_info, get_fact
+from googletrans import Translator
 import requests
 
 
@@ -15,32 +16,51 @@ vitamins_list = ["Vitamin A", "Vitamin C", "Vitamin D", "Vitamin E", "Folat", "V
 
 minerals_list = ["Fosfor","Jod","Järn","Kalcium","Kalium","Magnesium","Natrium","Selen","Zink"]
 
-mineral_mapping = {
-    "Fosfor": "Fosfor_mg",
-    "Jod": "Jod_mikrog",
-    "Järn": "Järn_mg",
-    "Kalcium": "Kalcium_mg",
-    "Kalium": "Kalium_mg",
-    "Magnesium": "Magnesium_mg",
-    "Natrium": "Natrium_mg",
-    "Selen": "Selen_mikrog",
-    "Zink": "Zink_mg",
-}
 vitamin_mapping = {
-    "Vitamin A": "Vitamin_A_RE_per_mikrog",
-    "Vitamin C": "Vitamin_C_mg",
-    "Vitamin D": "Vitamin_D_mikrog",
-    "Vitamin E": "Vitamin_E_mg",
-    "Folat": "Folat_mikrog",
-    "Vitamin K": "Vitamin_K_mikrog",
-    "Niacin": "Niacin_mg",
-    "Riboflavin": "Riboflavin_mg",
-    "Tiamin": "Tiamin_mg",
-    "Vitamin B6": "Vitamin_B6_mg",
-    "Vitamin B12": "Vitamin_B12_mikrog"
+    "Vitamin_A_RE_per_mikrog": "Vitamin A",
+    "Vitamin_C_mg": "Vitamin C",
+    "Vitamin_D_mikrog": "Vitamin D",
+    "Vitamin_E_mg": "Vitamin E",
+    "Folat_mikrog": "Folat",
+    "Vitamin_K_mikrog": "Vitamin K",
+    "Niacin_mg": "Niacin",
+    "Riboflavin_mg": "Riboflavin",
+    "Tiamin_mg": "Tiamin",
+    "Vitamin_B6_mg": "Vitamin B6",
+    "Vitamin_B12_mikrog": "Vitamin B12"
+}
+
+mineral_mapping = {
+    "Fosfor_mg": "Fosfor",
+    "Jod_mikrog": "Jod",
+    "Järn_mg": "Järn",
+    "Kalcium_mg": "Kalcium",
+    "Kalium_mg": "Kalium",
+    "Magnesium_mg": "Magnesium",
+    "Natrium_mg": "Natrium",
+    "Selen_mikrog": "Selen",
+    "Zink_mg": "Zink",
 }
 
 nutrient_mapping = {**mineral_mapping, **vitamin_mapping}
+
+def fetch_img_API(search):
+    API_KEY = open('API_KEY').read()
+    SEARCH_ENGINE_ID = open('SEARCH_ENGINE_ID').read()
+
+    translator = Translator()
+    translated_search = translator.translate(search).text
+
+    q = f'{translated_search} -products'
+
+    url = f"https://www.googleapis.com/customsearch/v1?key={API_KEY}&cx={SEARCH_ENGINE_ID}&q={q}&searchType=image&safe=active"
+
+    response = requests.get(url).json()
+
+    if 'items' in response:
+        img = response['items'][0]['link']
+        
+    return img
 
 @app.route("/")
 def home():
@@ -61,16 +81,14 @@ def vitamin_info(vitamin):
     table = Fruit.__table__
     column_names = [column.name for column in table.columns]
 
-        #region Vitamin top 10
     for index,col_name in enumerate(column_names):
-        if col_name.startswith(vitamin_) or col_name.startswith(vitamin):                   
+        if col_name.startswith(vitamin_) or col_name.startswith(vitamin):
             data = []
-            print(f"Column name: {col_name}")
 
             if col_name=="Niacin_mg" or col_name=="Niacinekvivalenter_NE_per_mg":
                 top_10 = Fruit.query.order_by((getattr(Fruit, "Niacinekvivalenter_NE_per_mg")).desc()).limit(10).all()
             else:
-                top_10 = Fruit.query.order_by((getattr(Fruit, col_name)).desc()).limit(10).all()  
+                top_10 = Fruit.query.order_by((getattr(Fruit, col_name)).desc()).limit(10).all()
 
             if "mg" in col_name.split("_"): unit = f"{vitamin} (mg)"
             if "mikrog" in col_name.split("_"): unit = f"{vitamin} (mikrog)"
@@ -88,27 +106,27 @@ def vitamin_info(vitamin):
                 temp_dict = {"name" : fruit_cls.Namn,
                              "vitamin_value" : getattr(fruit_cls, col_name),
                              "unit": unit}
-                
+
                 if vitamin == "Vitamin A":
                     temp_dict = {"name" : fruit_cls.Namn,
                              "vitamin_value" : getattr(fruit_cls, col_name),
                              "unit": "Vitamin A (Retinolekvivalenter per mikrogram)"}
-                
+
                 if vitamin == "Niacin":
                     temp_dict = {"name" : fruit_cls.Namn,
                              "vitamin_value" : getattr(fruit_cls, "Niacinekvivalenter_NE_per_mg"),
                              "unit": "Niacin (Niacinekvivalenter per mg)"}
 
                 data.append(temp_dict)
-            #endregion
-            
+
             if vitamin in RDI_list_vit.keys():
                 vitamin_RDI = RDI_list_vit[vitamin]
+
 
             return render_template("vitamin_info.html", vitamins = vitamins_list, vitamin=vitamin, top_10=data, vitamin_text=vitamin_text, vitamin_RDI=vitamin_RDI)
 
 
-    if vitamin in vitamins_list:  
+    if vitamin in vitamins_list:
         return render_template("vitamin_info.html", vitamins = vitamins_list, vitamin=vitamin)
     else:   # Prevent user to create random path. E.g. vitaminer/blabla
         return render_template("vitaminer.html", vitamins = vitamins_list)
@@ -116,54 +134,80 @@ def vitamin_info(vitamin):
 @app.route("/mineraler/<mineral>")
 def mineral_info(mineral):
     mineral_info = next((mineral_name for mineral_name in minerals_info if mineral_name["name"]==mineral), None)
-    
-    column_name = mineral_mapping.get(mineral)
+
+    for idx, key in enumerate(mineral_mapping):
+        value = mineral_mapping[key]
+        if mineral == value:
+            column_name = key
 
     top_fruits = Fruit.query.order_by(getattr(Fruit, column_name).desc()).limit(10).all()
 
     if mineral in RDI_list_min.keys():
         mineral_RDI = RDI_list_min[mineral]
 
-    print(mineral)
     return render_template("mineral_info.html", minerals=minerals_list, mineral=mineral_info, top_fruits=top_fruits, mineral_RDI=mineral_RDI)
 
 @app.route("/search")
 def search():
     search_query = request.args.get("search")
-    if not search_query:
-        return render_template("search.html")
+    query_result_list = False
+    page = request.args.get('page', 1, type=int)
+
+    if search_query:
+        query = Fruit.query.filter(   
+                                        Fruit.Namn.startswith(search_query.title()) |
+                                        Fruit.Namn.contains(f'%{search_query.lower()}%')
+                                            )
+        query_result = query.all()
+        
+        query_result_list = list(set(sorted(query_result, key= lambda x: x.Namn, reverse=True)))
+
+        if int(query.count()) == 1:
+            item_name = query_result_list[0].__getattribute__('Namn')
+            return redirect(f"/{item_name}")
+        
+        if int(query.count()) >10:
+            paged_query = query.paginate(page=page, per_page=10, error_out=False)
+
+            return render_template('search.html', results=paged_query, search=search_query, page=page)
+
+        return render_template('search.html', results=query_result_list, page=page)
+
+    return render_template("search.html", results=query_result_list)
+
+@app.route("/<item>")
+def item_page(item):
+
+    query = Fruit.query.filter(Fruit.Namn==item).first()
+
+    query = query.__dict__
+
+    if query==None:
+        return render_template('search.html', not_page=True)
+
+    query = {key: value for key, value in query.items() if value is not None}
+
+    del query['_sa_instance_state']
+    del query['Namn']
+
+    img = '../static/images/placeholder.png'
+    img = fetch_img_API(item)
+
+
+    for index,key in enumerate(veg_fruit_info):
+        name = veg_fruit_info[index]['titel']
+        if name == item:
+            fact = veg_fruit_info[index]['fakta']
+
+    data = { 'name' : item,
+            'object' : query,
+            'vitamins' : vitamin_mapping,
+            'minerals' : mineral_mapping,
+            'fact' : fact,
+            'img' : img
+            }
     
-    check = Fruit.query.filter(Fruit.Namn.startswith(search_query)).first()
-
-    if check:
-        query_name = check.Namn
-        api_query = requests.get(f"https://sv.wikipedia.org/api/rest_v1/page/summary/{query_name}")
-        api_data = api_query.json()
-        api_image = api_data.get("thumbnail", {}).get("source")
-
-        if not api_image:
-            query_name = check.Namn 
-
-        fact_data = get_fact(veg_fruit_info, check.Namn)
-
-        if isinstance(fact_data, tuple):
-            fact, img = fact_data
-        else:
-            fact = fact_data
-            img = None
-
-        filtered_data = {}
-        print(api_data)
-        for nutrient_name, column_name in nutrient_mapping.items():
-            value = getattr(check, column_name)
-            if isinstance(value, (int, float)) and value > 0:
-                if nutrient_name not in filtered_data:
-                    filtered_data[nutrient_name] = []
-                filtered_data[nutrient_name].append(value)
-        return render_template("search.html", results=filtered_data, query_name=query_name, message=None, fact=fact, img=img, api_image=api_image)
-    
-    else:
-        return render_template("search.html", message="Oops! det du sökte på existerar inte i vår databas. Testa att söka på en frukt eller grönsak.")
+    return render_template("search.html", searched_page=data)
 
 
 @app.route("/team")
