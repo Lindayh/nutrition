@@ -371,7 +371,7 @@ footer p {
 .nutrition-info td,
 .RDI-info th,
 .RDI-info td {
-  text-align: left;
+  text-align: center;
   padding: 8px;
   border-bottom: 1px solid #ddd;
 }
