@@ -1,3 +1,423 @@
+RDI_list_vit = {
+    "Vitamin A": {
+    "rek": "RDI i retinolekvivalenter per mikrogram",
+    "target" : {"Spädbarn 7-11 mån": 250,
+              "Barn 1-3 år": 300,
+              "Barn 4-6 år": 350,
+              "Barn 7-10 år": 450,
+              "Flickor 11-14 år": 650,
+              "Pojkar 11-14 år": 700,
+              "Flickor 15-17 år": 650,
+              "Pojkar 15-17 år": 750,
+              "Kvinnor 18-70 år": 700,
+              "Kvinnor över 70 år": 650,
+              "Gravida": 750,
+              "Ammande": 1400,
+              "Män 18-70 år": 800,
+              "Män över 70 år": 750}
+  },
+    "Vitamin C":{
+    "rek":"RDI i milligram",
+    "target" :  {"Spädbarn 7-11 mån": 30,
+                "Barn 1-3 år": 25,
+                "Barn 4-6 år": 35,
+                "Barn 7-10 år": 55,
+                "Flickor 11-14 år": 50,
+                "Pojkar 11-14 år": 80,
+                "Flickor 15-17 år": 75,
+                "Pojkar 15-17 år": 105,
+                "Kvinnor över 18 år": 95,
+                "Gravida": 105,
+                "Ammande": 155,
+                "Män över 18 år": 110}
+  },
+    "Vitamin D" : {"rek":"RDI i mikrogram",
+                   "target" : {"Barn och vuxna under 70 år": 10,
+                    "Barn och vuxna under 70 år som inte exponerar huden för sol": 20,
+                    "Vuxna över 70 år": 20}
+  },
+
+    "Vitamin E": {
+    "rek": "Tillräckligt intag per dag i alfatokoferolekvivalenter",
+    "target" :  {"Spädbarn 7-11 mån": 5,
+                  "Barn 1-3 år": 7,
+                  "Barn 4-6 år": 8,
+                  "Barn 7-10 år": 9,
+                  "Flickor 11-14 år": 10,
+                  "Pojkar 11-14 år": 11,
+                  "Flickor 15-17 år": 11,
+                  "Pojkar 15-17 år": 12,
+                  "Kvinnor 18-50 år": 10,
+                  "Kvinnor över 50 år": 9,
+                  "Gravida": 11,
+                  "Ammande": 12,
+                  "Män över 18 år": 11}
+    },
+
+    "Folat":{
+    "rek": "RDI i mikrogram",
+    "target" :  {"Spädbarn 7-11 mån": 90,
+                "Barn 1-3 år": 120,
+                "Barn 4-6 år": 140,
+                "Barn 7-10 år": 200,
+                "Flickor 11-14 år": 280,
+                "Pojkar 11-14 år": 260,
+                "Flickor 15-17 år": 310,
+                "Pojkar 15-17 år": 320,
+                "Kvinnor över 18 år": 330,
+                "Gravida": 600,
+                "Ammande": 490,
+                "Män över 18 år": 330}
+    },
+
+    "Vitamin K" : {
+    "rek": "Tillräckligt intag per dag i mikrogram", 
+    "target" :  {"Spädbarn 7-11 mån": 10,
+                  "Barn 1-3 år": 15,
+                  "Barn 4-6 år": 20,
+                  "Barn 7-10 år": 30,
+                  "Flickor 11-14 år": 45,
+                  "Pojkar 11-14 år": 50,
+                  "Flickor 15-17 år": 60,
+                  "Pojkar 15-17 år": 65,
+                  "Kvinnor 18-50 år": 65,
+                  "Kvinnor över 50 år": 60,
+                  "Gravida": 80,
+                  "Ammande": 65,
+                  "Män 18-50 år": 75,
+                  "Män över 50 år": 70}
+  },
+    "Riboflavin": {
+    "rek":"RDI i milligram",
+    "target" : {"Spädbarn 7-11 mån": 0.4,
+                "Barn 1-3 år": 0.6,
+                "Barn 4-6 år": 0.7,
+                "Barn 7-10 år": 1.0,
+                "Flickor 11-14 år": 1.4,
+                "Pojkar 11-14 år": 1.3,
+                "Kvinnor över 15 år": 1.6,
+                "Män över 15 år": 1.6,
+                "Gravida": 1.9,
+                "Ammande": 2.0}
+    },
+    "Vitamin B6": {
+    "rek": "RDI i milligram",
+    "target" : {"Spädbarn 7-11 mån": 0.4,
+    "Barn 1-3 år": 0.6,
+    "Barn 4-6 år": 0.7,
+    "Barn 7-10 år": 1.0,
+    "Flickor 11-14 år": 1.3,
+    "Pojkar 11-14 år": 1.5,
+    "Flickor 15-17 år": 1.5,
+    "Pojkar 15-70 år": 1.8,
+    "Kvinnor över 18 år": 1.6,
+    "Gravida": 1.9,
+    "Ammande": 1.7,
+    "Män över 70 år": 1.7}
+    },
+
+    "Vitamin B12": {
+    "rek":"Tillräckligt intag per dag i mikrogram",
+    "target": {"Spädbarn 7-11 mån": 1.5,
+    "Barn 1-3 år": 1.5,
+    "Barn 4-6 år": 1.7,
+    "Barn 7-10 år": 2.5,
+    "Flickor 11-14 år": 3.5,
+    "Pojkar 11-14 år": 3.0,
+    "Kvinnor över 15 år": 4.0,
+    "Män över 15 år": 4.0,
+    "Gravida": 4.5,
+    "Ammande": 5.0}
+    },
+
+    "Niacin" : {"rek":"Niacin",
+                "target": ""},
+
+    "Tiamin" : {"rek":"Tiamin",
+    "target": ""} 
+}
+
+RDI_list_min = {
+    "Fosfor":{
+    "rek": "Tillräckligt intag per dag i milligram",
+    "target" : {"Spädbarn 6-11 mån": 170,
+    "Barn 1-3 år": 250,
+    "Barn 4-10 år": 440,
+    "Barn och tonåringar 11-17 år": 640,
+    "Vuxna 18- 24 år": 550,
+    "Vuxna över 25 år": 520,
+    "Gravida och ammande": 530}
+    },
+
+    "Jod": {
+    "rek": "Tillräckligt intag per dag i mikrogram",
+    "target" : {"Spädbarn 6-11 mån": "80-90",
+    "Barn 1-10 år": 100,
+    "Flickor 11-17 år": 120,
+    "Pojkar 11-14 år": 130,
+    "Pojkar 15-17 år": 140,
+    "Vuxna över 18 år": 150,
+    "Gravida och ammande": 200}
+    },
+    "Järn":{
+    "rek": "RDI i milligram",
+    "target" : {"Spädbarn 7-11 mån": 10,
+    "Barn 1-6 år": 7,
+    "Barn 7-10 år": 9,
+    "Flickor 11-14 år": 13,
+    "Pojkar 11-17 år": 11,
+    "Flickor 15-17 år": 15,
+    "Kvinnor 18-50 år": 15,
+    "Kvinnor 51-70 år": 8,
+    "Kvinnor över 70 år": 7,
+    "Gravida": 26,
+    "Ammande": 15,
+    "Män över 18 år": 9}
+    },
+
+    "Kalcium":{
+    "rek":"RDI i milligram",
+    "target" : {"Spädbarn 7-11 mån": 310,
+    "Barn 1-3 år": 450,
+    "Barn 4-10 år": 800,
+    "Barn och tonåringar 11-17 år": 1150,
+    "Vuxna 18- 24 år": 1000,
+    "Vuxna över 25 år": 950,
+    "Gravida och ammande": 950}
+    },
+
+    "Kalium":{
+    "rek":"Tillräckligt intag per dag i gram",
+    "target" : {"Spädbarn 7-11 mån": 0.7,
+    "Barn 1-3 år": 0.85,
+    "Barn 4-6 år": 1.15,
+    "Barn 7-10 år": 1.8,
+    "Flickor 11-14 år": 2.4,
+    "Pojkar 11-14 år": 2.55,
+    "Flickor 15-17 år": 2.85,
+    "Män 15-24 år": 3.4,
+    "Kvinnor över 18 år": 3.5,
+    "Män över 25 år": 3.5,
+    "Gravida och ammande": 3.5}
+    },
+
+    "Magnesium":{
+    "rek":"Tillräckligt intag per dag i milligram",
+    "target" : {"Spädbarn 7-11 mån": 80,
+    "Barn 1-3 år": 170,
+    "Barn 4-10 år": 230,
+    "Flickor 11-17 år": 250,
+    "Pojkar 11-17 år": 300,
+    "Kvinnor": 300,
+    "Män": 350}
+    },
+
+    "Natrium": {
+    "rek":"Maxintag i gram",
+    "target" : {"Spädbarn 7-11 mån": 0.37,
+    "Barn 1-3 år": 1.1,
+    "Barn 4-6 år": 1.4,
+    "Barn 7-10 år": 1.7,
+    "Barn 11-14 år": 2.0,
+    "Kvinnor och män över 15 år": 2.3}
+    },
+
+    "Selen":{
+    "rek":"Tillräckligt intag per dag i mikrogram",
+    "target" : {"Spädbarn 7-11 mån": 20,
+    "Barn 1-3 år": 20,
+    "Barn 4-6 år": 25,
+    "Barn 7-10 år": 40,
+    "Flickor 11-14 år": 60,
+    "Pojkar 11-14 år": 65,
+    "Flickor 15-17 år": 70,
+    "Pojkar 15-17 år": 85,
+    "Kvinnor över 18 år": 75,
+    "Män över 18 år": 90,
+    "Gravida": 90,
+    "Ammande": 85}
+    },
+
+    "Zink":{
+    "rek":"RDI i milligram",
+    "target" : {"Spädbarn 7-11 mån": 3,
+    "Barn 1-3 år": 4.5,
+    "Barn 4-6 år": 5.8,
+    "Barn 7-10 år": 7.7,
+    "Flickor 11-14 år": 10.8,
+    "Pojkar 11-14 år": 11.1,
+    "Flickor 15-17 år": 12.2,
+    "Pojkar 15-17 år": 14,
+    "Kvinnor 18-50 år": 9.7,
+    "Kvinnor 51-70 år": 9.5,
+    "Kvinnor över 70 år": 9.3,
+    "Män 18-50 år": 12.7,
+    "Män 51-70 år": 12.4,
+    "Män över 70 år": 12.1,
+    "Gravida": 11.3,
+    "Ammande": 12.6}
+    }
+}
+
+minerals_info = [
+    {
+        "name": "Fosfor",
+        "info": "Fosfor samverkar med kalcium vid bildning och stärkning av ben och tänder. Det är även viktigt för syra-bas balansen i kroppen och för energiproduktion till kroppens alla energikrävande funktioner. Den största mängden finns lagrad i skelettet.",
+        "info1": "Fosfor, som fosfat, finns framförallt i proteinrika livsmedel såsom mejeriprodukter, kött, fisk, fullkornsspannmål och baljväxter.",
+        "info2": "Tillsatsen fosfor, eller fosfater får användas i många olika livsmedel. Fosfor är ett grundämne och framställs ur naturligt förekommande mineraler. I maten och i kroppen förekommer fosfor som olika fosfatföreningar. Som tillsats förekommer fosfor ofta i kombination med exempelvis natrium och kalium och bildar då salter som kallas fosfater.",
+        "info3": "Har man brist på fosfor kan det leda till urkalkning av skelettet, försämrad njurfunktion och nerv- och muskelproblem. Det är dock mycket ovanligt med brist på fosfor. För högt intag kan leda till skador på njurarna och påverkan på skelettet så att kalcium läcker ut vilket i sin tur leder till problem med blodcirkulationen. Den övre gränsen för säkert intag är satt till 3000 mg per dag för vuxna.",
+        "info4": "Tillräckligt intag för fosfor baseras på Rekommenderat intag för kalcium. Det tillräckliga intaget skiljer sig mellan olika åldersgrupper.",
+    },
+    {
+        "name": "Jod",
+        "info": "Jod ingår i sköldkörtelhormoner som deltar i ämnesomsättningen. Jod förekommer naturligt i berggrunden och halterna varierar mycket mellan olika geografiska områden.",
+        "info1": "Vi får i oss jod från livsmedel såsom fisk, skaldjur, ägg och mejeriprodukter. Även joderat koksalt är en viktig källa till jod. Vissa algprodukter som säljs som näringstillskott innehåller mycket jod, dock kan det skilja mycket beroende på preparat.",
+        "info2":"Jodbrist leder till struma, förstoring av sköldkörteln. För gravida och ammande är det extra viktigt att få i sig tillräckligt med jod då jodbrist under fosterstadiet kan leda till störningar i utvecklingen av nervsystemet, den fysiska utvecklingen samt leda till psykiska utvecklingsstörningar. I Sverige är jodbrist inte vanligt förekommande sedan man införde jodberikning av hushållssalt. Globalt är jodbrist fortfarande ett problem i många länder.",
+        "info3": "För högt intag av jod kan påverka sköldkörtelns funktion och leda till rubbningar i sköldkörtelhormonbalansen. En övre gräns för säkert intag är 600 mikrogram per dag för vuxna. För gravida och ammande kan jodöverskott påverka fostrets mentala och fysiska utveckling vid för högt intag, utan att det påverkar modern.",
+    },
+    {
+        "name": "Järn",
+        "info": "Järn ingår i hemoglobin som transporterar syre i blodet och i myoglobin som finns i musklerna. Järn ingår även i en del enzymer.",
+        "info1":"Järn finns främst i inälvs- och blodmat, men finns även i kött, ägg och skaldjur samt i vegetabiliska livsmedel som fullkornsprodukter, nötter, frön, torkad frukt och baljväxter.",
+        "info2":"Jämfört med många andra näringsämnen är kroppens upptag av järn lågt. Det finns två olika typer av järn, hemjärn och icke-hemjärn. Hemjärn är lättast för kroppen att tillgodogöra sig och utgör ungefär hälften av järninnehållet i kött och blodmat. Vegetabiliska livsmedel innehåller uteslutande icke-hemjärn som inte tas upp lika effektivt och i större grad påverkas av andra ämnen. Vitamin C, fisk och kött kan exempelvis förbättra upptaget av icke-hemjärn medan ämnen som polyfenoler (som finns i exempelvis te, kaffe och vin) och fytinsyra (finns i fiberrika livsmedel som spannmål, baljväxter och nötter) kan minska upptaget. Även ett högt intag av kalcium kan verka hämmande på järnupptaget.",
+        "info3": "En person med järnbrist tar upp mer järn från kosten än en person vars järndepåer är fyllda. Järntillgängligheten är speciellt viktig under perioder där järndepåerna byggs upp, exempelvis hos spädbarn.Järnbrist kan uppstå om man inte får i sig tillräckligt med järn från maten för att ersätta det som kroppen förlorar vid bland annat blodförluster. Till slut kan man då få blodbrist, järnbristanemi. Det finns då inte tillräckligt med järn för att bilda hemoglobin. Symtom vid detta tillstånd är blekhet, trötthet, andfåddhet och nedsatt immunförsvar. Järnbrist drabbar oftare gravida kvinnor, tonåringar eller kvinnor som förlorar mycket järn på grund av stora menstruationsblödningar. Av alla mikronäringsämnen är järnbristanemi vanligast globalt sett.",
+        "info4":"Järn i större mängder kan vara giftigt. Tidiga symtom kan vara magont, kräkningar och diarré. Mycket höga doser av järn kan vara dödligt giftigt, speciellt för barn.",
+    },
+    {
+        "name": "Kalcium",
+        "info": "Kalcium är ett livsnödvändigt grundämne och behövs bland annat då skelett och tänder bildas samt vid blodkoagulering och för nervfunktion.",
+        "info1":"Kalcium finns i de flesta livsmedel. Allra mest i mjölkprodukter, bladgrönsaker och nötter. Vegetabiliska alternativ till mjölk är ofta berikade med kalcium.",
+        "info2":"Långvarig kalciumbrist kan orsaka benskörhet. Hos barn kan det leda till tillväxthämning.",
+        "info3":"Kalcium kan överdoseras genom intag av kosttillskott vilket i kombination med högt intag av vitamin D kan leda till hyperkalcemi, förkalkning av kroppens vävnader, njursten och njurskador. Övre gräns för säkert intag av kalcium för vuxna är satt till 2500 mg per dag.",
+        "info4":"Den mänskliga kroppen består av ca 1-2 procent kalcium och 99 procent av allt kalcium finns bundet i ben och tänder. Det fria kalciumet spelar roll för en rad processer i och mellan kroppens celler. Därför är koncentrationen av kalcium i blodet strikt reglerat genom ett samspel mellan tarmarna, njurarna och skelett. Bland annat regleras koncentrationen av parathormon och vitamin D3.",
+    },
+    {
+        "name": "Kalium",
+        "info": "Kalium är ett livsnödvändigt grundämne och behövs för kroppens nerv- och muskelfunktion samt för att reglera blodtrycket.",
+        "info1":"Kalium finns i princip i alla livsmedel. Lite högre halter finns i nötter, frön, torkad frukt, potatis, färska frukter och grönsaker. Men även animaliska livsmedel som kött, fisk och mejeriprodukter är viktiga källor till kalium.",
+        "info2":"Kaliumbrist är mycket ovanligt men kan uppstå exempelvis vid långvariga diaréer eller användande av vätskedrivande läkemedel. Kaliumbrist leder till trötthet, muskelsvaghet och rubbningar av hjärtrytmen. Det kan även leda till depression och förvirring.",
+        "info3":"Ett långvarigt högt intag av kalium kan påverka hjärtfunktionen hos individer med nedsatt njurfunktion. Kosttillskott kan bidra till ett för högt intag vilket kan leda till hyperkalemi vilket är ett livsfarligt tillstånd som orsakar rubbningar i hjärtrytmen vilket i sin tur kan utgöra en risk för hjärtstillestånd.",
+    },
+    {
+        "name": "Magnesium",
+        "info": "Magnesium behövs bland annat för produktionen av protein, för omsättningen av kalcium samt för normal nerv- och muskelfunktion.",
+        "info1":"Magnesium finns främst i baljväxter, bladgrönsaker, fullkornsprodukter och kött, fisk och skaldjur. Det finns även i dricksvatten, framförallt om det är hårt vatten.",
+        "info2":"Magnesiumbrist är ytterst ovanligt men kan uppstå vid kostrestriktion eller vid vissa sjukdomar. Det kan ge hämmad tillväxt, beteendestörningar och störningar i hjärtfunktionen. Allvarlig magnesiumbrist kan ge kramp.",
+        "info3":"Ett högt intag av magnesium från kosttillskott kan ge diarré. Därför har en övre gräns för säkert intag satt till 250 mg per dag.",
+    },
+    {
+        "name": "Natrium",
+        "info": "Natrium är ett nödvändigt grundämne i kroppen och finns i kroppsvätskan utanför cellerna men även i skelettet. Natrium är viktigt för syra-basbalansen samt vatten- och saltbalansen i kroppen. Balansen mellan natrium och kalium påverkar blodtrycket. Natrium behövs även för nervernas normala funktion och för upptaget av glukos och vissa aminosyror.",
+        "info1":"Vi får främst i oss natrium via salt och andra typer av bordssalt och havssalt. Natrium finns även naturligt förekommande i livsmedel som kött, fisk och spannmål.",
+        "info2":"Natriumbrist är mycket ovanligt men akut brist kan uppstå vid extrema tillfällen som exempelvis långvarig magsjuka eller stark svettning.",
+        "info3":"För mycket natrium kan vara orsak till högt blodtryck vilket i sin tur bidrar till att öka risken för hjärtinfarkt, hjärtsvikt, stroke och skador på njurarna. ",
+        "info4":"Enligt de Nordiska Näringsrekommendationerna bör intaget av salt minska hos de flesta vuxna i befolkningen och natriumintaget bör max vara 2,3 g/dag vilket motsvarar 5,75 g salt per dag. Begränsas intaget till detta förväntas risken för kronisk sjukdom såsom högt blodtryck och hjärt- och kärlsjukdomar minska i befolkningen. Saltintag hos barn bör också begränsas och för barn 2-10 år bör det ligga på runt 3-4 g salt per dag. Maxintag av natrium varierar med ålder.",
+    },
+    {
+        "name": "Selen",
+        "info": "Selen ingår i enzym som skyddar cellerna mot oxidation, samverkar med vitamin E och deltar i immunologiska försvarsmekanismer.",
+        "info1":"Selen är ett grundämne som finns i jorden och finns i nästan all mat även om halterna varierar. I Sverige är marken selenfattig och vegetabilier odlade i Sverige har därför låga halter. De livsmedel som innehåller mest selen är fisk, skaldjur, inälvsmat, nötter/fröer, linser, ägg och ost. Vuxna får i sig ungefär 40 till 50 mikrogram selen per dag. ",
+        "info2":"Allvarlig brist på selen kan leda till hjärtmuskelförändringar, men selenbrist är ovanligt. Det finns även studier som visar att det kan vara förknippat med vissa cancerformer, dock saknas kliniska studier i västvärlden för att bekräfta detta.",
+        "info3":"Selen i högre doser är giftigt. Ett för högt selenintag kan påverka mag- och tarmkanalen samt försämra tillväxt av hår och naglar. Dagsintaget bör inte överskrida 255 mikrogram.",
+    },
+    {
+        "name": "Zink",
+        "info": "Zink är ett livsnödvändigt mineral. Det ingår i 100-talet enzymer i kroppen som påverkar omsättning av proteiner, kolhydrater, fett, nukleinsyror och vissa vitaminer som exempelvis vitamin A. Zink behövs även för immunsystemet.",
+        "info1":"Zink finns i kött, mejeriprodukter, fullkornsprodukter och inälvsmat. Upptag av zink underlättas av animaliska proteiner. Även musslor, ost och nötter är rika på zink.",
+        "info2":"Det rekommenderade intaget av zink varierar med kön och ålder och rekommendationerna gäller för en blandad animalisk-vegetabilisk kost. De som äter strikt vegetarisk och cerealiebasera kost rekommenderas ett intag som är 25-30% högre.",
+        "info3":"Zinkbrist är ovanligt i Sverige. Brist på zink hos barn ger tillväxthämning och störd utveckling. Brist hos vuxna ger hudförändringar, försämrad sårläkning och försämrad aptit.",
+        "info4":"Europeiska Livsmedelssäkerhets-myndigheten har fastställt en övre gräns för säkert intag för vuxna till 25 mg zink per dag.",
+    },
+]
+
+vitamins_info = [
+    {
+        "name": "Vitamin A",
+        "info":"A-vitamin behövs för att syn, hud och slemhinnor ska fungera normalt. Den har även en grundläggande betydelse för utveckling, tillväxt och differentiering av embryot under den tidiga delen av graviditeten för att fostret ska utvecklas normalt och få en fullgod syn. ",
+        "info1":"A-vitamin finns i olika former; Färdigbildat A-vitamin (retinol och retinylestrar) som finns i animaliska livsmedel, exempelvis inälvsmat, matfett, ost och ägg. Provitamin A som är ett förstadium till A-vitamin i form av karotenoider finns främst i växtbaserade livsmedel som grönsaker och rotfrukter. Karotenoider kan omvandlas till A-vitamin i kroppen när det behövs. Betakaroten är den vanligaste men även alfakaroten och betakrytoxantin kan omvandlas till A-vitamin.",
+        "info2":"Att äta varierat täcker dagsbehovet väl och brist på A-vitamin förekommer i princip inte i Sverige idag. Globalt är dock A-vitaminbrist ett problem. Lindrig brist kan ge nattblindhet, vilket kan leda till blindhet om det fortgår och A-vitaminbrist är den enskilt största orsaken till blindhet i världen. Brist på A-vitamin under en graviditet kan ge allvarliga skador på fostret. Allvarlig brist ger nedsatt motståndskraft mot infektioner.",
+        "info3":"A-vitamin i stora doser är skadligt, framförallt den färdigbildade formen som retinol. Det är främst genom kosttillskott man får i sig för stora mängder. Äter man mycket lever under lång tid kan även det ge överdosering av A-vitamin. Risken för överdosering av A-vitamin genom konsumtion av karotenoider är mindre eftersom omvandlingen av karotenoider till retinol minskar i takt med att intaget ökar.",
+        "info4":"Den allvarligaste effekten av för högt intag av retinol är fosterskador. Gravida bör inte äta mer än 1000 mikrogram A-vitamin i form av retinol per dag som tillskott om inte annat ordinerats av läkare. A-vitamintillskott av karotenoider innebär alltså inte samma risk.",
+        "info5": "Nordiska näringsrekommendationer anger en övre gräns för intag av retinol i kosttillskott om 3000 mikrogram per dag för vuxna. För kvinnor som passerat klimakteriet är den övre gränsen 1500 mikrogram per dag. Det är för att risken för benskörhet är högre hos kvinnor efter klimakteriet och det inte gått att utesluta att intag över 1500 mikrogram per dag ökar risken för frakturer.",
+        "info6": "Hur mycket A-vitamin vi behöver uttrycks i retinolekvivalenter (det sammantagna innehållet av vitamin A i mat från både animaliska och vegetabiliska källor och motsvarar den biologiska aktiviteten i 1 mikrogram retinol) och det dagliga behovet varierar med kön och ålder."
+    },
+    {
+        "name": "Vitamin C",
+        "info":"C-vitamin fungerar som antioxidant och behövs bland annat för att bygga upp kroppens brosk- och benvävnad. Det underlättar även upptaget av järn från maten.",
+        "info1": "C-vitamin får vi främst i oss från grönsaker, bär och citrusfrukter. C-vitamin är värmekänsligt och om mat hålls uppvärmd länge minskar mängden C-vitamin.",
+        "info2": "Det är ovanligt med C-vitaminbrist i Sverige. Lindrig brist kan ge trötthet, svaghet och irritation. Allvarlig brist kan i sällsynta fall ge skörbjugg med symtom som inflammation i tandköttet, försämrad sårläkning och infektionskänslighet.",
+        "info3": "Det finns inget som tyder på att höga intag, mer än 1000 mg per dag, riskerar att ge några allvarliga konsekvenser. Dock kan känsliga personer få diarré och möjligtvis njursten vid för högt intag.",
+    },
+    {
+        "name": "Vitamin D",
+        "info":"D-vitamin har många funktioner i kroppen. Bland annat behövs D-vitamin för att vi ska kunna bilda starka tänder och skelett. ",
+        "info1":"D-vitamin är ett av få vitaminer vi riskerar att få för lite av. Därför rekommenderas tillskott av D-vitamin till vissa grupper. D-vitamin kan vi få i oss på två sätt, dels via maten och dels bildas D-vitamin i huden när vi är ute i solen. Fet fisk, exempelvis lax, sill och makrill, är det livsmedel som innehåller mest D-vitamin. I Sverige berikas även de flesta mjölkprodukter, växtdrycker, smörgåsfetter och matfettsblandningar med D-vitamin. Även kött och ägg innehåller D-vitamin. Under sommarhalvåret är sol på huden den viktigaste källan till D-vitamin för de flesta. Vitaminet lagras även i kroppen och det som bildas i solen på sommaren kan täcka en del av behovet under vinterhalvåret.",
+        "info2":"Långvarig brist på D-vitamin kan orsaka rakit hos barn vilket visar sig som mjukt och missformat skelett. Hos vuxna kan långvarig D-vitaminbrist orsaka benuppmjukning, osteomalaci. Allvarlig brist på D-vitamin kan orsaka kramper. Detta är dock mycket ovanligt i Sverige. Det finns även forskning som tyder på att låga halter av D-vitamin kan ha betydelse för uppkomsten av andra sjukdomar såsom hjärt- och kärlsjukdom.",
+        "info3":"För mycket D-vitamin i blodet kan vara farligt. Det går inte att få i sig för höga doser via maten, men om du tar kosttillskott kan du få i dig för mycket. De övre gränserna per dag är för barn, 1-10 år, 50 mikrogram och för vuxna och barn över 11 år 100 mikrogram. För stora mängder D-vitamin kan leda till att man får för mycket kalcium i blodet, kalciuminlagring i njurarna och njursvikt.",
+    },
+        {
+        "name": "Vitamin E",
+        "info":"E-vitamin är en antioxidant som bland annat skyddar våra vävnader genom att förhindra att de fleromättade fettsyrorna som bygger upp membranen bryts ner.",
+        "info1":"Vi får i oss E-vitamin främst från frön, nötter, vegetabiliska oljor, margarin, vetegroddar, gröna bladväxter, avokado, fullkornsprodukter och ägg.",
+        "info2":"Den form av E-vitamin som är nödvändig för kroppens funktioner är alfa-tokoferol och är det som anges i tabellen.",
+        "info3":"Brist på E-vitamin har inte påvisats hos friska personer men kan uppstå hos personer med kroniskt nedsatt absorption av fett och i vissa fall hos för tidigt födda barn.",
+        "info4": "E-vitamin i naturlig form har låg giftighet eftersom kroppen har en effektiv kontroll av hur vitaminet omsätts och lagras i kroppen. För högt intag av E-vitamin i form av kosttillskott kan dock ha negativa hälsoeffekter, bland annat ökad dödlighet, men några definitiva slutsatser kan inte dras baserat på de studier som finns tillgängliga idag. Sammantaget pekar forskningen på att ett högt intag av E-vitamin under lång tid inte ger några hälsofördelar i den allmänna befolkningen. Den europeiska myndigheten för livsmedelssäkerhet har satt en övre gräns för intag av E-vitamin från kosttillskott till 300 mg per dag för vuxna.",
+    },
+        {
+        "name": "Folat",
+        "info":"Folat behövs för att bilda nya celler och röda blodkroppar. När cellbildningen ökar, exempelvis då man växer eller är gravid ökar behovet av folat.",
+        "info1":"Folat finns i nästan all mat i mycket små mängder. Folat och folsyra är olika former av samma B-vitamin. Folat finns naturligt i mat medan folsyra är ett konstgjort framställt folat som används vid berikning och i kosttillskott. Mörkgröna bladgrönsaker och olika slag av kål, bönor, kikärtor, linser, frukt och bär är livsmedel som innehåller mycket folat. Även fullkornsprodukter, filmjölk och yoghurt innehåller förhållandevis mycket folat.",
+        "info2":"Brist på folat/folsyra ger blodbrist, anemi, eftersom kroppen inte kan tillverka röda blodkroppar på rätt sätt. Många får idag i sig för lite folat från maten. Om mamman har för låga halter folat i blodet före och under första veckorna i graviditeten ökar risken för ryggmärgsbråck hos fostret. Låga folathalter ökar även risken för missfall.",
+        "info3":"Det finns ingen risk att få i sig för mycket folat genom att äta mycket folatrik mat. Däremot kan högt intag av folsyra via tillskott maskera symtom som uppkommer av vitamin B12-brist. Den europeiska livsmedelssäkerhets-myndigheten har därför satt en övre gräns för intag av folsyra till 1000 mikrogram per dag för vuxna.",
+    },
+            {
+        "name": "Vitamin K",
+        "info":"K-vitamin är nödvändigt för blodets koagulering och har även betydelse för bentätheten.",
+        "info1":"Vi får i oss K1-vitamin, fyllokinon, från kål, gröna bladgrönsaker och vissa oljor. Kött, lever, äggula och mejeriprodukter innehåller högre halter av vitamin K2, menakinoner. Vitamin K2 bildas av bakterier i mag-tarmkanalen hos djur men kan även finnas i högre halter i fermenterade livsmedel och alger. Vitamin K2 bildas av tarmbakterier även hos människor, dock inte i tillräcklig mängd för att tillgodose kroppens behov.",
+        "info2":"Innehållet av K-vitamin i livsmedel påverkas av faktorer som sort, odlings- och lagringsförhållanden. Vitamin K1 är ljuskänsligt men relativt värmestabilt.",
+        "info3":"Brist på K-vitamin är ytterst ovanligt, men har påvisats hos personer med nedsatt absorption från tarmen och vid antibiotikabehandling. Inlagringen av K-vitamin i kroppen är låg och nyfödda har inte heller utvecklat någon tarmflora som kan bilda vitaminet. För att motverka blödningar innanför skallbenet ges K-vitamin som injektion till alla nyfödda i Sverige.",
+        "info4":"Det finns inget belägg för att högt intag av K-vitamin från kosten skulle ha negativa effekter på hälsan.",
+    },
+            {
+        "name": "Niacin",
+        "info":"Niacin som är ett B-vitamin, behövs för att bryta ner fett, kolhydrater och protein. Det hjälper till att hålla nervsystemet fungerande och huden frisk. Niacin finns i två former, nikotinsyra och nikotinamid, vilka båda förekommer naturligt i maten. ",
+        "info1":"Höga halter niacin finns i kyckling, fisk, kött, jordnötter, hårt bröd och spannmål. Det finns även produkter berikade med niacin, exempelvis frukostflingor.",
+        "info2":"Brist på niacin är mycket ovanligt i Sverige, men det kan förekomma vid extremt ensidig kosthållning. Allvarlig brist på nicacin ger hudsjukdomen pellagra.",
+        "info3":"Det finns inga studier som tyder på att naturligt förekommande niacin i mat orsakar negativa hälsoeffekter. Däremot kan tillskott eller berikning orsaka reaktioner som plötslig hudrodnad vid doser på 30-1000 mg per dag. Detta är dosberoende och symtomen kännetecknas av brännande, hettande eller stickande känsla i ansiktet och på bröstet samt röd eller flammande hud. Normalt sett är reaktionen övergående och inte farlig för i övrigt friska personer. Ännu högre doser av niacin kan dock ge andra allvarliga biverkningar som leverpåverkan och magbesvär. En övre gräns för intag är satt för vuxna till 10 mg per dag av nikotinsyra och 900 mg per dag för nikotinamid.",
+        "info4": "Det rekommenderade intaget av niacin anges som niacinekvivalenter per megajoule, dvs i relation till det totala energiintaget. Det rekommenderade intaget anges som niacinekvivalenter/MJ och är oberoende av kön och ålder satt till 1,6 niacinekvivalenter/MJ."
+    },
+            {
+        "name": "Riboflavin",
+        "info":"Riboflavin, tidigare kallad vitamin B2 behövs för nedbrytning av fett, kolhydrater och protein.",
+        "info1":"Riboflavin finns i många livsmedel och bra källor är kött, fågel, ägg, inälvsmat, korv, mjölk och mjölkprodukter. Det finns även i vegetabiliska livsmedel som baljväxter, gröna bladgrönsaker och fullkornsprodukter. Vissa drycker berikas också med riboflavin, exempelvis havre-, soja- och risdryck (ej ekologiska).",
+        "info2":"Brist på riboflavin är ovanligt men kan ge slemhinne- och hudförändringar.",
+        "info3":"Det finns inget som tyder på att riboflavin som intas via maten har några negativa hälsoeffekter. Idag saknas information för att kunna säga vilken nivå av riboflavin som eventuellt skulle kunna vara skadlig.",
+    },
+                {
+        "name": "Tiamin",
+        "info":"Tiamin, förr kallat vitamin B1, behövs för ämnesomsättningen av kolhydrater och protein.",
+        "info1":"Vi får i oss tiamin via kosten och det finns i exempelvis frukostflingor och müsli, fläskkött, inälvsmat, vetegroddar, solrosfrön och bröd.",
+        "info2":"Brist på tiamin är ovanligt i Sverige sett till hela befolkningen, men kan ofta ses vid alkoholmissbruk. Allvarlig brist ger sjukdomen beriberi.",
+        "info3":"Det finns inget som tyder på att tiamin ger negativa hälsoeffekter vid intag via maten och intag av upp till 500 mg per dag över flera veckor har inte kunnat kopplas till negativa effekter.",
+        "info4":"Det rekommenderade dagliga behovet varierar med kön och ålder. I nordiska näringsrekommendationerna 2023 anges det rekommenderade intaget av tiamin som milligram per megajoule, dvs relation till det totala energiintaget. För alla oberoende av ålder så är det rekommenderade intaget satt till 0,1 milligram/MJ.",
+    },
+                {
+        "name": "Vitamin B6",
+        "info":"Vitamin B6, även kallat pyridoxin, är nödvändigt för proteinomsättningen och har betydelse för exempelvis nervernas funktion.",
+        "info1":"Högst halter av vitamin B6 finns i animaliska livsmedel som kött, fågel, korv, ägg och mjölkprodukter. Det finns dock även i potatis, spannmål, bär och matbröd, vilka också är goda källor till vitamin B6. Frukostflingor av fullkorn, fullkornsbröd, baljväxter, gröna bladgrönsaker, frukt, mandel, vetegroddar och sesamfrön innehåller också vitamin B6.",
+        "info2":"Brist på vitamin B6 är mycket ovanligt då vitamin B6 finns i nästan allt vi äter. Symptom på brist är hudförändringar kring mun, näsa och ögon, kramper och anemi.",
+        "info3":"Ett högt intag av vitamin B6 under lång tid, månader eller år, kan vara skadligt. Den europeiska myndigheten för livsmedelssäkerhet har satt en övre gräns för intag av vitamin B6 till 12 mg per dag för vuxna.",
+    },
+                {
+        "name": "Vitamin B12",
+        "info":"Vitamin B12, även kallat kobalamin, behövs bland annat för cellernas ämnesomsättning och för bildning av blodkroppar. Det är också nödvändigt för nervsystemets funktion.",
+        "info1":"Vitamin B12 finns främst i animaliska livsmedel som fisk, kött, skaldjur, ägg, lever, mjölk och ost. Fermenterade produkter kan också innehålla lite vitamin B12. Det finns även inaktiva former av vitamin B12 i kosten, speciellt i vegetabilier. De inaktiva formerna av vitaminet kan våra kroppar inte tillgodogöra sig.",
+        "info2":"Är man vegan är det mycket viktigt med tillskott på vitamin B12 eller tillräckliga mängder av berikade livsmedel. Även för lakto-ovo-vegetarianer kan intaget bli för lågt, trots att vitamin B12 finns i både mjölkprodukter och ägg. Vissa drycker berikas med vitamin B12, ex havre- soja- och risdryck (ej ekologisk).",
+        "info3":"Förmågan att ta upp vitamin B12 minskar med åldern och därför kan en del äldre personer få brist på vitaminet, även när de äter vanlig mat som innehåller B12. Även vissa sjukdomstillstånd kan bidra till brist på vitamin B12. En sådan sjukdom är perniciös anemi, en autoimmun sjukdom som innebär att patienten har svårt att ta upp vitamin B12 från tarmen. Allvarlig brist kan ge blodbrist, nervskador och försämrat minne.",
+        "info4":"Det finns inget som tyder på att ett högt intag av vitamin B12 är skadligt. Intag på upp till 100 mikrogram per dag från maten eller genom kosttillskott har inte kunnat kopplas till negativa effekter.",
+    },
+]
+
 veg_fruit_info = [
       {
         "titel": "Jordärtskocka",
@@ -657,16 +1077,3 @@ veg_fruit_info = [
           "fakta": "Ärtskott är unga ärtväxter som är rika på vitaminer (särskilt C och K), mineraler och antioxidanter. De har en mild, söt smak och används ofta i sallader, smörgåsar och som garnering."
       }
     ]
-
-def get_fact(data, name):
-    for item in data:
-        if item["titel"].lower() == name.lower():
-            if "bild" in item:               
-                return item["fakta"], item["bild"]
-            elif "namn" in item:
-                return item["fakta"], item["namn"]
-            elif "bild" in item and "namn" in item:
-                return item["fakta"], item["bild"], item["namn"]
-            return item["fakta"]
-    return None
-

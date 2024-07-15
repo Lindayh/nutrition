@@ -1,9 +1,6 @@
 from flask import Flask, render_template, request, redirect
 from models import db, Fruit
-from minerals_info import minerals_info
-from vitamins_info import vitamins_info
-from RDI_info import RDI_list_vit, RDI_list_min
-from fakta_info import veg_fruit_info, get_fact
+from info import RDI_list_vit, RDI_list_min, minerals_info, vitamins_info, veg_fruit_info
 from googletrans import Translator
 import requests
 
