@@ -1,7 +1,4 @@
 .venv
-
 __pycache__
-
 .DS_Store
-API_KEY
-SEARCH_ENGINE_ID
+.env

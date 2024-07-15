@@ -3,6 +3,7 @@ from models import db, Fruit
 from info import RDI_list_vit, RDI_list_min, minerals_info, vitamins_info, veg_fruit_info
 from googletrans import Translator
 import requests
+import os
 
 
 app = Flask(__name__)
@@ -42,8 +43,8 @@ mineral_mapping = {
 nutrient_mapping = {**mineral_mapping, **vitamin_mapping}
 
 def fetch_img_API(search):
-    API_KEY = open('API_KEY').read()
-    SEARCH_ENGINE_ID = open('SEARCH_ENGINE_ID').read()
+    API_KEY = os.environ.get('API_KEY')
+    SEARCH_ENGINE_ID = os.environ.get('SEARCH_ENGINE_ID')
 
     translator = Translator()
     translated_search = translator.translate(search).text
