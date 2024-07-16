@@ -9,7 +9,8 @@
 <h3 align="center">WikiGreens</h3>
 
   <p align="center">
-    project description
+    A website where information about vitamins and minerals is gathered neatly in one place.
+    Every vitamin and mineral has also a top 10 showing which food has the most of that nutrient.
   </p>
 </div>
 
@@ -52,8 +53,14 @@
 <!-- ACKNOWLEDGMENTS -->
 ## Acknowledgments
 
-* []()
-* []()
-* []()
+<p>
+This is a group project, developed by:
 
+* [Linda](https://github.com/Lindayh)
+* [Marie](https://github.com/mariebayard)
+* [Jose](https://github.com/oxenjose)
+* [Juaquin](https://github.com/Julure)
+* [Rami](https://github.com/Ramia128)
+
+</p>
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
