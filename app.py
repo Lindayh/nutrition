@@ -4,11 +4,15 @@ from info import RDI_list_vit, RDI_list_min, minerals_info, vitamins_info, veg_f
 from googletrans import Translator
 import requests
 import os
+from dotenv import load_dotenv
 
 
 app = Flask(__name__)
 app.config['SQLALCHEMY_DATABASE_URI']='sqlite:///fruit_and_veg.db'
 db.init_app(app)
+
+project_folder = os.path.expanduser('~/nutrition')
+load_dotenv(os.path.join(project_folder, '.env'))
 
 vitamins_list = ["Vitamin A", "Vitamin C", "Vitamin D", "Vitamin E", "Folat", "Vitamin K", "Niacin", "Riboflavin", "Tiamin", "Vitamin B6", "Vitamin B12"]
 
@@ -43,8 +47,8 @@ mineral_mapping = {
 nutrient_mapping = {**mineral_mapping, **vitamin_mapping}
 
 def fetch_img_API(search):
-    API_KEY = os.environ.get('API_KEY')
-    SEARCH_ENGINE_ID = os.environ.get('SEARCH_ENGINE_ID')
+    API_KEY = os.getenv('API_KEY')
+    SEARCH_ENGINE_ID = os.getenv('SEARCH_ENGINE_ID')
 
     translator = Translator()
     translated_search = translator.translate(search).text
@@ -54,6 +58,8 @@ def fetch_img_API(search):
     url = f"https://www.googleapis.com/customsearch/v1?key={API_KEY}&cx={SEARCH_ENGINE_ID}&q={q}&searchType=image&safe=active"
 
     response = requests.get(url).json()
+
+    print( f'Translated search: {translated_search} | original query: {search}\n Json response: {response}', flush=True )
 
     if 'items' in response:
         img = response['items'][0]['link']
