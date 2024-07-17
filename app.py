@@ -57,7 +57,9 @@ def fetch_img_API(search):
 
     if 'items' in response:
         img = response['items'][0]['link']
-        
+    else:
+        img = '../static/images/placeholder.png'
+
     return img
 
 @app.route("/")
@@ -152,18 +154,18 @@ def search():
     page = request.args.get('page', 1, type=int)
 
     if search_query:
-        query = Fruit.query.filter(   
+        query = Fruit.query.filter(
                                         Fruit.Namn.startswith(search_query.title()) |
                                         Fruit.Namn.contains(f'%{search_query.lower()}%')
                                             )
         query_result = query.all()
-        
+
         query_result_list = list(set(sorted(query_result, key= lambda x: x.Namn, reverse=True)))
 
         if int(query.count()) == 1:
             item_name = query_result_list[0].__getattribute__('Namn')
             return redirect(f"/{item_name}")
-        
+
         if int(query.count()) >10:
             paged_query = query.paginate(page=page, per_page=10, error_out=False)
 
@@ -176,36 +178,37 @@ def search():
 @app.route("/<item>")
 def item_page(item):
 
-    query = Fruit.query.filter(Fruit.Namn==item).first()
+    query = Fruit.query.filter(Fruit.Namn.like(item)).first()
 
-    query = query.__dict__
+    print(f'Item: {item}, query: {query}')
 
     if query==None:
         return render_template('search.html', not_page=True)
+    else:
+        query = query.__dict__
 
-    query = {key: value for key, value in query.items() if value is not None}
+        query = {key: value for key, value in query.items() if value is not None}
 
-    del query['_sa_instance_state']
-    del query['Namn']
+        del query['_sa_instance_state']
+        del query['Namn']
 
-    img = '../static/images/placeholder.png'
-    img = fetch_img_API(item)
+        img = fetch_img_API(item)
 
 
-    for index,key in enumerate(veg_fruit_info):
-        name = veg_fruit_info[index]['titel']
-        if name == item:
-            fact = veg_fruit_info[index]['fakta']
+        for index,key in enumerate(veg_fruit_info):
+            name = veg_fruit_info[index]['titel']
+            if name == item:
+                fact = veg_fruit_info[index]['fakta']
 
-    data = { 'name' : item,
-            'object' : query,
-            'vitamins' : vitamin_mapping,
-            'minerals' : mineral_mapping,
-            'fact' : fact,
-            'img' : img
-            }
-    
-    return render_template("search.html", searched_page=data)
+        data = { 'name' : item,
+                'object' : query,
+                'vitamins' : vitamin_mapping,
+                'minerals' : mineral_mapping,
+                'fact' : fact,
+                'img' : img
+                }
+
+        return render_template("search.html", searched_page=data)
 
 
 @app.route("/team")
