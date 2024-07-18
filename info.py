@@ -420,159 +420,195 @@ vitamins_info = [
 
 veg_fruit_info = [
       {
-        "titel": "Jordärtskocka",
-        "fakta": "Jordärtskocka är en rotfrukt som är rik på järn och kalium. Den är känd för sin nötaktiga smak och används ofta i soppor och puréer. Jordärtskockan har även prebiotiska egenskaper som kan främja en hälsosam tarmflora."
+      "titel": "Jordärtskocka",
+      "fakta": "Jordärtskocka är en rotfrukt som är rik på järn och kalium. Den är känd för sin nötaktiga smak och används ofta i soppor och puréer. Jordärtskockan har även prebiotiska egenskaper som kan främja en hälsosam tarmflora.",
+      "bild": "https://images.pexels.com/photos/9589644/pexels-photo-9589644.jpeg"
       },
       {
         "titel": "Kålrot",
-        "fakta": "Kålrot är en korsning mellan kål och rova och innehåller mycket C-vitamin. Den har en söt, mild smak och används ofta i soppor, grytor och som rostad grönsak. Kålrot är också en bra källa till fiber och kalium."
+        "fakta": "Kålrot är en korsning mellan kål och rova och innehåller mycket C-vitamin. Den har en söt, mild smak och används ofta i soppor, grytor och som rostad grönsak. Kålrot är också en bra källa till fiber och kalium.",
+        "bild": "https://images.pexels.com/photos/97311/pexels-photo-97311.jpeg"
       },
       {
         "titel": "Morot",
-        "fakta": "Morötter är rika på betakaroten, vilket omvandlas till vitamin A i kroppen och är bra för synen. De är också en utmärkt källa till antioxidanter och kan ätas råa, kokta eller bakade. Morötter bidrar också till god matsmältning tack vare sitt höga fiberinnehåll."
+        "fakta": "Morötter är rika på betakaroten, vilket omvandlas till vitamin A i kroppen och är bra för synen. De är också en utmärkt källa till antioxidanter och kan ätas råa, kokta eller bakade. Morötter bidrar också till god matsmältning tack vare sitt höga fiberinnehåll.",
+        "bild": "https://images.pexels.com/photos/143133/pexels-photo-143133.jpeg"
       },
       {
         "titel": "Palsternacka",
-        "fakta": "Palsternacka har en söt, nötaktig smak och är rik på fiber. Den innehåller också viktiga vitaminer och mineraler som vitamin C, folat och kalium. Palsternacka kan användas i soppor, grytor eller rostas för att framhäva dess naturliga sötma."
+        "fakta": "Palsternacka har en söt, nötaktig smak och är rik på fiber. Den innehåller också viktiga vitaminer och mineraler som vitamin C, folat och kalium. Palsternacka kan användas i soppor, grytor eller rostas för att framhäva dess naturliga sötma.",
+        "bild": "https://get.pxhere.com/photo/parsnip-vegetable-food-Arracacia-xanthorrhiza-horseradish-root-vegetable-produce-plant-ingredient-cuisine-1622935.jpg"
       },
       {
         "titel": "Pepparrot",
-        "fakta": "Pepparrot används ofta som krydda och har en stark, skarp smak. Den är rik på glukosinolater, som har visat sig ha antiinflammatoriska och cancerbekämpande egenskaper. Pepparrot kan rivas och användas i såser, dressingar och som smakförstärkare i olika rätter."
+        "fakta": "Pepparrot används ofta som krydda och har en stark, skarp smak. Den är rik på glukosinolater, som har visat sig ha antiinflammatoriska och cancerbekämpande egenskaper. Pepparrot kan rivas och användas i såser, dressingar och som smakförstärkare i olika rätter.",
+        "bild": "https://images.pexels.com/photos/17552791/pexels-photo-17552791/free-photo-of-closeup-of-a-horseradish-bush-with-dark-green-leaves.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
       },
       {
         "titel": "Rotselleri",
-        "fakta": "Rotselleri är rik på vitamin K och används ofta i soppor och grytor. Den har en mild, selleriliknande smak och är också en bra källa till fiber och vitaminer som vitamin C och B6. Rotselleri kan ätas rå, kokt eller rostad."
+        "fakta": "Rotselleri är rik på vitamin K och används ofta i soppor och grytor. Den har en mild, selleriliknande smak och är också en bra källa till fiber och vitaminer som vitamin C och B6. Rotselleri kan ätas rå, kokt eller rostad.",
+        "bild": "https://images.pexels.com/photos/11663133/pexels-photo-11663133.jpeg"
       },
       {
         "titel": "Rädisa",
-        "fakta": "Rädisor har en pepprig smak och är låg i kalorier. De är en utmärkt källa till vitamin C och andra antioxidanter som kan hjälpa till att bekämpa fria radikaler. Rädisor kan ätas råa i sallader eller användas som en krispig topping på olika rätter."
+        "fakta": "Rädisor har en pepprig smak och är låg i kalorier. De är en utmärkt källa till vitamin C och andra antioxidanter som kan hjälpa till att bekämpa fria radikaler. Rädisor kan ätas råa i sallader eller användas som en krispig topping på olika rätter.",
+        "bild": "https://images.pexels.com/photos/191043/pexels-photo-191043.jpeg"
       },
       {
         "titel": "Rödbeta",
-        "fakta": "Rödbetor är rika på folsyra och nitrater, vilket kan förbättra blodflödet och sänka blodtrycket. De innehåller också betacyaniner, kraftfulla antioxidanter som ger dem deras starka färg. Rödbetor kan ätas råa, kokta, inlagda eller bakade."
+        "fakta": "Rödbetor är rika på folsyra och nitrater, vilket kan förbättra blodflödet och sänka blodtrycket. De innehåller också betacyaniner, kraftfulla antioxidanter som ger dem deras starka färg. Rödbetor kan ätas råa, kokta, inlagda eller bakade.",
+        "bild": "https://images.pexels.com/photos/4443483/pexels-photo-4443483.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
       },
       {
         "titel": "Rättika",
-        "fakta": "Rättika är en rotfrukt som är rik på vitamin C och används ofta i sallader. Den har en skarp, kryddig smak och är också känd för sina matsmältningsfrämjande egenskaper. Rättika kan ätas rå, syrad eller kokt i soppor och grytor."
+        "fakta": "Rättika är en rotfrukt som är rik på vitamin C och används ofta i sallader. Den har en skarp, kryddig smak och är också känd för sina matsmältningsfrämjande egenskaper. Rättika kan ätas rå, syrad eller kokt i soppor och grytor.",
+        "bild": "https://c.pxhere.com/photos/45/5b/radish_blue_neck_white_green_vegetables_pile_up_flatbed_seiyu_ltd-1266104.jpg!d"
       },
       {
         "titel": "Rotpersilja",
-        "fakta": "Rotpersilja har en smak som liknar persilja och används i soppor och grytor. Den är rik på vitaminer och mineraler, särskilt vitamin C och järn. Rotpersilja kan också rostas eller användas som en smakrik tillsats i olika maträtter."
+        "fakta": "Rotpersilja har en smak som liknar persilja och används i soppor och grytor. Den är rik på vitaminer och mineraler, särskilt vitamin C och järn. Rotpersilja kan också rostas eller användas som en smakrik tillsats i olika maträtter.",
+        "bild": "https://images.pexels.com/photos/60639/parsley-seasoning-salad-greens-60639.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
       },
       {
         "titel": "Majrova",
-        "fakta": "Majrovor är rika på vitamin C och används ofta i grytor och soppor. De har en mild, söt smak och är också en bra källa till kalium och fiber. Majrovor kan ätas råa, kokta eller inlagda för att tillföra en krispig textur till måltider."
+        "fakta": "Majrovor är rika på vitamin C och används ofta i grytor och soppor. De har en mild, söt smak och är också en bra källa till kalium och fiber. Majrovor kan ätas råa, kokta eller inlagda för att tillföra en krispig textur till måltider.",
+        "bild": "https://images.pexels.com/photos/8356962/pexels-photo-8356962.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
       },
       {
         "titel": "Svartrot",
-        "fakta": "Svartrot kallas också fattigmanssparris och är rik på kostfiber. Den har en mild, söt smak och innehåller även vitaminer och mineraler som vitamin E och järn. Svartrot kan kokas, stekas eller användas i soppor och grytor."
+        "fakta": "Svartrot kallas också fattigmanssparris och är rik på kostfiber. Den har en mild, söt smak och innehåller även vitaminer och mineraler som vitamin E och järn. Svartrot kan kokas, stekas eller användas i soppor och grytor.",
+        "bild": "https://images.rawpixel.com/image_800/cHJpdmF0ZS9zdGF0aWMvaW1hZ2Uvd2Vic2l0ZS8yMDIyLTA0L2xyL3B4MTYzMjY4Ny1pbWFnZS1rd3Z2aWdlbC5qcGc.jpg"
       },
       {
         "titel": "Avokado",
-        "fakta": "Avokado är rik på nyttiga fetter, särskilt enkelomättade fetter som är bra för hjärtat. Den är också en utmärkt källa till vitamin E, K och flera B-vitaminer. Avokado kan användas i sallader, på smörgåsar eller som en bas för guacamole."
+        "fakta": "Avokado är rik på nyttiga fetter, särskilt enkelomättade fetter som är bra för hjärtat. Den är också en utmärkt källa till vitamin E, K och flera B-vitaminer. Avokado kan användas i sallader, på smörgåsar eller som en bas för guacamole.",
+        "bild": "https://images.pexels.com/photos/557659/pexels-photo-557659.jpeg?cs=srgb&dl=pexels-foodie-factor-162291-557659.jpg&fm=jpg"
       },
       {
         "titel": "Stjälkselleri",
-        "fakta": "Stjälkselleri är låg i kalorier och används ofta i sallader och soppor. Den är också rik på fiber och vitamin K, vilket bidrar till god benhälsa. Stjälkselleri har en krispig textur och kan ätas rå eller tillagad."
+        "fakta": "Stjälkselleri är låg i kalorier och används ofta i sallader och soppor. Den är också rik på fiber och vitamin K, vilket bidrar till god benhälsa. Stjälkselleri har en krispig textur och kan ätas rå eller tillagad.",
+        "bild": "https://images.pexels.com/photos/13044694/pexels-photo-13044694.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
       },
       {
         "titel": "Blomkål",
-        "fakta": "Blomkål är rik på C-vitamin och kan ätas både rå och tillagad. Den är också en bra källa till fiber och folat, och innehåller antioxidanter som kan skydda mot inflammation. Blomkål kan användas i soppor, gratänger eller som ett lågkolhydratalternativ till ris."
+        "fakta": "Blomkål är rik på C-vitamin och kan ätas både rå och tillagad. Den är också en bra källa till fiber och folat, och innehåller antioxidanter som kan skydda mot inflammation. Blomkål kan användas i soppor, gratänger eller som ett lågkolhydratalternativ till ris.",
+        "bild": "https://images.pexels.com/photos/7456541/pexels-photo-7456541.jpeg"
       },
       {
         "titel": "Broccoli",
-        "fakta": "Broccoli är rik på vitamin C och K samt antioxidanter. Den är också känd för sitt höga innehåll av fibrer och sulforafan, en förening som har cancerbekämpande egenskaper. Broccoli kan ångas, rostas eller ätas rå i sallader."
+        "fakta": "Broccoli är rik på vitamin C och K samt antioxidanter. Den är också känd för sitt höga innehåll av fibrer och sulforafan, en förening som har cancerbekämpande egenskaper. Broccoli kan ångas, rostas eller ätas rå i sallader.",
+        "bild": "https://media.istockphoto.com/id/1135308302/photo/broccoli-on-white.jpg?b=1&s=612x612&w=0&k=20&c=tP6GicNnKNhChipfwgqQqMLH7k0iUl7PEC8nUNbDAYU="
       },
       {
         "titel": "Brysselkål",
-        "fakta": "Brysselkål är rik på vitamin K och fiber. Den innehåller också glukosinolater, som kan bidra till att minska risken för cancer. Brysselkål kan ångas, rostas eller stekas och passar bra som tillbehör till många rätter."
+        "fakta": "Brysselkål är rik på vitamin K och fiber. Den innehåller också glukosinolater, som kan bidra till att minska risken för cancer. Brysselkål kan ångas, rostas eller stekas och passar bra som tillbehör till många rätter.",
+        "bild": "https://images.pexels.com/photos/41171/brussels-sprouts-sprouts-cabbage-grocery-41171.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
       },
       {
         "titel": "Mungbönsgroddar",
-        "fakta": "Mungbönsgroddar är låg i kalorier och rik på protein. De innehåller också vitaminer som vitamin C och B-vitaminer, samt mineraler som järn och kalium. Mungbönsgroddar används ofta i sallader och asiatiska rätter."
+        "fakta": "Mungbönsgroddar är låg i kalorier och rik på protein. De innehåller också vitaminer som vitamin C och B-vitaminer, samt mineraler som järn och kalium. Mungbönsgroddar används ofta i sallader och asiatiska rätter.",
+        "bild": "https://images.pexels.com/photos/4070931/pexels-photo-4070931.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
       },
       {
         "titel": "Sojabönsgroddar",
-        "fakta": "Sojabönsgroddar är en bra källa till protein och vitamin C. De är också rika på isoflavoner, som har antioxidativa och antiinflammatoriska egenskaper. Sojabönsgroddar används ofta i asiatiska rätter, sallader och soppor."
+        "fakta": "Sojabönsgroddar är en bra källa till protein och vitamin C. De är också rika på isoflavoner, som har antioxidativa och antiinflammatoriska egenskaper. Sojabönsgroddar används ofta i asiatiska rätter, sallader och soppor.",
+        "bild": "https://images.pexels.com/photos/8956732/pexels-photo-8956732.jpeg?cs=srgb&dl=pexels-makafood-82669418-8956732.jpg&fm=jpg"
       },
       {
         "titel": "Gröna bönor",
-        "fakta": "Gröna bönor är rika på fiber och vitamin K. De är också en bra källa till vitamin C, folat och kalium. Gröna bönor kan ångas, kokas eller stekas och är ett mångsidigt tillbehör till många rätter."
+        "fakta": "Gröna bönor är rika på fiber och vitamin K. De är också en bra källa till vitamin C, folat och kalium. Gröna bönor kan ångas, kokas eller stekas och är ett mångsidigt tillbehör till många rätter.",
+        "bild": "https://images.pexels.com/photos/3004798/pexels-photo-3004798.jpeg?cs=srgb&dl=pexels-rozanova-3004798.jpg&fm=jpg"
       },
       {
         "titel": "Champinjon",
-        "fakta": "Champinjoner är låga i kalorier och rika på vitamin D, särskilt när de har exponerats för solljus. De innehåller också B-vitaminer och mineraler som selen. Champinjoner kan ätas råa i sallader eller tillagade i en mängd olika rätter."
+        "fakta": "Champinjoner är låga i kalorier och rika på vitamin D, särskilt när de har exponerats för solljus. De innehåller också B-vitaminer och mineraler som selen. Champinjoner kan ätas råa i sallader eller tillagade i en mängd olika rätter.",
+        "bild": "https://c.pxhere.com/photos/cd/13/mushrooms_button_fresh_cooking_food_cultivated_cuisine_edible-1220183.jpg!d"
       },
       {
         "titel": "Friséesallat",
-        "fakta": "Friséesallat har en bitter smak och är rik på vitamin K, vilket är viktigt för blodkoagulering och benhälsa. Den är också en källa till vitamin A och folat. Friséesallat används ofta i sallader och som garnering."
+        "fakta": "Friséesallat har en bitter smak och är rik på vitamin K, vilket är viktigt för blodkoagulering och benhälsa. Den är också en källa till vitamin A och folat. Friséesallat används ofta i sallader och som garnering.",
+        "bild": "../static/images/placeholder.png"
       },
       {
         "titel": "Endivesallat",
-        "fakta": "Endivesallat är rik på folat och vitamin A. Den har en mild, något bitter smak och är också en bra källa till fiber och vitamin K. Endivesallat används ofta i sallader, men kan också grillas eller bakas."
+        "fakta": "Endivesallat är rik på folat och vitamin A. Den har en mild, något bitter smak och är också en bra källa till fiber och vitamin K. Endivesallat används ofta i sallader, men kan också grillas eller bakas.",
+        "bild": "../static/images/placeholder.png"
       },
       {
         "titel": "Fänkål",
-        "fakta": "Fänkål har en anisliknande smak och är rik på fiber och C-vitamin. Den innehåller också antioxidanter och mineraler som kalium och mangan. Fänkål kan ätas rå i sallader eller tillagas i soppor och grytor."
+        "fakta": "Fänkål har en anisliknande smak och är rik på fiber och C-vitamin. Den innehåller också antioxidanter och mineraler som kalium och mangan. Fänkål kan ätas rå i sallader eller tillagas i soppor och grytor.",
+        "bild": "https://images.pexels.com/photos/159357/fennel-vegetables-fennel-bulb-food-159357.jpeg?cs=srgb&dl=pexels-pixabay-159357.jpg&fm=jpg"
       },
       {
         "titel": "Grönkål",
-        "fakta": "Grönkål är en superfood rik på vitaminer A, C och K samt antioxidanter. Den innehåller också sulforafan, som har cancerbekämpande egenskaper. Grönkål kan ätas rå i sallader, ångas, stekas eller användas i smoothies."
+        "fakta": "Grönkål är en superfood rik på vitaminer A, C och K samt antioxidanter. Den innehåller också sulforafan, som har cancerbekämpande egenskaper. Grönkål kan ätas rå i sallader, ångas, stekas eller användas i smoothies.",
+        "bild": "https://images.pexels.com/photos/51372/kale-vegetables-brassica-oleracea-var-sabellica-l-51372.jpeg?cs=srgb&dl=pexels-pixabay-51372.jpg&fm=jpg"
       },
       {
         "titel": "Gurka",
-        "fakta": "Gurka består till största delen av vatten och är låg i kalorier. Den är också en bra källa till vitamin K och innehåller antioxidanter som kan hjälpa till att minska inflammation. Gurka kan ätas rå i sallader eller användas i smörgåsar och som tillbehör."
+        "fakta": "Gurka består till största delen av vatten och är låg i kalorier. Den är också en bra källa till vitamin K och innehåller antioxidanter som kan hjälpa till att minska inflammation. Gurka kan ätas rå i sallader eller användas i smörgåsar och som tillbehör.",
+        "bild": "https://images.pexels.com/photos/2329440/pexels-photo-2329440.jpeg"
       },
       {
         "titel": "Isbergssallat",
-        "fakta": "Isbergssallat är krispig och låg i kalorier men innehåller få näringsämnen. Den är dock en bra källa till vatten och kan hjälpa till att hålla dig hydrerad. Isbergssallat används ofta i sallader, smörgåsar och som garnering."
+        "fakta": "Isbergssallat är krispig och låg i kalorier men innehåller få näringsämnen. Den är dock en bra källa till vatten och kan hjälpa till att hålla dig hydrerad. Isbergssallat används ofta i sallader, smörgåsar och som garnering.",
+        "bild": "https://images.pexels.com/photos/6038039/pexels-photo-6038039.jpeg"
       },
       {
         "titel": "Kronärtskocka",
-        "fakta": "Kronärtskocka är rik på antioxidanter och fiber. Den innehåller också vitaminer och mineraler som vitamin C, folat och magnesium. Kronärtskocka kan ångas, kokas eller grillas och är en populär ingrediens i många medelhavsrätter."
+        "fakta": "Kronärtskocka är rik på antioxidanter och fiber. Den innehåller också vitaminer och mineraler som vitamin C, folat och magnesium. Kronärtskocka kan ångas, kokas eller grillas och är en populär ingrediens i många medelhavsrätter.",
+        "bild": "https://images.pexels.com/photos/8538302/pexels-photo-8538302.jpeg"
       },
       {
         "titel": "Kålrabbi",
-        "fakta": "Kålrabbi är rik på vitamin C och används både rå och tillagad. Den har en mild, söt smak och är också en bra källa till kalium och fiber. Kålrabbi kan ätas rå i sallader, ångas eller rostas."
+        "fakta": "Kålrabbi är rik på vitamin C och används både rå och tillagad. Den har en mild, söt smak och är också en bra källa till kalium och fiber. Kålrabbi kan ätas rå i sallader, ångas eller rostas.",
+        "bild": "https://images.pexels.com/photos/7511865/pexels-photo-7511865.jpeg"
       },
       {
         "titel": "Lök gul",
         "fakta": "Gul lök är rik på antioxidanter och har en stark smak. Den innehåller också vitaminer och mineraler som vitamin C, B6 och folat. Gul lök används ofta som bas i många maträtter och kan ätas rå eller tillagad.",
-        "bild": "https://www.semenco.se/images/thumbs/0003372_gul-lok-stur-bc-20-f1_328.jpeg"
+        "bild": "https://images.pexels.com/photos/8862198/pexels-photo-8862198.jpeg"
       },
       {
         "titel": "Majskolv",
-        "fakta": "Majs är rik på fiber och B-vitaminer och kan ätas både färsk och tillagad. Den är också en bra källa till antioxidanter som lutein och zeaxantin, vilka är viktiga för ögonhälsan. Majs kan grillas, kokas eller användas i sallader och grytor."
+        "fakta": "Majs är rik på fiber och B-vitaminer och kan ätas både färsk och tillagad. Den är också en bra källa till antioxidanter som lutein och zeaxantin, vilka är viktiga för ögonhälsan. Majs kan grillas, kokas eller användas i sallader och grytor.",
+        "bild": "https://images.pexels.com/photos/13094647/pexels-photo-13094647.jpeg"
       },
       {
         "titel": "Mangold",
-        "fakta": "Mangold är rik på vitaminer A, C och K samt antioxidanter. Den innehåller också mineraler som järn och magnesium. Mangold kan ätas rå i sallader eller tillagas i soppor, grytor och som tillbehör."
+        "fakta": "Mangold är rik på vitaminer A, C och K samt antioxidanter. Den innehåller också mineraler som järn och magnesium. Mangold kan ätas rå i sallader eller tillagas i soppor, grytor och som tillbehör.",
+        "bild": "https://c.pxhere.com/photos/1e/40/chard_beta_vulgaris_herb_stalk_vegetables_vegetable_plant_leaf_stalk_red-647764.jpg!d"
       },
       {
         "titel": "Paprika grön",
-        "fakta": "Grön paprika är rik på C-vitamin och innehåller även fibrer och antioxidanter. Den har en krispig textur och en något bitter smak jämfört med mogna paprikor. Grön paprika kan ätas rå i sallader eller tillagas i olika rätter."
+        "fakta": "Grön paprika är rik på C-vitamin och innehåller även fibrer och antioxidanter. Den har en krispig textur och en något bitter smak jämfört med mogna paprikor. Grön paprika kan ätas rå i sallader eller tillagas i olika rätter.",
+        "bild": "../static/images/placeholder.png"
       },
       {
         "titel": "Paprika röd",
         "namn": "Röd paprika",
         "fakta": "Röd paprika är rik på vitamin C och A samt antioxidanter som betakaroten. Den har en sötare smak än grön paprika och kan ätas rå eller tillagad. Röd paprika är en mångsidig ingrediens i sallader, såser och grytor.",
-        "bild": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Capsicum_annuum_2008.jpg/1280px-Capsicum_annuum_2008.jpg"
+        "bild": "../static/images/placeholder.png"
       },
       {
         "titel": "Persilja blad",
-        "fakta": "Bladpersilja är rik på vitamin K, C och A. Den har också höga halter av antioxidanter och kan hjälpa till att förbättra matsmältningen. Persilja används ofta som en färsk krydda i sallader, soppor och olika rätter."
+        "fakta": "Bladpersilja är rik på vitamin K, C och A. Den har också höga halter av antioxidanter och kan hjälpa till att förbättra matsmältningen. Persilja används ofta som en färsk krydda i sallader, soppor och olika rätter.",
+        "bild": "../static/images/placeholder.png"
       },
       {
         "titel": "Pumpa",
-        "fakta": "Pumpa är rik på betakaroten, som omvandlas till vitamin A i kroppen. Den innehåller också fiber, vitamin C och kalium. Pumpa kan användas i soppor, bakverk och som en söt eller salt tillbehör."
+        "fakta": "Pumpa är rik på betakaroten, som omvandlas till vitamin A i kroppen. Den innehåller också fiber, vitamin C och kalium. Pumpa kan användas i soppor, bakverk och som en söt eller salt tillbehör.",
+        "bild": "https://images.pexels.com/photos/1486976/pexels-photo-1486976.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
       },
       {
         "titel": "Purjolök",
-        "fakta": "Purjolök är rik på vitamin K och A samt folat. Den har en mildare smak än gul lök och används ofta i soppor, grytor och sallader. Purjolök är också en bra källa till antioxidanter som kan skydda mot inflammation."
+        "fakta": "Purjolök är rik på vitamin K och A samt folat. Den har en mildare smak än gul lök och används ofta i soppor, grytor och sallader. Purjolök är också en bra källa till antioxidanter som kan skydda mot inflammation.",
+        "bild": "https://c.pxhere.com/photos/12/f2/leek_spring_onion_food_market_vegetables_onion_healthy-1134957.jpg!d"
       },
       {
         "titel": "Rödkål",
-        "fakta": "Rödkål är rik på vitamin C och antioxidanter som antocyaniner. Den har också högt fiberinnehåll och kan hjälpa till att förbättra matsmältningen. Rödkål används ofta i sallader, syrade rätter och som ett färgglatt tillbehör."
+        "fakta": "Rödkål är rik på vitamin C och antioxidanter som antocyaniner. Den har också högt fiberinnehåll och kan hjälpa till att förbättra matsmältningen. Rödkål används ofta i sallader, syrade rätter och som ett färgglatt tillbehör.",
+        "bild": "https://images.pexels.com/photos/8862197/pexels-photo-8862197.jpeg"
       },
       {
         "titel": "Savojkål",
