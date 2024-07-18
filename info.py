@@ -419,697 +419,815 @@ vitamins_info = [
 ]
 
 veg_fruit_info = [
-      {
-      "titel": "Jordärtskocka",
-      "fakta": "Jordärtskocka är en rotfrukt som är rik på järn och kalium. Den är känd för sin nötaktiga smak och används ofta i soppor och puréer. Jordärtskockan har även prebiotiska egenskaper som kan främja en hälsosam tarmflora.",
-      "bild": "https://images.pexels.com/photos/9589644/pexels-photo-9589644.jpeg"
-      },
-      {
-        "titel": "Kålrot",
-        "fakta": "Kålrot är en korsning mellan kål och rova och innehåller mycket C-vitamin. Den har en söt, mild smak och används ofta i soppor, grytor och som rostad grönsak. Kålrot är också en bra källa till fiber och kalium.",
-        "bild": "https://images.pexels.com/photos/97311/pexels-photo-97311.jpeg"
-      },
-      {
-        "titel": "Morot",
-        "fakta": "Morötter är rika på betakaroten, vilket omvandlas till vitamin A i kroppen och är bra för synen. De är också en utmärkt källa till antioxidanter och kan ätas råa, kokta eller bakade. Morötter bidrar också till god matsmältning tack vare sitt höga fiberinnehåll.",
-        "bild": "https://images.pexels.com/photos/143133/pexels-photo-143133.jpeg"
-      },
-      {
-        "titel": "Palsternacka",
-        "fakta": "Palsternacka har en söt, nötaktig smak och är rik på fiber. Den innehåller också viktiga vitaminer och mineraler som vitamin C, folat och kalium. Palsternacka kan användas i soppor, grytor eller rostas för att framhäva dess naturliga sötma.",
-        "bild": "https://get.pxhere.com/photo/parsnip-vegetable-food-Arracacia-xanthorrhiza-horseradish-root-vegetable-produce-plant-ingredient-cuisine-1622935.jpg"
-      },
-      {
-        "titel": "Pepparrot",
-        "fakta": "Pepparrot används ofta som krydda och har en stark, skarp smak. Den är rik på glukosinolater, som har visat sig ha antiinflammatoriska och cancerbekämpande egenskaper. Pepparrot kan rivas och användas i såser, dressingar och som smakförstärkare i olika rätter.",
-        "bild": "https://images.pexels.com/photos/17552791/pexels-photo-17552791/free-photo-of-closeup-of-a-horseradish-bush-with-dark-green-leaves.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
-      },
-      {
-        "titel": "Rotselleri",
-        "fakta": "Rotselleri är rik på vitamin K och används ofta i soppor och grytor. Den har en mild, selleriliknande smak och är också en bra källa till fiber och vitaminer som vitamin C och B6. Rotselleri kan ätas rå, kokt eller rostad.",
-        "bild": "https://images.pexels.com/photos/11663133/pexels-photo-11663133.jpeg"
-      },
-      {
-        "titel": "Rädisa",
-        "fakta": "Rädisor har en pepprig smak och är låg i kalorier. De är en utmärkt källa till vitamin C och andra antioxidanter som kan hjälpa till att bekämpa fria radikaler. Rädisor kan ätas råa i sallader eller användas som en krispig topping på olika rätter.",
-        "bild": "https://images.pexels.com/photos/191043/pexels-photo-191043.jpeg"
-      },
-      {
-        "titel": "Rödbeta",
-        "fakta": "Rödbetor är rika på folsyra och nitrater, vilket kan förbättra blodflödet och sänka blodtrycket. De innehåller också betacyaniner, kraftfulla antioxidanter som ger dem deras starka färg. Rödbetor kan ätas råa, kokta, inlagda eller bakade.",
-        "bild": "https://images.pexels.com/photos/4443483/pexels-photo-4443483.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-      },
-      {
-        "titel": "Rättika",
-        "fakta": "Rättika är en rotfrukt som är rik på vitamin C och används ofta i sallader. Den har en skarp, kryddig smak och är också känd för sina matsmältningsfrämjande egenskaper. Rättika kan ätas rå, syrad eller kokt i soppor och grytor.",
-        "bild": "https://c.pxhere.com/photos/45/5b/radish_blue_neck_white_green_vegetables_pile_up_flatbed_seiyu_ltd-1266104.jpg!d"
-      },
-      {
-        "titel": "Rotpersilja",
-        "fakta": "Rotpersilja har en smak som liknar persilja och används i soppor och grytor. Den är rik på vitaminer och mineraler, särskilt vitamin C och järn. Rotpersilja kan också rostas eller användas som en smakrik tillsats i olika maträtter.",
-        "bild": "https://images.pexels.com/photos/60639/parsley-seasoning-salad-greens-60639.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
-      },
-      {
-        "titel": "Majrova",
-        "fakta": "Majrovor är rika på vitamin C och används ofta i grytor och soppor. De har en mild, söt smak och är också en bra källa till kalium och fiber. Majrovor kan ätas råa, kokta eller inlagda för att tillföra en krispig textur till måltider.",
-        "bild": "https://images.pexels.com/photos/8356962/pexels-photo-8356962.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-      },
-      {
-        "titel": "Svartrot",
-        "fakta": "Svartrot kallas också fattigmanssparris och är rik på kostfiber. Den har en mild, söt smak och innehåller även vitaminer och mineraler som vitamin E och järn. Svartrot kan kokas, stekas eller användas i soppor och grytor.",
-        "bild": "https://images.rawpixel.com/image_800/cHJpdmF0ZS9zdGF0aWMvaW1hZ2Uvd2Vic2l0ZS8yMDIyLTA0L2xyL3B4MTYzMjY4Ny1pbWFnZS1rd3Z2aWdlbC5qcGc.jpg"
-      },
-      {
-        "titel": "Avokado",
-        "fakta": "Avokado är rik på nyttiga fetter, särskilt enkelomättade fetter som är bra för hjärtat. Den är också en utmärkt källa till vitamin E, K och flera B-vitaminer. Avokado kan användas i sallader, på smörgåsar eller som en bas för guacamole.",
-        "bild": "https://images.pexels.com/photos/557659/pexels-photo-557659.jpeg?cs=srgb&dl=pexels-foodie-factor-162291-557659.jpg&fm=jpg"
-      },
-      {
-        "titel": "Stjälkselleri",
-        "fakta": "Stjälkselleri är låg i kalorier och används ofta i sallader och soppor. Den är också rik på fiber och vitamin K, vilket bidrar till god benhälsa. Stjälkselleri har en krispig textur och kan ätas rå eller tillagad.",
-        "bild": "https://images.pexels.com/photos/13044694/pexels-photo-13044694.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
-      },
-      {
-        "titel": "Blomkål",
-        "fakta": "Blomkål är rik på C-vitamin och kan ätas både rå och tillagad. Den är också en bra källa till fiber och folat, och innehåller antioxidanter som kan skydda mot inflammation. Blomkål kan användas i soppor, gratänger eller som ett lågkolhydratalternativ till ris.",
-        "bild": "https://images.pexels.com/photos/7456541/pexels-photo-7456541.jpeg"
-      },
-      {
-        "titel": "Broccoli",
-        "fakta": "Broccoli är rik på vitamin C och K samt antioxidanter. Den är också känd för sitt höga innehåll av fibrer och sulforafan, en förening som har cancerbekämpande egenskaper. Broccoli kan ångas, rostas eller ätas rå i sallader.",
-        "bild": "https://media.istockphoto.com/id/1135308302/photo/broccoli-on-white.jpg?b=1&s=612x612&w=0&k=20&c=tP6GicNnKNhChipfwgqQqMLH7k0iUl7PEC8nUNbDAYU="
-      },
-      {
-        "titel": "Brysselkål",
-        "fakta": "Brysselkål är rik på vitamin K och fiber. Den innehåller också glukosinolater, som kan bidra till att minska risken för cancer. Brysselkål kan ångas, rostas eller stekas och passar bra som tillbehör till många rätter.",
-        "bild": "https://images.pexels.com/photos/41171/brussels-sprouts-sprouts-cabbage-grocery-41171.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
-      },
-      {
-        "titel": "Mungbönsgroddar",
-        "fakta": "Mungbönsgroddar är låg i kalorier och rik på protein. De innehåller också vitaminer som vitamin C och B-vitaminer, samt mineraler som järn och kalium. Mungbönsgroddar används ofta i sallader och asiatiska rätter.",
-        "bild": "https://images.pexels.com/photos/4070931/pexels-photo-4070931.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
-      },
-      {
-        "titel": "Sojabönsgroddar",
-        "fakta": "Sojabönsgroddar är en bra källa till protein och vitamin C. De är också rika på isoflavoner, som har antioxidativa och antiinflammatoriska egenskaper. Sojabönsgroddar används ofta i asiatiska rätter, sallader och soppor.",
-        "bild": "https://images.pexels.com/photos/8956732/pexels-photo-8956732.jpeg?cs=srgb&dl=pexels-makafood-82669418-8956732.jpg&fm=jpg"
-      },
-      {
-        "titel": "Gröna bönor",
-        "fakta": "Gröna bönor är rika på fiber och vitamin K. De är också en bra källa till vitamin C, folat och kalium. Gröna bönor kan ångas, kokas eller stekas och är ett mångsidigt tillbehör till många rätter.",
-        "bild": "https://images.pexels.com/photos/3004798/pexels-photo-3004798.jpeg?cs=srgb&dl=pexels-rozanova-3004798.jpg&fm=jpg"
-      },
-      {
-        "titel": "Champinjon",
-        "fakta": "Champinjoner är låga i kalorier och rika på vitamin D, särskilt när de har exponerats för solljus. De innehåller också B-vitaminer och mineraler som selen. Champinjoner kan ätas råa i sallader eller tillagade i en mängd olika rätter.",
-        "bild": "https://c.pxhere.com/photos/cd/13/mushrooms_button_fresh_cooking_food_cultivated_cuisine_edible-1220183.jpg!d"
-      },
-      {
-        "titel": "Friséesallat",
-        "fakta": "Friséesallat har en bitter smak och är rik på vitamin K, vilket är viktigt för blodkoagulering och benhälsa. Den är också en källa till vitamin A och folat. Friséesallat används ofta i sallader och som garnering.",
-        "bild": "../static/images/placeholder.png"
-      },
-      {
-        "titel": "Endivesallat",
-        "fakta": "Endivesallat är rik på folat och vitamin A. Den har en mild, något bitter smak och är också en bra källa till fiber och vitamin K. Endivesallat används ofta i sallader, men kan också grillas eller bakas.",
-        "bild": "../static/images/placeholder.png"
-      },
-      {
-        "titel": "Fänkål",
-        "fakta": "Fänkål har en anisliknande smak och är rik på fiber och C-vitamin. Den innehåller också antioxidanter och mineraler som kalium och mangan. Fänkål kan ätas rå i sallader eller tillagas i soppor och grytor.",
-        "bild": "https://images.pexels.com/photos/159357/fennel-vegetables-fennel-bulb-food-159357.jpeg?cs=srgb&dl=pexels-pixabay-159357.jpg&fm=jpg"
-      },
-      {
-        "titel": "Grönkål",
-        "fakta": "Grönkål är en superfood rik på vitaminer A, C och K samt antioxidanter. Den innehåller också sulforafan, som har cancerbekämpande egenskaper. Grönkål kan ätas rå i sallader, ångas, stekas eller användas i smoothies.",
-        "bild": "https://images.pexels.com/photos/51372/kale-vegetables-brassica-oleracea-var-sabellica-l-51372.jpeg?cs=srgb&dl=pexels-pixabay-51372.jpg&fm=jpg"
-      },
-      {
-        "titel": "Gurka",
-        "fakta": "Gurka består till största delen av vatten och är låg i kalorier. Den är också en bra källa till vitamin K och innehåller antioxidanter som kan hjälpa till att minska inflammation. Gurka kan ätas rå i sallader eller användas i smörgåsar och som tillbehör.",
-        "bild": "https://images.pexels.com/photos/2329440/pexels-photo-2329440.jpeg"
-      },
-      {
-        "titel": "Isbergssallat",
-        "fakta": "Isbergssallat är krispig och låg i kalorier men innehåller få näringsämnen. Den är dock en bra källa till vatten och kan hjälpa till att hålla dig hydrerad. Isbergssallat används ofta i sallader, smörgåsar och som garnering.",
-        "bild": "https://images.pexels.com/photos/6038039/pexels-photo-6038039.jpeg"
-      },
-      {
-        "titel": "Kronärtskocka",
-        "fakta": "Kronärtskocka är rik på antioxidanter och fiber. Den innehåller också vitaminer och mineraler som vitamin C, folat och magnesium. Kronärtskocka kan ångas, kokas eller grillas och är en populär ingrediens i många medelhavsrätter.",
-        "bild": "https://images.pexels.com/photos/8538302/pexels-photo-8538302.jpeg"
-      },
-      {
-        "titel": "Kålrabbi",
-        "fakta": "Kålrabbi är rik på vitamin C och används både rå och tillagad. Den har en mild, söt smak och är också en bra källa till kalium och fiber. Kålrabbi kan ätas rå i sallader, ångas eller rostas.",
-        "bild": "https://images.pexels.com/photos/7511865/pexels-photo-7511865.jpeg"
-      },
-      {
-        "titel": "Lök gul",
-        "fakta": "Gul lök är rik på antioxidanter och har en stark smak. Den innehåller också vitaminer och mineraler som vitamin C, B6 och folat. Gul lök används ofta som bas i många maträtter och kan ätas rå eller tillagad.",
-        "bild": "https://images.pexels.com/photos/8862198/pexels-photo-8862198.jpeg"
-      },
-      {
-        "titel": "Majskolv",
-        "fakta": "Majs är rik på fiber och B-vitaminer och kan ätas både färsk och tillagad. Den är också en bra källa till antioxidanter som lutein och zeaxantin, vilka är viktiga för ögonhälsan. Majs kan grillas, kokas eller användas i sallader och grytor.",
-        "bild": "https://images.pexels.com/photos/13094647/pexels-photo-13094647.jpeg"
-      },
-      {
-        "titel": "Mangold",
-        "fakta": "Mangold är rik på vitaminer A, C och K samt antioxidanter. Den innehåller också mineraler som järn och magnesium. Mangold kan ätas rå i sallader eller tillagas i soppor, grytor och som tillbehör.",
-        "bild": "https://c.pxhere.com/photos/1e/40/chard_beta_vulgaris_herb_stalk_vegetables_vegetable_plant_leaf_stalk_red-647764.jpg!d"
-      },
-      {
-        "titel": "Paprika grön",
-        "fakta": "Grön paprika är rik på C-vitamin och innehåller även fibrer och antioxidanter. Den har en krispig textur och en något bitter smak jämfört med mogna paprikor. Grön paprika kan ätas rå i sallader eller tillagas i olika rätter.",
-        "bild": "../static/images/placeholder.png"
-      },
-      {
-        "titel": "Paprika röd",
-        "namn": "Röd paprika",
-        "fakta": "Röd paprika är rik på vitamin C och A samt antioxidanter som betakaroten. Den har en sötare smak än grön paprika och kan ätas rå eller tillagad. Röd paprika är en mångsidig ingrediens i sallader, såser och grytor.",
-        "bild": "../static/images/placeholder.png"
-      },
-      {
-        "titel": "Persilja blad",
-        "fakta": "Bladpersilja är rik på vitamin K, C och A. Den har också höga halter av antioxidanter och kan hjälpa till att förbättra matsmältningen. Persilja används ofta som en färsk krydda i sallader, soppor och olika rätter.",
-        "bild": "../static/images/placeholder.png"
-      },
-      {
-        "titel": "Pumpa",
-        "fakta": "Pumpa är rik på betakaroten, som omvandlas till vitamin A i kroppen. Den innehåller också fiber, vitamin C och kalium. Pumpa kan användas i soppor, bakverk och som en söt eller salt tillbehör.",
-        "bild": "https://images.pexels.com/photos/1486976/pexels-photo-1486976.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
-      },
-      {
-        "titel": "Purjolök",
-        "fakta": "Purjolök är rik på vitamin K och A samt folat. Den har en mildare smak än gul lök och används ofta i soppor, grytor och sallader. Purjolök är också en bra källa till antioxidanter som kan skydda mot inflammation.",
-        "bild": "https://c.pxhere.com/photos/12/f2/leek_spring_onion_food_market_vegetables_onion_healthy-1134957.jpg!d"
-      },
-      {
-        "titel": "Rödkål",
-        "fakta": "Rödkål är rik på vitamin C och antioxidanter som antocyaniner. Den har också högt fiberinnehåll och kan hjälpa till att förbättra matsmältningen. Rödkål används ofta i sallader, syrade rätter och som ett färgglatt tillbehör.",
-        "bild": "https://images.pexels.com/photos/8862197/pexels-photo-8862197.jpeg"
-      },
-      {
-        "titel": "Savojkål",
-        "fakta": "Savojkål är rik på vitamin C och K samt fiber. Den har en mild smak och krispig textur och kan användas i sallader, soppor och grytor. Savojkål är också en bra källa till antioxidanter som kan skydda mot fria radikaler."
-      },
-      {
-        "titel": "Salladskål",
-        "fakta": "Salladskål, även känd som kinakål, är rik på vitamin C och K samt folat. Den har en mild, krispig smak och används ofta i sallader och asiatiska rätter som kimchi. Salladskål är också låg i kalorier men hög i fiber."
-      },
-      {
-        "titel": "Sockerärtor",
-        "fakta": "Sockerärtor är rika på vitamin C, K och fibrer. De har en söt smak och krispig textur och kan ätas råa eller tillagade. Sockerärtor är också en bra källa till antioxidanter som kan hjälpa till att minska inflammation."
-      },
-      {
-        "titel": "Squash",
-        "fakta": "Squash är låg i kalorier och rik på vitamin C och mangan. Den har en mild smak och kan användas i en mängd olika rätter, både rå och tillagad. Squash är också en bra källa till fiber som kan hjälpa till att förbättra matsmältningen.",
-        "bild": "https://www.allrecipes.com/thmb/9gJhrEQlONkxa3ueoR1Wa5Tckxg=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/RM-159433-baked-butternut-squash-ddmfs-1x2-2486-8c384bdaa7b34b848d5f3cdc6f97b92e.jpg"
-      },
-      {
-        "titel": "Tomat",
-        "fakta": "Tomater är rika på lycopen, en kraftfull antioxidant som kan skydda mot vissa typer av cancer. De innehåller också vitamin C, K och folat. Tomater kan ätas råa i sallader, tillagade i såser eller som en del av olika rätter."
-      },
-      {
-        "titel": "Trädgårdskrasse",
-        "fakta": "Trädgårdskrasse är rik på vitaminer A, C och K samt antioxidanter. Den har en kryddig, pepprig smak och används ofta som garnering eller i sallader. Trädgårdskrasse är också känd för sina antiinflammatoriska egenskaper."
-      },
-      {
-        "titel": "Vattenkrasse",
-        "fakta": "Vattenkrasse är en näringsrik grönsak rik på vitamin K, C och A. Den innehåller också antioxidanter och har en kryddig, pepprig smak. Vattenkrasse används ofta i sallader, smörgåsar och som en garnering."
-      },
-      {
-        "titel": "Vaxbönor",
-        "fakta": "Vaxbönor är rika på vitamin C och K samt fibrer. De har en mild smak och krispig textur och kan ätas råa eller tillagade. Vaxbönor är också en bra källa till antioxidanter som kan skydda mot inflammation."
-      },
-      {
-        "titel": "Vitkål",
-        "fakta": "Vitkål är rik på vitamin C och K samt fiber. Den har en mild, krispig smak och används ofta i sallader, syrade rätter som surkål och som tillbehör. Vitkål är också en bra källa till antioxidanter som kan skydda mot fria radikaler."
-      },
-      {
-        "titel": "Vitlök",
-        "fakta": "Vitlök är känd för sina antibakteriella och antivirala egenskaper. Den är också rik på antioxidanter och kan bidra till att sänka blodtrycket och kolesterolet. Vitlök används ofta som krydda i matlagning och kan ätas rå eller tillagad."
-      },
-      {
-        "titel": "Aubergine",
-        "fakta": "Aubergine är rik på antioxidanter som nasunin och innehåller också fibrer och vitamin B6. Den har en mjuk textur när den tillagas och används ofta i rätter som ratatouille och moussaka. Aubergine kan grillas, stekas eller bakas."
-      },
-      {
-        "titel": "Alfalfagroddar",
-        "fakta": "Alfalfagroddar är rika på vitaminer och mineraler som vitamin K, C och kalcium. De har en mild, krispig smak och används ofta i sallader och smörgåsar. Alfalfagroddar är också en bra källa till protein och fibrer."
-      },
-      {
-        "titel": "Dill färsk",
-        "fakta": "Färsk dill är rik på vitamin C och antioxidanter. Den har en karakteristisk smak och används ofta som krydda i matlagning, särskilt i fisk- och potatisrätter. Dill kan också hjälpa till att förbättra matsmältningen."
-      },
-      {
-        "titel": "Gräslök",
-        "fakta": "Gräslök är rik på vitamin K och A samt antioxidanter. Den har en mild löksmak och används ofta som krydda eller garnering i sallader, soppor och röror. Gräslök är också känd för sina antibakteriella egenskaper."
-      },
-      {
-        "titel": "Basilika färsk",
-        "fakta": "Färsk basilika är rik på vitamin K och har antioxidativa egenskaper. Den används ofta i medelhavsmatlagning och som en smakförstärkare i sallader, såser och peston. Basilika har också antiinflammatoriska egenskaper.",
-        "bild": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/Ocimum_basilicum_001.JPG/375px-Ocimum_basilicum_001.JPG"
-      },
-      {
-        "titel": "Chilipeppar färsk",
-        "fakta": "Färsk chilipeppar är rik på vitamin C och capsaicin, en förening som kan öka ämnesomsättningen och minska inflammation. Den har en stark, kryddig smak och används ofta som krydda i matlagning."
-      },
-      {
-        "titel": "Paprika gul",
-        "fakta": "Gul paprika är rik på vitamin C och A samt antioxidanter som betakaroten. Den har en söt, mild smak och kan ätas rå eller tillagad. Gul paprika är en mångsidig ingrediens i sallader, såser och grytor."
-      },
-      {
-        "titel": "Linsgroddar",
-        "fakta": "Linsgroddar är rika på protein, fiber och flera vitaminer och mineraler som folat och järn. De har en mild smak och används ofta i sallader, smörgåsar och som en näringsrik tillsats till olika rätter."
-      },
-      {
-        "titel": "Granatäpple",
-        "fakta": "Granatäpple är rik på antioxidanter som punicalaginer och vitamin C. Dess frön är söta och saftiga och används ofta i sallader, desserter och som garnityr. Granatäpple kan också bidra till att sänka blodtrycket och förbättra hjärthälsan."
-      },
-      {
-        "titel": "Grapefrukt",
-        "fakta": "Grapefrukt är rik på vitamin C och antioxidanter som lykopen. Den har en bitter-söt smak och kan ätas färsk eller användas i sallader och juicer. Grapefrukt är också känd för att kunna bidra till viktminskning och förbättra matsmältningen."
-      },
-      {
-        "titel": "Guava",
-        "fakta": "Guava är rik på vitamin C, fibrer och antioxidanter. Den har en söt, tropisk smak och kan ätas färsk eller användas i juicer och desserter. Guava kan också bidra till att förbättra hjärthälsan och stärka immunförsvaret."
-      },
-      {
-        "titel": "Hallon",
-        "fakta": "Hallon är rika på antioxidanter, fibrer och vitamin C. De har en söt och syrlig smak och används ofta i desserter, smoothies och sallader. Hallon kan också bidra till att förbättra matsmältningen och minska inflammation."
-      },
-      {
-        "titel": "Hjortron",
-        "fakta": "Hjortron är rika på vitamin C och antioxidanter. De har en unik söt och syrlig smak och används ofta i sylt, desserter och safter. Hjortron är också kända för sina antiinflammatoriska egenskaper."
-      },
-      {
-        "titel": "Jordgubbar",
-        "fakta": "Jordgubbar är rika på vitamin C, mangan och antioxidanter. De har en söt smak och används ofta i desserter, sallader och smoothies. Jordgubbar kan också bidra till att förbättra hjärthälsan och stärka immunförsvaret."
-      },
-      {
-        "titel": "Honungsmelon",
-        "fakta": "Honungsmelon är rik på vitamin C och har en söt, saftig smak. Den är också en bra källa till kalium och vatten, vilket kan hjälpa till att hålla dig hydrerad. Honungsmelon kan ätas färsk eller användas i fruktsallader och desserter."
-      },
-      {
-        "titel": "Nätmelon",
-        "fakta": "Nätmelon är rik på vitamin A och C samt antioxidanter. Den har en söt och saftig smak och används ofta i fruktsallader och desserter. Nätmelon kan också bidra till att förbättra synen och stärka immunförsvaret."
-      },
-      {
-        "titel": "Vattenmelon",
-        "fakta": "Vattenmelon är rik på vitamin C och antioxidanter som lykopen. Den har en söt, saftig smak och är också en bra källa till vatten, vilket hjälper till att hålla dig hydrerad. Vattenmelon kan ätas färsk eller användas i sallader och drycker."
-      },
-      {
-        "titel": "Ananas",
-        "fakta": "Ananas är rik på vitamin C och bromelain, ett enzym som kan hjälpa till med matsmältningen. Den har en söt och syrlig smak och används ofta i desserter, sallader och som garnityr. Ananas kan också bidra till att minska inflammation."
-      },
-      {
-        "titel": "Apelsin",
-        "fakta": "Apelsiner är rika på vitamin C och fibrer. De har en söt och saftig smak och kan ätas färska eller användas i juicer och desserter. Apelsiner är också kända för att stärka immunförsvaret och förbättra hudhälsan."
-      },
-      {
-        "titel": "Aprikos",
-        "fakta": "Aprikoser är rika på vitamin A och C samt fibrer. De har en söt, något syrlig smak och kan ätas färska eller torkade. Aprikoser kan bidra till att förbättra synen och matsmältningen samt stärka immunförsvaret."
-      },
-      {
-        "titel": "Banan",
-        "fakta": "Bananer är rika på kalium och vitamin B6. De har en söt smak och krämig textur och används ofta i smoothies, bakverk och som ett hälsosamt mellanmål. Bananer kan också hjälpa till att reglera blodtrycket och förbättra matsmältningen."
-      },
-      {
-        "titel": "Björnbär",
-        "fakta": "Björnbär är rika på antioxidanter, fibrer och vitamin C. De har en söt och syrlig smak och används ofta i desserter, smoothies och sallader. Björnbär kan också bidra till att förbättra matsmältningen och stärka immunförsvaret."
-      },
-      {
-        "titel": "Blåbär",
-        "fakta": "Blåbär är rika på antioxidanter, särskilt antocyaniner, samt vitamin C och K. De har en söt smak och används ofta i bakverk, smoothies och som ett hälsosamt mellanmål. Blåbär kan bidra till att förbättra hjärthälsan och hjärnfunktionen."
-      },
-      {
-        "titel": "Cherimoya",
-        "fakta": "Cherimoya är en tropisk frukt rik på vitamin C och B-vitaminer. Den har en söt och krämig smak som liknar en blandning av banan och ananas. Cherimoya kan ätas färsk eller användas i smoothies och desserter."
-      },
-      {
-        "titel": "Citron",
-        "fakta": "Citroner är rika på vitamin C och antioxidanter. De har en syrlig smak och används ofta som smaksättare i matlagning, drycker och desserter. Citroner kan också hjälpa till att förbättra matsmältningen och stärka immunförsvaret."
-      },
-      {
-        "titel": "Lime",
-        "fakta": "Lime är rik på vitamin C och antioxidanter. Den har en syrlig smak och används ofta i matlagning, drycker och desserter. Lime kan också bidra till att förbättra matsmältningen och stärka immunförsvaret."
-      },
-      {
-        "titel": "Mango",
-        "fakta": "Mango är rik på vitamin C och A samt antioxidanter. Den har en söt och saftig smak och används ofta i smoothies, sallader och desserter. Mango kan också bidra till att förbättra matsmältningen och stärka immunförsvaret."
-      },
-      {
-        "titel": "Nektarin",
-        "fakta": "Nektariner är rika på vitamin A och C samt fibrer. De har en söt och saftig smak och kan ätas färska eller användas i desserter och sallader. Nektariner kan också bidra till att förbättra synen och hudhälsan."
-      },
-      {
-        "titel": "Papaya",
-        "fakta": "Papaya är rik på vitamin C, A och enzymer som papain. Den har en söt och mjuk smak och används ofta i sallader, smoothies och desserter. Papaya kan också bidra till att förbättra matsmältningen och stärka immunförsvaret.",
-        "bild": "https://www.heart.org/-/media/Images/News/2023/October-2023/1013EIOLIPapaya_SC.jpg"
-      },
-      {
-        "titel": "Persika",
-        "fakta": "Persikor är rika på vitamin A och C samt fibrer. De har en söt och saftig smak och kan ätas färska eller användas i desserter och sallader. Persikor kan också bidra till att förbättra synen och hudhälsan."
-      },
-      {
-        "titel": "Plommon",
-        "fakta": "Plommon är rika på vitamin C och antioxidanter. De har en söt och saftig smak och kan ätas färska eller torkade. Plommon kan också bidra till att förbättra matsmältningen och stärka immunförsvaret."
-      },
-      {
-        "titel": "Päron",
-        "fakta": "Päron är rika på fiber och vitamin C. De har en söt och saftig smak och kan ätas färska eller användas i desserter och sallader. Päron kan också hjälpa till att förbättra matsmältningen och stärka immunförsvaret."
-      },
-      {
-        "titel": "Röda vinbär",
-        "fakta": "Röda vinbär är rika på vitamin C och antioxidanter. De har en syrlig smak och används ofta i sylt, desserter och safter. Röda vinbär kan också bidra till att stärka immunförsvaret och förbättra matsmältningen."
-      },
-      {
-        "titel": "Röda plommon",
-        "fakta": "Röda plommon är rika på vitamin C och antioxidanter. De har en söt och saftig smak och kan ätas färska eller torkade. Röda plommon kan också bidra till att förbättra matsmältningen och stärka immunförsvaret."
-      },
-      {
-        "titel": "Stjärnfrukt",
-        "fakta": "Stjärnfrukt är rik på vitamin C och antioxidanter. Den har en söt och syrlig smak och används ofta i sallader och som garnityr. Stjärnfrukt kan också bidra till att förbättra matsmältningen och stärka immunförsvaret."
-      },
-      {
-        "titel": "Tamarillo",
-        "fakta": "Tamarillo är rik på vitamin C, A och E samt antioxidanter. Den har en syrlig smak och används ofta i sallader, såser och desserter. Tamarillo kan också bidra till att förbättra synen och stärka immunförsvaret."
-      },
-      {
-        "titel": "Körsbär",
-        "fakta": "Körsbär är rika på antioxidanter, särskilt antocyaniner, samt vitamin C och fibrer. De har en söt smak och används ofta i desserter, sallader och som ett hälsosamt mellanmål. Körsbär kan bidra till att minska inflammation och förbättra sömnkvaliteten."
-      },
-      {
-        "titel": "Äpple",
-        "fakta": "Äpplen är rika på fiber och vitamin C. De har en söt och syrlig smak och kan ätas färska eller användas i desserter och sallader. Äpplen kan också bidra till att förbättra matsmältningen och stärka immunförsvaret."
-      },
-      {
-        "titel": "Sesamfrö m. skal",
-        "fakta": "Sesamfrön med skal är rika på kalcium, magnesium och järn. De används ofta som topping på bakverk och i asiatisk matlagning. Sesamfrön har också antioxidativa egenskaper och kan hjälpa till att sänka blodtrycket."
-      },
-      {
-          "titel": "Sesamfrö u. skal",
-          "fakta": "Sesamfrön utan skal är en utmärkt källa till hälsosamma fetter och protein. De används ofta i matlagning och bakning för att tillföra en nötaktig smak och krispig textur. Fröna är också rika på fiber och mineraler."
-      },
-      {
-          "titel": "Solrosfrö",
-          "fakta": "Solrosfrön är rika på vitamin E, magnesium och selen. De är populära som snacks och kan användas i sallader, bröd och granola. Solrosfrön bidrar till att förbättra hjärthälsa och stödjer immunförsvaret."
-      },
-      {
-          "titel": "Sötmandel",
-          "fakta": "Sötmandlar är en utmärkt källa till hälsosamma fetter, protein och fiber. De är också rika på vitamin E och magnesium. Mandlar kan ätas som snacks, användas i bakverk eller göras till mandelmjölk."
-      },
-      {
-          "titel": "Valnötter",
-          "fakta": "Valnötter är rika på omega-3 fettsyror, som är bra för hjärthälsan. De innehåller också antioxidanter och flera viktiga vitaminer och mineraler. Valnötter kan ätas som snacks, tillsättas i sallader eller användas i bakverk."
-      },
-      {
-          "titel": "Ingefära färsk",
-          "fakta": "Färsk ingefära har antiinflammatoriska och antioxidativa egenskaper. Den används ofta i matlagning och te för sin starka, kryddiga smak. Ingefära kan hjälpa till att lindra illamående och förbättra matsmältningen."
-      },
-      {
-          "titel": "Romansallat",
-          "fakta": "Romansallat är en krispig och näringsrik salladssort som är rik på vitamin A, K och folat. Den används ofta i sallader och som bas i olika rätter. Romansallat bidrar till god benhälsa och immunsystemfunktion."
-      },
-      {
-          "titel": "Ruccolasallat",
-          "fakta": "Ruccola har en pepprig smak och är rik på vitamin K, A och C. Den används ofta i sallader och som topping på pizzor och smörgåsar. Ruccola innehåller också antioxidanter som kan hjälpa till att bekämpa inflammation."
-      },
-      {
-          "titel": "Pinjefrö",
-          "fakta": "Pinjefrön är rika på hälsosamma fetter, protein och magnesium. De används ofta i pesto och som topping på sallader och bakverk. Pinjefrön kan hjälpa till att förbättra hjärthälsan och stödjer energiomsättningen."
-      },
-      {
-          "titel": "Sötpotatis rå",
-          "fakta": "Sötpotatis är rik på betakaroten, vitamin C och kostfiber. Den har en söt smak och används ofta i gratänger, soppor och som rostad grönsak. Sötpotatis kan bidra till god synhälsa och matsmältning."
-      },
-      {
-          "titel": "Huvudsallat",
-          "fakta": "Huvudsallat är en mild och krispig salladssort som är rik på vitamin K och A. Den används ofta i sallader och smörgåsar. Huvudsallat bidrar till god benhälsa och kan hjälpa till att bibehålla en frisk hud."
-      },
-      {
-          "titel": "Mâchesallat",
-          "fakta": "Mâchesallat, även kallad fältsallat, är rik på omega-3 fettsyror, vitamin C och järn. Den har en mild, nötaktig smak och används ofta i sallader. Mâchesallat bidrar till hjärthälsa och immunsystemets funktion."
-      },
-      {
-          "titel": "Havtorn",
-          "fakta": "Havtorn är rika på vitamin C, E och antioxidanter. Bären används ofta i juicer, sylt och kosttillskott. Havtorn kan bidra till att förbättra hudens hälsa och stärka immunsystemet."
-      },
-      {
-          "titel": "Potatis rå",
-          "fakta": "Potatis är en allsidig rotfrukt som är rik på vitamin C, B6 och kalium. Den används i en mängd olika rätter som mos, gratänger och soppor. Potatis bidrar till god matsmältning och energiomsättning."
-      },
-      {
-          "titel": "Vinbär vita",
-          "fakta": "Vita vinbär är rika på vitamin C och antioxidanter. De används ofta i sylt, desserter och som dekoration. Vita vinbär kan hjälpa till att stärka immunsystemet och förbättra hudens hälsa."
-      },
-      {
-          "titel": "Tomat körsbärstomat röd",
-          "fakta": "Röda körsbärstomater är rika på lykopen, en kraftfull antioxidant. De används ofta i sallader, pastarätter och som snacks. Körsbärstomater kan bidra till hjärthälsa och skydda mot vissa typer av cancer."
-      },
-      {
-          "titel": "Spenat färsk",
-          "fakta": "Färsk spenat är rik på järn, kalcium och vitamin K. Den används ofta i sallader, smoothies och som tillbehör. Spenat bidrar till god benhälsa och kan hjälpa till att förebygga anemi."
-      },
-      {
-          "titel": "Mangold röd småbladig färsk",
-          "fakta": "Röd mangold är rik på vitamin K, A och magnesium. De små bladen används ofta i sallader och som tillbehör. Mangold kan bidra till god benhälsa och har antiinflammatoriska egenskaper."
-      },
-      {
-          "titel": "Kruksallat",
-          "fakta": "Kruksallat är en mild och krispig salladssort som är rik på vitamin A och K. Den används ofta i sallader och smörgåsar. Kruksallat bidrar till god synhälsa och benhälsa."
-      },
-      {
-          "titel": "Lök röd",
-          "fakta": "Rödlök är rik på antioxidanter och vitamin C. Den används ofta i sallader, salsor och som smaksättare i olika rätter. Rödlök kan bidra till hjärthälsa och stärka immunsystemet."
-      },
-      {
-          "titel": "Kantarell gul rå",
-          "fakta": "Gula kantareller är rika på vitamin D och B-vitaminer. De har en delikat, nötig smak och används ofta i såser, soppor och som tillbehör. Kantareller kan bidra till god benhälsa och immunförsvar."
-      },
-      {
-          "titel": "Äpple Aroma rött",
-          "fakta": "Aromaäpple är en svensk äppelsort som är rik på fiber och vitamin C. Det har en söt, syrlig smak och används ofta i desserter och bakverk. Aromaäpple kan bidra till god matsmältning och immunförsvar."
-      },
-      {
-          "titel": "Äpple Ingrid Marie rött",
-          "fakta": "Ingrid Marie är en populär svensk äppelsort som är rik på antioxidanter och fiber. Det har en söt, saftig smak och används ofta i sallader och desserter. Ingrid Marie-äpplen kan bidra till hjärthälsa och god matsmältning."
-      },
-      {
-          "titel": "Äpple Frida",
-          "fakta": "Fridaäpple är en svensk äppelsort som är rik på vitamin C och fiber. Det har en krispig textur och en söt, syrlig smak. Fridaäpple kan användas i sallader, bakverk och som ett hälsosamt snacks."
-      },
-      {
-          "titel": "Äpple Golden delicious Granny Smith grönt",
-          "fakta": "Granny Smith är en grön äppelsort som är rik på vitamin C och fiber. Det har en krispig textur och en syrlig smak. Granny Smith-äpplen används ofta i sallader, bakverk och som ett friskt mellanmål."
-      },
-      {
-          "titel": "Psylliumfröskal",
-          "fakta": "Psylliumfröskal är en rik källa till löslig fiber. De används ofta som kosttillskott för att förbättra matsmältningen och främja tarmhälsa. Psylliumfröskal kan hjälpa till att sänka kolesterolnivåer och reglera blodsockret."
-      },
-      {
-          "titel": "Kiwi grön",
-          "fakta": "Kiwi är rik på C-vitamin och kostfiber. Dess skal är ätbart och innehåller mycket näring. Kiwi kan ätas färsk som den är eller användas i smoothies, fruktsallader och desserter.",
-          "bild": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/Kiwi_%28Actinidia_chinensis%29_1_Luc_Viatour.jpg/375px-Kiwi_%28Actinidia_chinensis%29_1_Luc_Viatour.jpg"
-      },
-      {
-          "titel": "Krusbär",
-          "fakta": "Krusbär är små, syrliga bär som är rika på C-vitamin och antioxidanter. De används ofta till saft, sylt och pajer. Krusbär kan också ätas färska om de är mogna."
-      },
-      {
-          "titel": "Physalis",
-          "fakta": "Physalis är små, gula bär som är inneslutna i en papery hus. De har en söt och syrlig smak och kan ätas färska eller användas som dekoration på desserter och fruktsallader."
-      },
-      {
-          "titel": "Kumquat",
-          "fakta": "Kumquat är små, ovala citrusfrukter som äts med skalet på. De har en söt och syrlig smak och kan ätas färska eller användas i sylt, marmelad och bakverk."
-      },
-      {
-          "titel": "Kvitten",
-          "fakta": "Kvitten är en gul frukt som påminner om päron i form och doft. Den används ofta till gelé, marmelad och likör. Kvitten kan ätas färsk om den är mogen, men den är hård och sur innan den mognar."
-      },
-      {
-          "titel": "Sötkörsbär",
-          "fakta": "Sötkörsbär är små, runda bär med en söt och syrlig smak. De används främst i bakning, såsom pajer, tårtor och muffins. Sötkörsbär kan också ätas färska eller användas i fruktsallader."
-      },
-      {
-          "titel": "Lime",
-          "fakta": "Lime är små, gröna citrusfrukter med en syrlig smak. De används ofta i matlagning och drycker, såsom mojitos, marinader och dressingar. Lime kan också pressas över mat som en smaksättare."
-      },
-      {
-          "titel": "Lingon",
-          "fakta": "Lingon är små, röda bär med en syrlig smak. De används ofta till saft, sylt och gelé. Lingon är också en vanlig ingrediens i nordiska rätter som köttbullar och pannkakor."
-      },
-      {
-          "titel": "Mango",
-          "fakta": "Mango är en tropisk frukt med en söt och saftig smak. Den används i sallader, smoothies, desserter och curries. Mango kan ätas färsk eller torkad och är rik på C-vitamin och betakaroten."
-      },
-      {
-          "titel": "Nektarin",
-          "fakta": "Nektarin är en saftig stenfrukt med en söt och syrlig smak. Den liknar en persika men har slätare skal. Nektariner används i sallader, pajer och fruktsallader eller äts färska som de är."
-      },
-      {
-          "titel": "Papaya",
-          "fakta": "Papaya är en tropisk frukt med orange kött och svarta frön. Den har en söt och krämig smak och används i sallader, smoothies och desserter. Papaya är rik på C-vitamin och har matsmältningsegenskaper."
-      },
-      {
-          "titel": "Paradisäpple",
-          "fakta": "Paradisäpple, även känt som annanas, är en tropisk frukt med saftigt gult kött och taggiga skal. Den har en söt och syrlig smak och används färsk i sallader, smoothies och desserter."
-      },
-      {
-          "titel": "Passionsfrukt",
-          "fakta": "Passionsfrukt är en rund frukt med ett hårt skal och geléaktigt innehåll med svarta frön. Den har en söt och syrlig smak och används i juice, sorbet, cheesecake och fruktsallader."
-      },
-      {
-          "titel": "Persika nektarin",
-          "fakta": "Nektarin är en saftig stenfrukt med en söt och syrlig smak. Den liknar en persika men har slätare skal. Nektariner används i sallader, pajer och fruktsallader eller äts färska som de är."
-      },
-      {
-          "titel": "Sharon",
-          "fakta": "Sharon är en korsning mellan persimon och plommon. Den har en söt och saftig smak och används i sallader, smoothies och desserter. Sharon kan också ätas som den är när den är mogen."
-      },
-      {
-          "titel": "Plommon",
-          "fakta": "Plommon är saftiga stenfrukter med en söt och syrlig smak. De används i pajer, marmelad, sylt och saft. Plommon kan också ätas färska eller torkade som en hälsosam snack."
-      },
-      {
-          "titel": "Päron",
-          "fakta": "Päron är saftiga frukter med en söt smak och mjuk textur. De används i pajer, sallader, chutney och desserter. Päron är rika på kostfiber och antioxidanter och kan ätas färska eller kokta."
-      },
-      {
-          "titel": "Tranbär",
-          "fakta": "Tranbär är små, röda bär med en syrlig smak. De används främst till saft, gelé och torkade produkter som russin. Tranbär sägs ha hälsofördelar, särskilt för urinvägarna."
-      },
-      {
-          "titel": "Vinbär röda",
-          "fakta": "Vinbär är små, runda bär som finns i olika färger, inklusive rött, svart och vitt. De är rika på C-vitamin och antioxidanter. Vinbär används ofta till saft, sylt och bakverk. De har också använts traditionellt för sina medicinska egenskaper."
-      },
-      {
-          "titel": "Kiwi gul",
-          "fakta": "Gula kiwifrukter är en variant av den mer vanliga gröna kiwin. De har en söt och saftig smak och är lika näringsrika som de gröna kiwifrukterna. Gul kiwi är rik på C-vitamin, kalium och fiber. Dessutom innehåller de naturliga ämnen som kan hjälpa till att främja matsmältningen och stödja immunsystemet.",
-          "bild": "https://jeppastradgard.se/wp-content/uploads/2023/12/KLK004_gul-kiwi-hona-lv.jpg"
-      },
-      {
-          "titel": "Pistaschnötter",
-          "fakta": "Pistaschnötter är en källa till hälsosamma fetter, protein, fiber, vitaminer och mineraler, särskilt vitamin B6, koppar och mangan. De innehåller också antioxidanter och har förknippats med hälsofördelar som att främja hjärthälsa, reglera blodsockernivåer och stödja viktkontroll. Pistaschnötter kan ätas råa, rostade eller användas i olika rätter som desserter och sallader."
-      },
-      {
-          "titel": "Småcitrus clementin mandarin tangerin satsumas",
-          "fakta": "Småcitrus inkluderar flera varianter som clementiner, mandariner, tangeriner och satsumas. Dessa citrusfrukter är kända för sin sötma och saftighet. De är rika på vitamin C, fiber och antioxidanter. Småcitrus är ett populärt mellanmål och används ofta i sallader, desserter och juicer."
-      },
-      {
-          "titel": "Fikon",
-          "fakta": "Fikon är en näringsrik frukt med en söt smak och mjuk textur. De är rika på kostfiber, vitaminer (särskilt vitamin B6 och K), mineraler som kalium och magnesium samt antioxidanter. Fikon kan ätas färska eller torkade och används i en mängd olika rätter, inklusive bakverk och sallader."
-      },
-      {
-          "titel": "Kaktusfikon",
-          "fakta": "Kaktusfikon, även kända som prickly pears, är frukter från olika arter av kaktus. De har en söt och något syrlig smak och är rika på vitamin C, magnesium och kalium. Kaktusfikon används ofta i sylt, geléer, sallader och drycker."
-      },
-      {
-          "titel": "Vinbär svarta",
-          "fakta": "Svarta vinbär är små, mörklila bär som är rika på vitamin C, kalium och antioxidanter. De har en syrlig smak och används ofta i sylt, geléer, saft och bakverk. Svarta vinbär har också antiinflammatoriska egenskaper."
-      },
-      {
-          "titel": "Vindruvor",
-          "fakta": "Vindruvor är saftiga bär som kan vara gröna, röda eller svarta. De är rika på vitaminer (särskilt vitamin K och C), antioxidanter och naturliga sockerarter. Vindruvor kan ätas färska, torkade som russin eller användas i juice och vinproduktion."
-      },
-      {
-          "titel": "Cashewnötter rostade u. salt",
-          "fakta": "Cashewnötter är näringsrika och har en krämig konsistens. Rostade cashewnötter utan salt är rika på protein, hälsosamma fetter, vitaminer (särskilt E och B6) och mineraler som magnesium och järn. De används i matlagning, bakning och som snacks."
-      },
-      {
-          "titel": "Hasselnötter",
-          "fakta": "Hasselnötter är rika på hälsosamma fetter, protein, fiber, vitaminer (särskilt E) och mineraler som magnesium och koppar. De har en söt och mild smak och används ofta i bakverk, choklad och som snacks.",
-          "bild": "https://images.pexels.com/photos/7676099/pexels-photo-7676099.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-      },
-      {
-          "titel": "Jordnötter torkade",
-          "fakta": "Torkade jordnötter är rika på protein, hälsosamma fetter, fiber och flera vitaminer och mineraler, inklusive niacin och magnesium. De används ofta som snacks eller i matlagning och bakning."
-      },
-      {
-          "titel": "Jordnötter rostade",
-          "fakta": "Rostade jordnötter har en rikare smak jämfört med råa jordnötter. De är rika på protein, hälsosamma fetter och fiber samt vitaminer och mineraler som niacin och magnesium. Rostade jordnötter används ofta som snacks eller i matlagning."
-      },
-      {
-          "titel": "Kastanjer",
-          "fakta": "Kastanjer är rika på kolhydrater, fiber, vitaminer (särskilt C och B6) och mineraler som kalium och magnesium. De har en söt och mild smak och används ofta i matlagning, bakning och som rostade snacks."
-      },
-      {
-          "titel": "Kokosflingor",
-          "fakta": "Kokosflingor är torkade och strimlade bitar av kokosnötkött. De är rika på fiber, hälsosamma fetter och mineraler som mangan och koppar. Kokosflingor används i bakning, matlagning och som topping på desserter och frukostprodukter."
-      },
-      {
-          "titel": "Kokosnöt",
-          "fakta": "Kokosnöt är en näringsrik frukt som är rik på fiber, hälsosamma fetter och mineraler som mangan och koppar. Kokosnötköttet kan ätas färskt eller torkat, och kokosmjölk används i många matlagningsrecept."
-      },
-      {
-          "titel": "Linfrö hela",
-          "fakta": "Hela linfrön är rika på fiber, omega-3 fettsyror och lignaner. De har hälsofrämjande egenskaper, inklusive förbättrad matsmältning och hjärthälsa. Linfrön används ofta i bakning, smoothies och som topping på frukostprodukter."
-      },
-      {
-          "titel": "Paranötter",
-          "fakta": "Paranötter är rika på selen, hälsosamma fetter, protein, vitaminer och mineraler. De har en mild och krämig smak och används ofta som snacks eller i matlagning och bakning."
-      },
-      {
-          "titel": "Pekannötter",
-          "fakta": "Pekannötter är rika på hälsosamma fetter, protein, fiber, vitaminer (särskilt E) och mineraler som magnesium och zink. De har en söt och smörig smak och används ofta i bakverk, desserter och som snacks."
-      },
-      {
-          "titel": "Pumpafrö",
-          "fakta": "Pumpafrön är rika på protein, hälsosamma fetter, fiber, vitaminer och mineraler som magnesium och zink. De har en mild och nötaktig smak och används ofta som snacks eller i matlagning och bakning."
-      },
-      {
-          "titel": "Chiafrö",
-          "fakta": "Chiafrön är rika på fiber, omega-3 fettsyror, protein och antioxidanter. De har många hälsofördelar, inklusive förbättrad matsmältning och hjärthälsa. Chiafrön används ofta i smoothies, puddingar och bakning."
-      },
-      {
-          "titel": "Hampafrö m. skal",
-          "fakta": "Hampafrön med skal är rika på protein, omega-3 och omega-6 fettsyror, fiber och mineraler som magnesium och järn. De har en mild, nötaktig smak och används ofta i smoothies, bakning och som topping på sallader och frukostprodukter."
-      },
-      {
-          "titel": "Hampafrö u. skal",
-          "fakta": "Skalade hampafrön är rika på protein, omega-3 och omega-6 fettsyror samt mineraler som magnesium och järn. De har en mild, nötaktig smak och används ofta i smoothies, bakning och som topping på sallader och frukostprodukter."
-      },
-      {
-          "titel": "Vallmofrö",
-          "fakta": "Vallmofrön är rika på protein, fiber, hälsosamma fetter och mineraler som kalcium och magnesium. De har en mild och nötaktig smak och används ofta i bakning och matlagning, särskilt i bröd och bakverk."
-      },
-      {
-          "titel": "Vindruvor gröna",
-          "fakta": "Gröna vindruvor är rika på vitaminer (särskilt K och C), antioxidanter och naturliga sockerarter. De har en söt och saftig smak och används ofta som snacks, i sallader och i vinproduktion."
-      },
-      {
-          "titel": "Vindruvor röda",
-          "fakta": "Röda vindruvor är rika på vitaminer (särskilt K och C), antioxidanter och naturliga sockerarter. De har en söt och saftig smak och används ofta som snacks, i sallader och i vinproduktion."
-      },
-      {
-          "titel": "Mullbär",
-          "fakta": "Mullbär är små, näringsrika bär som är rika på vitamin C, järn och antioxidanter. De har en söt och mild smak och används ofta torkade som snacks eller i bakning och matlagning."
-      },
-      {
-          "titel": "Wasabirot",
-          "fakta": "Wasabirot är känd för sin starka, skarpa smak och används ofta som krydda till sushi och andra japanska rätter. Den har antibakteriella egenskaper och är rik på antioxidanter."
-      },
-      {
-          "titel": "Macadamianötter",
-          "fakta": "Macadamianötter är rika på hälsosamma fetter, fiber, vitaminer (särskilt B1) och mineraler som magnesium och mangan. De har en smörig smak och används ofta i bakverk, desserter och som snacks."
-      },
-      {
-          "titel": "Shiitakesvamp",
-          "fakta": "Shiitakesvamp är rik på B-vitaminer, mineraler och antioxidanter. Den har en köttig konsistens och en rik, umamismak. Shiitakesvamp används ofta i asiatiska rätter, soppor och såser."
-      },
-      {
-          "titel": "Ostronskivling",
-          "fakta": "Ostronskivling är en näringsrik svamp som är rik på protein, fiber, B-vitaminer och antioxidanter. Den har en mild smak och en köttig konsistens och används ofta i matlagning, särskilt i vegetariska rätter."
-      },
-      {
-          "titel": "Blåbär amerikanska",
-          "fakta": "Amerikanska blåbär är rika på vitaminer (särskilt C och K), antioxidanter och kostfiber. De har en söt och saftig smak och används ofta i bakning, smoothies och som snacks."
-      },
-      {
-          "titel": "Ärtskott",
-          "fakta": "Ärtskott är unga ärtväxter som är rika på vitaminer (särskilt C och K), mineraler och antioxidanter. De har en mild, söt smak och används ofta i sallader, smörgåsar och som garnering."
-      }
-    ]
+  {
+    "titel": "Jordärtskocka",
+    "fakta": "Jordärtskocka är en rotfrukt som är rik på järn och kalium. Den är känd för sin nötaktiga smak och används ofta i soppor och puréer. Jordärtskockan har även prebiotiska egenskaper som kan främja en hälsosam tarmflora.",
+    "bild": "https://images.pexels.com/photos/9589644/pexels-photo-9589644.jpeg"
+  },
+  {
+    "titel": "Kålrot",
+    "fakta": "Kålrot är en korsning mellan kål och rova och innehåller mycket C-vitamin. Den har en söt, mild smak och används ofta i soppor, grytor och som rostad grönsak. Kålrot är också en bra källa till fiber och kalium.",
+    "bild": "https://images.pexels.com/photos/97311/pexels-photo-97311.jpeg"
+  },
+  {
+    "titel": "Morot",
+    "fakta": "Morötter är rika på betakaroten, vilket omvandlas till vitamin A i kroppen och är bra för synen. De är också en utmärkt källa till antioxidanter och kan ätas råa, kokta eller bakade. Morötter bidrar också till god matsmältning tack vare sitt höga fiberinnehåll.",
+    "bild": "https://images.pexels.com/photos/143133/pexels-photo-143133.jpeg"
+  },
+  {
+    "titel": "Palsternacka",
+    "fakta": "Palsternacka har en söt, nötaktig smak och är rik på fiber. Den innehåller också viktiga vitaminer och mineraler som vitamin C, folat och kalium. Palsternacka kan användas i soppor, grytor eller rostas för att framhäva dess naturliga sötma.",
+    "bild": "https://get.pxhere.com/photo/parsnip-vegetable-food-Arracacia-xanthorrhiza-horseradish-root-vegetable-produce-plant-ingredient-cuisine-1622935.jpg"
+  },
+  {
+    "titel": "Pepparrot",
+    "fakta": "Pepparrot används ofta som krydda och har en stark, skarp smak. Den är rik på glukosinolater, som har visat sig ha antiinflammatoriska och cancerbekämpande egenskaper. Pepparrot kan rivas och användas i såser, dressingar och som smakförstärkare i olika rätter.",
+    "bild": "https://images.pexels.com/photos/17552791/pexels-photo-17552791/free-photo-of-closeup-of-a-horseradish-bush-with-dark-green-leaves.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+  },
+  {
+    "titel": "Rotselleri",
+    "fakta": "Rotselleri är rik på vitamin K och används ofta i soppor och grytor. Den har en mild, selleriliknande smak och är också en bra källa till fiber och vitaminer som vitamin C och B6. Rotselleri kan ätas rå, kokt eller rostad.",
+    "bild": "https://images.pexels.com/photos/11663133/pexels-photo-11663133.jpeg"
+  },
+  {
+    "titel": "Rädisa",
+    "fakta": "Rädisor har en pepprig smak och är låg i kalorier. De är en utmärkt källa till vitamin C och andra antioxidanter som kan hjälpa till att bekämpa fria radikaler. Rädisor kan ätas råa i sallader eller användas som en krispig topping på olika rätter.",
+    "bild": "https://images.pexels.com/photos/191043/pexels-photo-191043.jpeg"
+  },
+  {
+    "titel": "Rödbeta",
+    "fakta": "Rödbetor är rika på folsyra och nitrater, vilket kan förbättra blodflödet och sänka blodtrycket. De innehåller också betacyaniner, kraftfulla antioxidanter som ger dem deras starka färg. Rödbetor kan ätas råa, kokta, inlagda eller bakade.",
+    "bild": "https://images.pexels.com/photos/4443483/pexels-photo-4443483.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+  },
+  {
+    "titel": "Rättika",
+    "fakta": "Rättika är en rotfrukt som är rik på vitamin C och används ofta i sallader. Den har en skarp, kryddig smak och är också känd för sina matsmältningsfrämjande egenskaper. Rättika kan ätas rå, syrad eller kokt i soppor och grytor.",
+    "bild": "https://c.pxhere.com/photos/45/5b/radish_blue_neck_white_green_vegetables_pile_up_flatbed_seiyu_ltd-1266104.jpg!d"
+  },
+  {
+    "titel": "Rotpersilja",
+    "fakta": "Rotpersilja har en smak som liknar persilja och används i soppor och grytor. Den är rik på vitaminer och mineraler, särskilt vitamin C och järn. Rotpersilja kan också rostas eller användas som en smakrik tillsats i olika maträtter.",
+    "bild": "https://images.pexels.com/photos/60639/parsley-seasoning-salad-greens-60639.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+  },
+  {
+    "titel": "Majrova",
+    "fakta": "Majrovor är rika på vitamin C och används ofta i grytor och soppor. De har en mild, söt smak och är också en bra källa till kalium och fiber. Majrovor kan ätas råa, kokta eller inlagda för att tillföra en krispig textur till måltider.",
+    "bild": "https://images.pexels.com/photos/8356962/pexels-photo-8356962.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+  },
+  {
+    "titel": "Svartrot",
+    "fakta": "Svartrot kallas också fattigmanssparris och är rik på kostfiber. Den har en mild, söt smak och innehåller även vitaminer och mineraler som vitamin E och järn. Svartrot kan kokas, stekas eller användas i soppor och grytor.",
+    "bild": "https://images.rawpixel.com/image_800/cHJpdmF0ZS9zdGF0aWMvaW1hZ2Uvd2Vic2l0ZS8yMDIyLTA0L2xyL3B4MTYzMjY4Ny1pbWFnZS1rd3Z2aWdlbC5qcGc.jpg"
+  },
+  {
+    "titel": "Avokado",
+    "fakta": "Avokado är rik på nyttiga fetter, särskilt enkelomättade fetter som är bra för hjärtat. Den är också en utmärkt källa till vitamin E, K och flera B-vitaminer. Avokado kan användas i sallader, på smörgåsar eller som en bas för guacamole.",
+    "bild": "https://images.pexels.com/photos/557659/pexels-photo-557659.jpeg?cs=srgb&dl=pexels-foodie-factor-162291-557659.jpg&fm=jpg"
+  },
+  {
+    "titel": "Stjälkselleri",
+    "fakta": "Stjälkselleri är låg i kalorier och används ofta i sallader och soppor. Den är också rik på fiber och vitamin K, vilket bidrar till god benhälsa. Stjälkselleri har en krispig textur och kan ätas rå eller tillagad.",
+    "bild": "https://images.pexels.com/photos/13044694/pexels-photo-13044694.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+  },
+  {
+    "titel": "Blomkål",
+    "fakta": "Blomkål är rik på C-vitamin och kan ätas både rå och tillagad. Den är också en bra källa till fiber och folat, och innehåller antioxidanter som kan skydda mot inflammation. Blomkål kan användas i soppor, gratänger eller som ett lågkolhydratalternativ till ris.",
+    "bild": "https://images.pexels.com/photos/7456541/pexels-photo-7456541.jpeg"
+  },
+  {
+    "titel": "Broccoli",
+    "fakta": "Broccoli är rik på vitamin C och K samt antioxidanter. Den är också känd för sitt höga innehåll av fibrer och sulforafan, en förening som har cancerbekämpande egenskaper. Broccoli kan ångas, rostas eller ätas rå i sallader.",
+    "bild": "https://media.istockphoto.com/id/1135308302/photo/broccoli-on-white.jpg?b=1&s=612x612&w=0&k=20&c=tP6GicNnKNhChipfwgqQqMLH7k0iUl7PEC8nUNbDAYU="
+  },
+  {
+    "titel": "Brysselkål",
+    "fakta": "Brysselkål är rik på vitamin K och fiber. Den innehåller också glukosinolater, som kan bidra till att minska risken för cancer. Brysselkål kan ångas, rostas eller stekas och passar bra som tillbehör till många rätter.",
+    "bild": "https://images.pexels.com/photos/41171/brussels-sprouts-sprouts-cabbage-grocery-41171.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+  },
+  {
+    "titel": "Mungbönsgroddar",
+    "fakta": "Mungbönsgroddar är låg i kalorier och rik på protein. De innehåller också vitaminer som vitamin C och B-vitaminer, samt mineraler som järn och kalium. Mungbönsgroddar används ofta i sallader och asiatiska rätter.",
+    "bild": "https://images.pexels.com/photos/4070931/pexels-photo-4070931.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+  },
+  {
+    "titel": "Sojabönsgroddar",
+    "fakta": "Sojabönsgroddar är en bra källa till protein och vitamin C. De är också rika på isoflavoner, som har antioxidativa och antiinflammatoriska egenskaper. Sojabönsgroddar används ofta i asiatiska rätter, sallader och soppor.",
+    "bild": "https://images.pexels.com/photos/8956732/pexels-photo-8956732.jpeg?cs=srgb&dl=pexels-makafood-82669418-8956732.jpg&fm=jpg"
+  },
+  {
+    "titel": "Gröna bönor",
+    "fakta": "Gröna bönor är rika på fiber och vitamin K. De är också en bra källa till vitamin C, folat och kalium. Gröna bönor kan ångas, kokas eller stekas och är ett mångsidigt tillbehör till många rätter.",
+    "bild": "https://images.pexels.com/photos/3004798/pexels-photo-3004798.jpeg?cs=srgb&dl=pexels-rozanova-3004798.jpg&fm=jpg"
+  },
+  {
+    "titel": "Champinjon",
+    "fakta": "Champinjoner är låga i kalorier och rika på vitamin D, särskilt när de har exponerats för solljus. De innehåller också B-vitaminer och mineraler som selen. Champinjoner kan ätas råa i sallader eller tillagade i en mängd olika rätter.",
+    "bild": "https://c.pxhere.com/photos/cd/13/mushrooms_button_fresh_cooking_food_cultivated_cuisine_edible-1220183.jpg!d"
+  },
+  {
+    "titel": "Friséesallat",
+    "fakta": "Friséesallat har en bitter smak och är rik på vitamin K, vilket är viktigt för blodkoagulering och benhälsa. Den är också en källa till vitamin A och folat. Friséesallat används ofta i sallader och som garnering.",
+    "bild": "https://c.pxhere.com/photos/d2/d7/lettuce_fresh_hydroponic_green_healthy_food_salad_growing-910562.jpg!d"
+  },
+  {
+    "titel": "Endivesallat",
+    "fakta": "Endivesallat är rik på folat och vitamin A. Den har en mild, något bitter smak och är också en bra källa till fiber och vitamin K. Endivesallat används ofta i sallader, men kan också grillas eller bakas.",
+    "bild": "https://images.pexels.com/photos/7098654/pexels-photo-7098654.jpeg"
+  },
+  {
+    "titel": "Fänkål",
+    "fakta": "Fänkål har en anisliknande smak och är rik på fiber och C-vitamin. Den innehåller också antioxidanter och mineraler som kalium och mangan. Fänkål kan ätas rå i sallader eller tillagas i soppor och grytor.",
+    "bild": "https://images.pexels.com/photos/159357/fennel-vegetables-fennel-bulb-food-159357.jpeg?cs=srgb&dl=pexels-pixabay-159357.jpg&fm=jpg"
+  },
+  {
+    "titel": "Grönkål",
+    "fakta": "Grönkål är en superfood rik på vitaminer A, C och K samt antioxidanter. Den innehåller också sulforafan, som har cancerbekämpande egenskaper. Grönkål kan ätas rå i sallader, ångas, stekas eller användas i smoothies.",
+    "bild": "https://images.pexels.com/photos/51372/kale-vegetables-brassica-oleracea-var-sabellica-l-51372.jpeg?cs=srgb&dl=pexels-pixabay-51372.jpg&fm=jpg"
+  },
+  {
+    "titel": "Gurka",
+    "fakta": "Gurka består till största delen av vatten och är låg i kalorier. Den är också en bra källa till vitamin K och innehåller antioxidanter som kan hjälpa till att minska inflammation. Gurka kan ätas rå i sallader eller användas i smörgåsar och som tillbehör.",
+    "bild": "https://images.pexels.com/photos/2329440/pexels-photo-2329440.jpeg"
+  },
+  {
+    "titel": "Isbergssallat",
+    "fakta": "Isbergssallat är krispig och låg i kalorier men innehåller få näringsämnen. Den är dock en bra källa till vatten och kan hjälpa till att hålla dig hydrerad. Isbergssallat används ofta i sallader, smörgåsar och som garnering.",
+    "bild": "https://images.pexels.com/photos/6038039/pexels-photo-6038039.jpeg"
+  },
+  {
+    "titel": "Kronärtskocka",
+    "fakta": "Kronärtskocka är rik på antioxidanter och fiber. Den innehåller också vitaminer och mineraler som vitamin C, folat och magnesium. Kronärtskocka kan ångas, kokas eller grillas och är en populär ingrediens i många medelhavsrätter.",
+    "bild": "https://images.pexels.com/photos/8538302/pexels-photo-8538302.jpeg"
+  },
+  {
+    "titel": "Kålrabbi",
+    "fakta": "Kålrabbi är rik på vitamin C och används både rå och tillagad. Den har en mild, söt smak och är också en bra källa till kalium och fiber. Kålrabbi kan ätas rå i sallader, ångas eller rostas.",
+    "bild": "https://images.pexels.com/photos/7511865/pexels-photo-7511865.jpeg"
+  },
+  {
+    "titel": "Lök gul",
+    "fakta": "Gul lök är rik på antioxidanter och har en stark smak. Den innehåller också vitaminer och mineraler som vitamin C, B6 och folat. Gul lök används ofta som bas i många maträtter och kan ätas rå eller tillagad.",
+    "bild": "https://images.pexels.com/photos/8862198/pexels-photo-8862198.jpeg"
+  },
+  {
+    "titel": "Majskolv",
+    "fakta": "Majs är rik på fiber och B-vitaminer och kan ätas både färsk och tillagad. Den är också en bra källa till antioxidanter som lutein och zeaxantin, vilka är viktiga för ögonhälsan. Majs kan grillas, kokas eller användas i sallader och grytor.",
+    "bild": "https://images.pexels.com/photos/13094647/pexels-photo-13094647.jpeg"
+  },
+  {
+    "titel": "Mangold",
+    "fakta": "Mangold är rik på vitaminer A, C och K samt antioxidanter. Den innehåller också mineraler som järn och magnesium. Mangold kan ätas rå i sallader eller tillagas i soppor, grytor och som tillbehör.",
+    "bild": "https://c.pxhere.com/photos/1e/40/chard_beta_vulgaris_herb_stalk_vegetables_vegetable_plant_leaf_stalk_red-647764.jpg!d"
+  },
+  {
+    "titel": "Paprika grön",
+    "fakta": "Grön paprika är rik på C-vitamin och innehåller även fibrer och antioxidanter. Den har en krispig textur och en något bitter smak jämfört med mogna paprikor. Grön paprika kan ätas rå i sallader eller tillagas i olika rätter.",
+    "bild": "https://images.pexels.com/photos/15429116/pexels-photo-15429116/free-photo-of-close-up-of-a-lot-of-green-peppers.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+  },
+  {
+    "titel": "Paprika röd",
+    "namn": "Röd paprika",
+    "fakta": "Röd paprika är rik på vitamin C och A samt antioxidanter som betakaroten. Den har en sötare smak än grön paprika och kan ätas rå eller tillagad. Röd paprika är en mångsidig ingrediens i sallader, såser och grytor.",
+    "bild": "https://images.pexels.com/photos/870808/pexels-photo-870808.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+  },
+  {
+    "titel": "Persilja blad",
+    "fakta": "Bladpersilja är rik på vitamin K, C och A. Den har också höga halter av antioxidanter och kan hjälpa till att förbättra matsmältningen. Persilja används ofta som en färsk krydda i sallader, soppor och olika rätter.",
+    "bild": "https://c.pxhere.com/photos/15/fa/cilantro_herbs_food_green_cuisine_dish_parsley_fresh-638070.jpg!d"
+  },
+  {
+    "titel": "Pumpa",
+    "fakta": "Pumpa är rik på betakaroten, som omvandlas till vitamin A i kroppen. Den innehåller också fiber, vitamin C och kalium. Pumpa kan användas i soppor, bakverk och som en söt eller salt tillbehör.",
+    "bild": "https://images.pexels.com/photos/18441282/pexels-photo-18441282/free-photo-of-close-up-of-pumpkins.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+  },
+  {
+    "titel": "Purjolök",
+    "fakta": "Purjolök är rik på vitamin K och A samt folat. Den har en mildare smak än gul lök och används ofta i soppor, grytor och sallader. Purjolök är också en bra källa till antioxidanter som kan skydda mot inflammation.",
+    "bild": "https://c.pxhere.com/photos/12/f2/leek_spring_onion_food_market_vegetables_onion_healthy-1134957.jpg!d"
+  },
+  {
+    "titel": "Rödkål",
+    "fakta": "Rödkål är rik på vitamin C och antioxidanter som antocyaniner. Den har också högt fiberinnehåll och kan hjälpa till att förbättra matsmältningen. Rödkål används ofta i sallader, syrade rätter och som ett färgglatt tillbehör.",
+    "bild": "https://images.pexels.com/photos/8862197/pexels-photo-8862197.jpeg"
+  },
+  {
+    "titel": "Savojkål",
+    "fakta": "Savojkål är rik på vitamin C och K samt fiber. Den har en mild smak och krispig textur och kan användas i sallader, soppor och grytor. Savojkål är också en bra källa till antioxidanter som kan skydda mot fria radikaler.",
+    "bild": "https://images.pexels.com/photos/11798036/pexels-photo-11798036.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+  },
+  {
+    "titel": "Salladskål",
+    "fakta": "Salladskål, även känd som kinakål, är rik på vitamin C och K samt folat. Den har en mild, krispig smak och används ofta i sallader och asiatiska rätter som kimchi. Salladskål är också låg i kalorier men hög i fiber.",
+    "bild": "https://images.pexels.com/photos/17942484/pexels-photo-17942484/free-photo-of-salad-bowl-served-in-a-restaurant.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+  },
+  {
+    "titel": "Sockerärtor",
+    "fakta": "Sockerärtor är rika på vitamin C, K och fibrer. De har en söt smak och krispig textur och kan ätas råa eller tillagade. Sockerärtor är också en bra källa till antioxidanter som kan hjälpa till att minska inflammation.",
+    "bild": "https://images.pexels.com/photos/768092/pexels-photo-768092.jpeg"
+  },
+  {
+    "titel": "Squash",
+    "fakta": "Squash är låg i kalorier och rik på vitamin C och mangan. Den har en mild smak och kan användas i en mängd olika rätter, både rå och tillagad. Squash är också en bra källa till fiber som kan hjälpa till att förbättra matsmältningen.",
+    "bild": "https://images.pexels.com/photos/7890214/pexels-photo-7890214.jpeg"
+  },
+  {
+    "titel": "Tomat",
+    "fakta": "Tomater är rika på lycopen, en kraftfull antioxidant som kan skydda mot vissa typer av cancer. De innehåller också vitamin C, K och folat. Tomater kan ätas råa i sallader, tillagade i såser eller som en del av olika rätter.",
+    "bild": "https://media.istockphoto.com/id/466175630/photo/tomato-isolated-on-white-background.jpg?b=1&s=612x612&w=0&k=20&c=zN55o1lj4JdZCOI6BBnt6ARtJL7X9lHJ5POS4aGFnyw="
+  },
+  {
+    "titel": "Trädgårdskrasse",
+    "fakta": "Trädgårdskrasse är rik på vitaminer A, C och K samt antioxidanter. Den har en kryddig, pepprig smak och används ofta som garnering eller i sallader. Trädgårdskrasse är också känd för sina antiinflammatoriska egenskaper.",
+    "bild": "https://images.pexels.com/photos/7475826/pexels-photo-7475826.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+  },
+  {
+    "titel": "Vattenkrasse",
+    "fakta": "Vattenkrasse är en näringsrik grönsak rik på vitamin K, C och A. Den innehåller också antioxidanter och har en kryddig, pepprig smak. Vattenkrasse används ofta i sallader, smörgåsar och som en garnering.",
+    "bild": "https://images.pexels.com/photos/5337811/pexels-photo-5337811.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+  },
+  {
+    "titel": "Vaxbönor",
+    "fakta": "Vaxbönor är rika på vitamin C och K samt fibrer. De har en mild smak och krispig textur och kan ätas råa eller tillagade. Vaxbönor är också en bra källa till antioxidanter som kan skydda mot inflammation.",
+    "bild": "https://images.pexels.com/photos/13376466/pexels-photo-13376466.jpeg"
+  },
+  {
+    "titel": "Vitkål",
+    "fakta": "Vitkål är rik på vitamin C och K samt fiber. Den har en mild, krispig smak och används ofta i sallader, syrade rätter som surkål och som tillbehör. Vitkål är också en bra källa till antioxidanter som kan skydda mot fria radikaler.",
+    "bild": "https://images.pexels.com/photos/2518893/pexels-photo-2518893.jpeg"
+  },
+  {
+    "titel": "Vitlök",
+    "fakta": "Vitlök är känd för sina antibakteriella och antivirala egenskaper. Den är också rik på antioxidanter och kan bidra till att sänka blodtrycket och kolesterolet. Vitlök används ofta som krydda i matlagning och kan ätas rå eller tillagad.",
+    "bild": "https://images.pexels.com/photos/1392585/pexels-photo-1392585.jpeg?cs=srgb&dl=pexels-nickcollins-1392585.jpg&fm=jpg"
+  },
+  {
+    "titel": "Aubergine",
+    "fakta": "Aubergine är rik på antioxidanter som nasunin och innehåller också fibrer och vitamin B6. Den har en mjuk textur när den tillagas och används ofta i rätter som ratatouille och moussaka. Aubergine kan grillas, stekas eller bakas.",
+    "bild": "https://images.pexels.com/photos/321551/pexels-photo-321551.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+  },
+  {
+    "titel": "Alfalfagroddar",
+    "fakta": "Alfalfagroddar är rika på vitaminer och mineraler som vitamin K, C och kalcium. De har en mild, krispig smak och används ofta i sallader och smörgåsar. Alfalfagroddar är också en bra källa till protein och fibrer.",
+    "bild": "https://images.pexels.com/photos/15874884/pexels-photo-15874884/free-photo-of-close-up-of-green-sprouts.jpeg"
+  },
+  {
+    "titel": "Dill färsk",
+    "fakta": "Färsk dill är rik på vitamin C och antioxidanter. Den har en karakteristisk smak och används ofta som krydda i matlagning, särskilt i fisk- och potatisrätter. Dill kan också hjälpa till att förbättra matsmältningen.",
+    "bild": "https://images.pexels.com/photos/6633107/pexels-photo-6633107.jpeg"
+  },
+  {
+    "titel": "Gräslök",
+    "fakta": "Gräslök är rik på vitamin K och A samt antioxidanter. Den har en mild löksmak och används ofta som krydda eller garnering i sallader, soppor och röror. Gräslök är också känd för sina antibakteriella egenskaper.",
+    "bild": "https://images.pexels.com/photos/4113893/pexels-photo-4113893.jpeg?auto=compress&cs=tinysrgb&h=627&fit=crop&w=1200"
+  },
+  {
+    "titel": "Basilika färsk",
+    "fakta": "Färsk basilika är rik på vitamin K och har antioxidativa egenskaper. Den används ofta i medelhavsmatlagning och som en smakförstärkare i sallader, såser och peston. Basilika har också antiinflammatoriska egenskaper.",
+    "bild": "https://images.pexels.com/photos/1391505/pexels-photo-1391505.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+  },
+  {
+    "titel": "Chilipeppar färsk",
+    "fakta": "Färsk chilipeppar är rik på vitamin C och capsaicin, en förening som kan öka ämnesomsättningen och minska inflammation. Den har en stark, kryddig smak och används ofta som krydda i matlagning.",
+    "bild": "https://images.pexels.com/photos/6156991/pexels-photo-6156991.jpeg"
+  },
+  {
+    "titel": "Paprika gul",
+    "fakta": "Gul paprika är rik på vitamin C och A samt antioxidanter som betakaroten. Den har en söt, mild smak och kan ätas rå eller tillagad. Gul paprika är en mångsidig ingrediens i sallader, såser och grytor.",
+    "bild": "https://images.pexels.com/photos/7473491/pexels-photo-7473491.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+  },
+  {
+    "titel": "Linsgroddar",
+    "fakta": "Linsgroddar är rika på protein, fiber och flera vitaminer och mineraler som folat och järn. De har en mild smak och används ofta i sallader, smörgåsar och som en näringsrik tillsats till olika rätter.",
+    "bild": "https://images.pexels.com/photos/11579265/pexels-photo-11579265.jpeg?cs=srgb&dl=pexels-tivasee-17374727-11579265.jpg&fm=jpg"
+  },
+  {
+    "titel": "Granatäpple",
+    "fakta": "Granatäpple är rik på antioxidanter som punicalaginer och vitamin C. Dess frön är söta och saftiga och används ofta i sallader, desserter och som garnityr. Granatäpple kan också bidra till att sänka blodtrycket och förbättra hjärthälsan.",
+    "bild": "https://images.pexels.com/photos/65256/pomegranate-open-cores-fruit-fruit-logistica-65256.jpeg"
+  },
+  {
+    "titel": "Grapefrukt",
+    "fakta": "Grapefrukt är rik på vitamin C och antioxidanter som lykopen. Den har en bitter-söt smak och kan ätas färsk eller användas i sallader och juicer. Grapefrukt är också känd för att kunna bidra till viktminskning och förbättra matsmältningen.",
+    "bild": "https://images.pexels.com/photos/209549/pexels-photo-209549.jpeg?cs=srgb&dl=pexels-pixabay-209549.jpg&fm=jpg"
+  },
+  {
+    "titel": "Guava",
+    "fakta": "Guava är rik på vitamin C, fibrer och antioxidanter. Den har en söt, tropisk smak och kan ätas färsk eller användas i juicer och desserter. Guava kan också bidra till att förbättra hjärthälsan och stärka immunförsvaret.",
+    "bild": "https://images.pexels.com/photos/8668726/pexels-photo-8668726.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+  },
+  {
+    "titel": "Hallon",
+    "fakta": "Hallon är rika på antioxidanter, fibrer och vitamin C. De har en söt och syrlig smak och används ofta i desserter, smoothies och sallader. Hallon kan också bidra till att förbättra matsmältningen och minska inflammation.",
+    "bild": "https://images.pexels.com/photos/52536/raspberry-fruits-fresh-red-52536.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+  },
+  {
+    "titel": "Hjortron",
+    "fakta": "Hjortron är rika på vitamin C och antioxidanter. De har en unik söt och syrlig smak och används ofta i sylt, desserter och safter. Hjortron är också kända för sina antiinflammatoriska egenskaper.",
+    "bild": "https://images.pexels.com/photos/12225706/pexels-photo-12225706.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+  },
+  {
+    "titel": "Jordgubbar",
+    "fakta": "Jordgubbar är rika på vitamin C, mangan och antioxidanter. De har en söt smak och används ofta i desserter, sallader och smoothies. Jordgubbar kan också bidra till att förbättra hjärthälsan och stärka immunförsvaret.",
+    "bild": "https://images.pexels.com/photos/89778/strawberries-frisch-ripe-sweet-89778.jpeg?cs=srgb&dl=pexels-pixabay-89778.jpg&fm=jpg"
+  },
+  {
+    "titel": "Honungsmelon",
+    "fakta": "Honungsmelon är rik på vitamin C och har en söt, saftig smak. Den är också en bra källa till kalium och vatten, vilket kan hjälpa till att hålla dig hydrerad. Honungsmelon kan ätas färsk eller användas i fruktsallader och desserter.",
+    "bild": "https://images.pexels.com/photos/4772947/pexels-photo-4772947.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+  },
+  {
+    "titel": "Nätmelon",
+    "fakta": "Nätmelon är rik på vitamin A och C samt antioxidanter. Den har en söt och saftig smak och används ofta i fruktsallader och desserter. Nätmelon kan också bidra till att förbättra synen och stärka immunförsvaret.",
+    "bild": "https://images.pexels.com/photos/7227410/pexels-photo-7227410.jpeg"
+  },
+  {
+    "titel": "Vattenmelon",
+    "fakta": "Vattenmelon är rik på vitamin C och antioxidanter som lykopen. Den har en söt, saftig smak och är också en bra källa till vatten, vilket hjälper till att hålla dig hydrerad. Vattenmelon kan ätas färsk eller användas i sallader och drycker.",
+    "bild": "https://images.pexels.com/photos/4966362/pexels-photo-4966362.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+  },
+  {
+    "titel": "Ananas",
+    "fakta": "Ananas är rik på vitamin C och bromelain, ett enzym som kan hjälpa till med matsmältningen. Den har en söt och syrlig smak och används ofta i desserter, sallader och som garnityr. Ananas kan också bidra till att minska inflammation.",
+    "bild": "https://images.pexels.com/photos/12471181/pexels-photo-12471181.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+  },
+  {
+    "titel": "Apelsin",
+    "fakta": "Apelsiner är rika på vitamin C och fibrer. De har en söt och saftig smak och kan ätas färska eller användas i juicer och desserter. Apelsiner är också kända för att stärka immunförsvaret och förbättra hudhälsan.",
+    "bild": "https://images.pexels.com/photos/327098/pexels-photo-327098.jpeg?cs=srgb&dl=pexels-pixabay-327098.jpg&fm=jpg"
+  },
+  {
+    "titel": "Aprikos",
+    "fakta": "Aprikoser är rika på vitamin A och C samt fibrer. De har en söt, något syrlig smak och kan ätas färska eller torkade. Aprikoser kan bidra till att förbättra synen och matsmältningen samt stärka immunförsvaret.",
+    "bild": "https://images.pexels.com/photos/4397722/pexels-photo-4397722.jpeg?cs=srgb&dl=pexels-karolina-grabowska-4397722.jpg&fm=jpg"
+  },
+  {
+    "titel": "Banan",
+    "fakta": "Bananer är rika på kalium och vitamin B6. De har en söt smak och krämig textur och används ofta i smoothies, bakverk och som ett hälsosamt mellanmål. Bananer kan också hjälpa till att reglera blodtrycket och förbättra matsmältningen.",
+    "bild": "https://images.pexels.com/photos/61127/pexels-photo-61127.jpeg?cs=srgb&dl=pexels-jsalamanca-61127.jpg&fm=jpg"
+  },
+  {
+    "titel": "Björnbär",
+    "fakta": "Björnbär är rika på antioxidanter, fibrer och vitamin C. De har en söt och syrlig smak och används ofta i desserter, smoothies och sallader. Björnbär kan också bidra till att förbättra matsmältningen och stärka immunförsvaret.",
+    "bild": "https://images.pexels.com/photos/892808/pexels-photo-892808.jpeg"
+  },
+  {
+    "titel": "Blåbär",
+    "fakta": "Blåbär är rika på antioxidanter, särskilt antocyaniner, samt vitamin C och K. De har en söt smak och används ofta i bakverk, smoothies och som ett hälsosamt mellanmål. Blåbär kan bidra till att förbättra hjärthälsan och hjärnfunktionen.",
+    "bild": "https://images.pexels.com/photos/2539177/pexels-photo-2539177.jpeg?cs=srgb&dl=pexels-kelly-1179532-2539177.jpg&fm=jpg"
+  },
+  {
+    "titel": "Cherimoya",
+    "fakta": "Cherimoya är en tropisk frukt rik på vitamin C och B-vitaminer. Den har en söt och krämig smak som liknar en blandning av banan och ananas. Cherimoya kan ätas färsk eller användas i smoothies och desserter.",
+    "bild": "https://images.pexels.com/videos/5944591/pexels-photo-5944591.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+  },
+  {
+    "titel": "Citron",
+    "fakta": "Citroner är rika på vitamin C och antioxidanter. De har en syrlig smak och används ofta som smaksättare i matlagning, drycker och desserter. Citroner kan också hjälpa till att förbättra matsmältningen och stärka immunförsvaret.",
+    "bild": "https://images.pexels.com/photos/1585849/pexels-photo-1585849.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+  },
+  {
+    "titel": "Lime",
+    "fakta": "Lime är rik på vitamin C och antioxidanter. Den har en syrlig smak och används ofta i matlagning, drycker och desserter. Lime kan också bidra till att förbättra matsmältningen och stärka immunförsvaret.",
+    "bild": "https://media.istockphoto.com/id/1156644711/photo/lime-isolated-lime-half-slice-piece-isolate-on-white-lime-set.jpg?b=1&s=612x612&w=0&k=20&c=gbWnImzEn43Q7imNt9D_8OfE-2LEtf2zGVsBaocKGmo="
+  },
+  {
+    "titel": "Mango",
+    "fakta": "Mango är rik på vitamin C och A samt antioxidanter. Den har en söt och saftig smak och används ofta i smoothies, sallader och desserter. Mango kan också bidra till att förbättra matsmältningen och stärka immunförsvaret.",
+    "bild": "https://images.pexels.com/photos/2294471/pexels-photo-2294471.jpeg"
+  },
+  {
+    "titel": "Nektarin",
+    "fakta": "Nektariner är rika på vitamin A och C samt fibrer. De har en söt och saftig smak och kan ätas färska eller användas i desserter och sallader. Nektariner kan också bidra till att förbättra synen och hudhälsan.",
+    "bild": "https://images.pexels.com/photos/17197614/pexels-photo-17197614/free-photo-of-close-up-of-a-nectarine.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+  },
+  {
+    "titel": "Papaya",
+    "fakta": "Papaya är rik på vitamin C, A och enzymer som papain. Den har en söt och mjuk smak och används ofta i sallader, smoothies och desserter. Papaya kan också bidra till att förbättra matsmältningen och stärka immunförsvaret.",
+    "bild": "https://media.istockphoto.com/id/1204875411/photo/set-of-fresh-whole-and-half-papaya-fruit-and-slices.jpg?b=1&s=612x612&w=0&k=20&c=96vr4yRAkpHMhvYLZUe1qFHCnam892A3_mmU862YKc0="
+  },
+  {
+    "titel": "Persika",
+    "fakta": "Persikor är rika på vitamin A och C samt fibrer. De har en söt och saftig smak och kan ätas färska eller användas i desserter och sallader. Persikor kan också bidra till att förbättra synen och hudhälsan.",
+    "bild": "https://media.istockphoto.com/id/1137630158/photo/single-peach-fruit-with-leaf-isolated-on-white.jpg?b=1&s=612x612&w=0&k=20&c=xCeLjA9w1GgTJ3RveD4U6wRBe_M2nU9ykT8qXhvYhAs="
+  },
+  {
+    "titel": "Plommon",
+    "fakta": "Plommon är rika på vitamin C och antioxidanter. De har en söt och saftig smak och kan ätas färska eller torkade. Plommon kan också bidra till att förbättra matsmältningen och stärka immunförsvaret.",
+    "bild": "https://images.pexels.com/photos/248440/pexels-photo-248440.jpeg?cs=srgb&dl=pexels-pixabay-248440.jpg&fm=jpg"
+  },
+  {
+    "titel": "Päron",
+    "fakta": "Päron är rika på fiber och vitamin C. De har en söt och saftig smak och kan ätas färska eller användas i desserter och sallader. Päron kan också hjälpa till att förbättra matsmältningen och stärka immunförsvaret.",
+    "bild": "https://images.pexels.com/photos/568471/pexels-photo-568471.jpeg?cs=srgb&dl=pexels-mali-568471.jpg&fm=jpg"
+  },
+  {
+    "titel": "Röda vinbär",
+    "fakta": "Röda vinbär är rika på vitamin C och antioxidanter. De har en syrlig smak och används ofta i sylt, desserter och safter. Röda vinbär kan också bidra till att stärka immunförsvaret och förbättra matsmältningen.",
+    "bild": "https://images.pexels.com/photos/17543922/pexels-photo-17543922/free-photo-of-close-up-of-redcurrants-on-a-shrub.jpeg"
+  },
+  {
+    "titel": "Röda plommon",
+    "fakta": "Röda plommon är rika på vitamin C och antioxidanter. De har en söt och saftig smak och kan ätas färska eller torkade. Röda plommon kan också bidra till att förbättra matsmältningen och stärka immunförsvaret.",
+    "bild": "https://images.pexels.com/photos/4018846/pexels-photo-4018846.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+  },
+  {
+    "titel": "Stjärnfrukt",
+    "fakta": "Stjärnfrukt är rik på vitamin C och antioxidanter. Den har en söt och syrlig smak och används ofta i sallader och som garnityr. Stjärnfrukt kan också bidra till att förbättra matsmältningen och stärka immunförsvaret.",
+    "bild": "https://images.pexels.com/photos/14641770/pexels-photo-14641770.jpeg"
+  },
+  {
+    "titel": "Tamarillo",
+    "fakta": "Tamarillo är rik på vitamin C, A och E samt antioxidanter. Den har en syrlig smak och används ofta i sallader, såser och desserter. Tamarillo kan också bidra till att förbättra synen och stärka immunförsvaret.",
+    "bild": "https://images.pexels.com/photos/16963376/pexels-photo-16963376/free-photo-of-tamarillo-tomatoes-cut-in-halves.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+  },
+  {
+    "titel": "Körsbär",
+    "fakta": "Körsbär är rika på antioxidanter, särskilt antocyaniner, samt vitamin C och fibrer. De har en söt smak och används ofta i desserter, sallader och som ett hälsosamt mellanmål. Körsbär kan bidra till att minska inflammation och förbättra sömnkvaliteten.",
+    "bild": "https://images.pexels.com/photos/966416/pexels-photo-966416.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+  },
+  {
+    "titel": "Äpple",
+    "fakta": "Äpplen är rika på fiber och vitamin C. De har en söt och syrlig smak och kan ätas färska eller användas i desserter och sallader. Äpplen kan också bidra till att förbättra matsmältningen och stärka immunförsvaret.",
+    "bild": "https://images.pexels.com/photos/209439/pexels-photo-209439.jpeg?cs=srgb&dl=pexels-pixabay-209439.jpg&fm=jpg"
+  },
+  {
+    "titel": "Sesamfrö m. skal",
+    "fakta": "Sesamfrön med skal är rika på kalcium, magnesium och järn. De används ofta som topping på bakverk och i asiatisk matlagning. Sesamfrön har också antioxidativa egenskaper och kan hjälpa till att sänka blodtrycket.",
+    "bild": "https://images.pexels.com/photos/4203054/pexels-photo-4203054.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+  },
+  {
+    "titel": "Sesamfrö u. skal",
+    "fakta": "Sesamfrön utan skal är en utmärkt källa till hälsosamma fetter och protein. De används ofta i matlagning och bakning för att tillföra en nötaktig smak och krispig textur. Fröna är också rika på fiber och mineraler.",
+    "bild": "https://images.pexels.com/photos/4203054/pexels-photo-4203054.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+  },
+  {
+    "titel": "Solrosfrö",
+    "fakta": "Solrosfrön är rika på vitamin E, magnesium och selen. De är populära som snacks och kan användas i sallader, bröd och granola. Solrosfrön bidrar till att förbättra hjärthälsa och stödjer immunförsvaret.",
+    "bild": "https://images.pexels.com/photos/7223448/pexels-photo-7223448.jpeg"
+  },
+  {
+    "titel": "Sötmandel",
+    "fakta": "Sötmandlar är en utmärkt källa till hälsosamma fetter, protein och fiber. De är också rika på vitamin E och magnesium. Mandlar kan ätas som snacks, användas i bakverk eller göras till mandelmjölk.",
+    "bild": "https://images.pexels.com/photos/3997459/pexels-photo-3997459.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+  },
+  {
+    "titel": "Valnötter",
+    "fakta": "Valnötter är rika på omega-3 fettsyror, som är bra för hjärthälsan. De innehåller också antioxidanter och flera viktiga vitaminer och mineraler. Valnötter kan ätas som snacks, tillsättas i sallader eller användas i bakverk.",
+    "bild": "https://images.pexels.com/photos/3640631/pexels-photo-3640631.jpeg"
+  },
+  {
+    "titel": "Ingefära färsk",
+    "fakta": "Färsk ingefära har antiinflammatoriska och antioxidativa egenskaper. Den används ofta i matlagning och te för sin starka, kryddiga smak. Ingefära kan hjälpa till att lindra illamående och förbättra matsmältningen.",
+    "bild": "https://images.pexels.com/photos/7657087/pexels-photo-7657087.jpeg"
+  },
+  {
+    "titel": "Romansallat",
+    "fakta": "Romansallat är en krispig och näringsrik salladssort som är rik på vitamin A, K och folat. Den används ofta i sallader och som bas i olika rätter. Romansallat bidrar till god benhälsa och immunsystemfunktion.",
+    "bild": "https://images.pexels.com/photos/5202194/pexels-photo-5202194.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+  },
+  {
+    "titel": "Ruccolasallat",
+    "fakta": "Ruccola har en pepprig smak och är rik på vitamin K, A och C. Den används ofta i sallader och som topping på pizzor och smörgåsar. Ruccola innehåller också antioxidanter som kan hjälpa till att bekämpa inflammation.",
+    "bild": "https://images.pexels.com/photos/17198753/pexels-photo-17198753/free-photo-of-bowl-of-rucola-with-lemon-slice.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+  },
+  {
+    "titel": "Pinjefrö",
+    "fakta": "Pinjefrön är rika på hälsosamma fetter, protein och magnesium. De används ofta i pesto och som topping på sallader och bakverk. Pinjefrön kan hjälpa till att förbättra hjärthälsan och stödjer energiomsättningen.",
+    "bild": "https://c.pxhere.com/photos/8d/79/pine_food_christmas_nut_healthy_eating_dinner_meal-838448.jpg!d"
+  },
+  {
+    "titel": "Sötpotatis rå",
+    "fakta": "Sötpotatis är rik på betakaroten, vitamin C och kostfiber. Den har en söt smak och används ofta i gratänger, soppor och som rostad grönsak. Sötpotatis kan bidra till god synhälsa och matsmältning.",
+    "bild": "https://images.pexels.com/photos/89247/pexels-photo-89247.png?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+  },
+  {
+    "titel": "Huvudsallat",
+    "fakta": "Huvudsallat är en mild och krispig salladssort som är rik på vitamin K och A. Den används ofta i sallader och smörgåsar. Huvudsallat bidrar till god benhälsa och kan hjälpa till att bibehålla en frisk hud.",
+    "bild": "https://images.pexels.com/photos/2893639/pexels-photo-2893639.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+  },
+  {
+    "titel": "Mâchesallat",
+    "fakta": "Mâchesallat, även kallad fältsallat, är rik på omega-3 fettsyror, vitamin C och järn. Den har en mild, nötaktig smak och används ofta i sallader. Mâchesallat bidrar till hjärthälsa och immunsystemets funktion.",
+    "bild": "https://c.pxhere.com/photos/87/36/valerianella_locusta_corn_salad_common_cornsalad_lamb's_lettuce_m_che_fetticus_nut_lettuce_field_salad-1229029.jpg!d"
+  },
+  {
+    "titel": "Havtorn",
+    "fakta": "Havtorn är rika på vitamin C, E och antioxidanter. Bären används ofta i juicer, sylt och kosttillskott. Havtorn kan bidra till att förbättra hudens hälsa och stärka immunsystemet.",
+    "bild": "https://images.pexels.com/photos/11122249/pexels-photo-11122249.jpeg?cs=srgb&dl=pexels-munkhbayar-dambajav-176526124-11122249.jpg&fm=jpg"
+  },
+  {
+    "titel": "Potatis rå",
+    "fakta": "Potatis är en allsidig rotfrukt som är rik på vitamin C, B6 och kalium. Den används i en mängd olika rätter som mos, gratänger och soppor. Potatis bidrar till god matsmältning och energiomsättning.",
+    "bild": "https://images.pexels.com/photos/144248/potatoes-vegetables-erdfrucht-bio-144248.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+  },
+  {
+    "titel": "Vinbär vita",
+    "fakta": "Vita vinbär är rika på vitamin C och antioxidanter. De används ofta i sylt, desserter och som dekoration. Vita vinbär kan hjälpa till att stärka immunsystemet och förbättra hudens hälsa.",
+    "bild": "https://images.pexels.com/photos/46541/currant-immature-mature-bush-46541.jpeg"
+  },
+  {
+    "titel": "Tomat körsbärstomat röd",
+    "fakta": "Röda körsbärstomater är rika på lykopen, en kraftfull antioxidant. De används ofta i sallader, pastarätter och som snacks. Körsbärstomater kan bidra till hjärthälsa och skydda mot vissa typer av cancer.",
+    "bild": "https://images.pexels.com/photos/13519431/pexels-photo-13519431.jpeg"
+  },
+  {
+    "titel": "Spenat färsk",
+    "fakta": "Färsk spenat är rik på järn, kalcium och vitamin K. Den används ofta i sallader, smoothies och som tillbehör. Spenat bidrar till god benhälsa och kan hjälpa till att förebygga anemi.",
+    "bild": "https://images.pexels.com/photos/13376463/pexels-photo-13376463.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+  },
+  {
+    "titel": "Mangold röd småbladig färsk",
+    "fakta": "Röd mangold är rik på vitamin K, A och magnesium. De små bladen används ofta i sallader och som tillbehör. Mangold kan bidra till god benhälsa och har antiinflammatoriska egenskaper.",
+    "bild": "https://images.pexels.com/photos/5852255/pexels-photo-5852255.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+  },
+  {
+    "titel": "Kruksallat",
+    "fakta": "Kruksallat är en mild och krispig salladssort som är rik på vitamin A och K. Den används ofta i sallader och smörgåsar. Kruksallat bidrar till god synhälsa och benhälsa.",
+    "bild": "https://images.pexels.com/photos/348689/pexels-photo-348689.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+  },
+  {
+    "titel": "Lök röd",
+    "fakta": "Rödlök är rik på antioxidanter och vitamin C. Den används ofta i sallader, salsor och som smaksättare i olika rätter. Rödlök kan bidra till hjärthälsa och stärka immunsystemet.",
+    "bild": "https://images.pexels.com/photos/7890164/pexels-photo-7890164.jpeg"
+  },
+  {
+    "titel": "Kantarell gul rå",
+    "fakta": "Gula kantareller är rika på vitamin D och B-vitaminer. De har en delikat, nötig smak och används ofta i såser, soppor och som tillbehör. Kantareller kan bidra till god benhälsa och immunförsvar.",
+    "bild": "https://images.pexels.com/photos/5569538/pexels-photo-5569538.jpeg?cs=srgb&dl=pexels-leeloothefirst-5569538.jpg&fm=jpg"
+  },
+  {
+    "titel": "Äpple Aroma rött",
+    "fakta": "Aromaäpple är en svensk äppelsort som är rik på fiber och vitamin C. Det har en söt, syrlig smak och används ofta i desserter och bakverk. Aromaäpple kan bidra till god matsmältning och immunförsvar.",
+    "bild": "https://images.pexels.com/photos/4305254/pexels-photo-4305254.jpeg"
+  },
+  {
+    "titel": "Äpple Ingrid Marie rött",
+    "fakta": "Ingrid Marie är en populär svensk äppelsort som är rik på antioxidanter och fiber. Det har en söt, saftig smak och används ofta i sallader och desserter. Ingrid Marie-äpplen kan bidra till hjärthälsa och god matsmältning.",
+    "bild": "../static/images/placeholder.png"
+  },
+  {
+    "titel": "Äpple Frida",
+    "fakta": "Fridaäpple är en svensk äppelsort som är rik på vitamin C och fiber. Det har en krispig textur och en söt, syrlig smak. Fridaäpple kan användas i sallader, bakverk och som ett hälsosamt snacks.",
+    "bild": "https://images.pexels.com/photos/15450930/pexels-photo-15450930/free-photo-of-rotten-apples-on-ground.jpeg"
+  },
+  {
+    "titel": "Äpple Golden delicious Granny Smith grönt",
+    "fakta": "Granny Smith är en grön äppelsort som är rik på vitamin C och fiber. Det har en krispig textur och en syrlig smak. Granny Smith-äpplen används ofta i sallader, bakverk och som ett friskt mellanmål.",
+    "bild": "https://images.pexels.com/photos/6639456/pexels-photo-6639456.jpeg?cs=srgb&dl=pexels-monika-erdei-3806982-6639456.jpg&fm=jpg"
+  },
+  {
+    "titel": "Psylliumfröskal",
+    "fakta": "Psylliumfröskal är en rik källa till löslig fiber. De används ofta som kosttillskott för att förbättra matsmältningen och främja tarmhälsa. Psylliumfröskal kan hjälpa till att sänka kolesterolnivåer och reglera blodsockret.",
+    "bild": "https://images.pexels.com/photos/1048035/pexels-photo-1048035.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+  },
+  {
+    "titel": "Kiwi grön",
+    "fakta": "Kiwi är rik på C-vitamin och kostfiber. Dess skal är ätbart och innehåller mycket näring. Kiwi kan ätas färsk som den är eller användas i smoothies, fruktsallader och desserter.",
+    "bild": "https://images.pexels.com/photos/4462786/pexels-photo-4462786.jpeg"
+  },
+  {
+    "titel": "Krusbär",
+    "fakta": "Krusbär är små, syrliga bär som är rika på C-vitamin och antioxidanter. De används ofta till saft, sylt och pajer. Krusbär kan också ätas färska om de är mogna.",
+    "bild": "https://images.pexels.com/photos/5103296/pexels-photo-5103296.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+  },
+  {
+    "titel": "Physalis",
+    "fakta": "Physalis är små, gula bär som är inneslutna i en papery hus. De har en söt och syrlig smak och kan ätas färska eller användas som dekoration på desserter och fruktsallader.",
+    "bild": "https://images.pexels.com/photos/19707372/pexels-photo-19707372/free-photo-of-physalis-fruits-in-container-on-white-table.jpeg"
+  },
+  {
+    "titel": "Kumquat",
+    "fakta": "Kumquat är små, ovala citrusfrukter som äts med skalet på. De har en söt och syrlig smak och kan ätas färska eller användas i sylt, marmelad och bakverk.",
+    "bild": "https://images.pexels.com/photos/15311562/pexels-photo-15311562.jpeg?cs=srgb&dl=pexels-anna-zviahina-431214732-15311562.jpg&fm=jpg"
+  },
+  {
+    "titel": "Kvitten",
+    "fakta": "Kvitten är en gul frukt som påminner om päron i form och doft. Den används ofta till gelé, marmelad och likör. Kvitten kan ätas färsk om den är mogen, men den är hård och sur innan den mognar.",
+    "bild": "https://images.pexels.com/photos/16085766/pexels-photo-16085766/free-photo-of-close-up-of-red-flowers-of-the-flowering-quince.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+  },
+  {
+    "titel": "Sötkörsbär",
+    "fakta": "Sötkörsbär är små, runda bär med en söt och syrlig smak. De används främst i bakning, såsom pajer, tårtor och muffins. Sötkörsbär kan också ätas färska eller användas i fruktsallader.",
+    "bild": "https://images.pexels.com/photos/7138906/pexels-photo-7138906.jpeg"
+  },
+  {
+    "titel": "Lime",
+    "fakta": "Lime är små, gröna citrusfrukter med en syrlig smak. De används ofta i matlagning och drycker, såsom mojitos, marinader och dressingar. Lime kan också pressas över mat som en smaksättare.",
+    "bild": "https://media.istockphoto.com/id/1156644711/photo/lime-isolated-lime-half-slice-piece-isolate-on-white-lime-set.jpg?b=1&s=612x612&w=0&k=20&c=gbWnImzEn43Q7imNt9D_8OfE-2LEtf2zGVsBaocKGmo="
+  },
+  {
+    "titel": "Lingon",
+    "fakta": "Lingon är små, röda bär med en syrlig smak. De används ofta till saft, sylt och gelé. Lingon är också en vanlig ingrediens i nordiska rätter som köttbullar och pannkakor.",
+    "bild": "https://images.pexels.com/photos/18833716/pexels-photo-18833716.jpeg?cs=srgb&dl=pexels-ann-h-45017-18833716.jpg&fm=jpg"
+  },
+  {
+    "titel": "Mango",
+    "fakta": "Mango är en tropisk frukt med en söt och saftig smak. Den används i sallader, smoothies, desserter och curries. Mango kan ätas färsk eller torkad och är rik på C-vitamin och betakaroten.",
+    "bild": "https://images.pexels.com/photos/2294471/pexels-photo-2294471.jpeg"
+  },
+  {
+    "titel": "Nektarin",
+    "fakta": "Nektarin är en saftig stenfrukt med en söt och syrlig smak. Den liknar en persika men har slätare skal. Nektariner används i sallader, pajer och fruktsallader eller äts färska som de är.",
+    "bild": "https://images.pexels.com/photos/18773725/pexels-photo-18773725/free-photo-of-honeybee-collecting-nectar-from-purple-flowers-of-butterfly-bush.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+  },
+  {
+    "titel": "Papaya",
+    "fakta": "Papaya är en tropisk frukt med orange kött och svarta frön. Den har en söt och krämig smak och används i sallader, smoothies och desserter. Papaya är rik på C-vitamin och har matsmältningsegenskaper.",
+    "bild": "https://media.istockphoto.com/id/1204875411/photo/set-of-fresh-whole-and-half-papaya-fruit-and-slices.jpg?b=1&s=612x612&w=0&k=20&c=96vr4yRAkpHMhvYLZUe1qFHCnam892A3_mmU862YKc0="
+  },
+  {
+    "titel": "Paradisäpple",
+    "fakta": "Paradisäpple, även känt som annanas, är en tropisk frukt med saftigt gult kött och taggiga skal. Den har en söt och syrlig smak och används färsk i sallader, smoothies och desserter.",
+    "bild": "../static/images/placeholder.png"
+  },
+  {
+    "titel": "Passionsfrukt",
+    "fakta": "Passionsfrukt är en rund frukt med ett hårt skal och geléaktigt innehåll med svarta frön. Den har en söt och syrlig smak och används i juice, sorbet, cheesecake och fruktsallader.",
+    "bild": "https://images.pexels.com/photos/5945939/pexels-photo-5945939.jpeg?cs=srgb&dl=pexels-any-lane-5945939.jpg&fm=jpg"
+  },
+  {
+    "titel": "Persika nektarin",
+    "fakta": "Nektarin är en saftig stenfrukt med en söt och syrlig smak. Den liknar en persika men har slätare skal. Nektariner används i sallader, pajer och fruktsallader eller äts färska som de är.",
+    "bild": "https://images.pexels.com/photos/4331546/pexels-photo-4331546.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+  },
+  {
+    "titel": "Sharon",
+    "fakta": "Sharon är en korsning mellan persimon och plommon. Den har en söt och saftig smak och används i sallader, smoothies och desserter. Sharon kan också ätas som den är när den är mogen.",
+    "bild": "https://images.pexels.com/photos/12642002/pexels-photo-12642002.jpeg"
+  },
+  {
+    "titel": "Plommon",
+    "fakta": "Plommon är saftiga stenfrukter med en söt och syrlig smak. De används i pajer, marmelad, sylt och saft. Plommon kan också ätas färska eller torkade som en hälsosam snack.",
+    "bild": "https://images.pexels.com/photos/248440/pexels-photo-248440.jpeg?cs=srgb&dl=pexels-pixabay-248440.jpg&fm=jpg"
+  },
+  {
+    "titel": "Päron",
+    "fakta": "Päron är saftiga frukter med en söt smak och mjuk textur. De används i pajer, sallader, chutney och desserter. Päron är rika på kostfiber och antioxidanter och kan ätas färska eller kokta.",
+    "bild": "https://images.pexels.com/photos/568471/pexels-photo-568471.jpeg?cs=srgb&dl=pexels-mali-568471.jpg&fm=jpg"
+  },
+  {
+    "titel": "Tranbär",
+    "fakta": "Tranbär är små, röda bär med en syrlig smak. De används främst till saft, gelé och torkade produkter som russin. Tranbär sägs ha hälsofördelar, särskilt för urinvägarna.",
+    "bild": "https://images.pexels.com/photos/139917/pexels-photo-139917.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+  },
+  {
+    "titel": "Vinbär röda",
+    "fakta": "Vinbär är små, runda bär som finns i olika färger, inklusive rött, svart och vitt. De är rika på C-vitamin och antioxidanter. Vinbär används ofta till saft, sylt och bakverk. De har också använts traditionellt för sina medicinska egenskaper.",
+    "bild": "https://images.pexels.com/photos/8734194/pexels-photo-8734194.jpeg"
+  },
+  {
+    "titel": "Kiwi gul",
+    "fakta": "Gula kiwifrukter är en variant av den mer vanliga gröna kiwin. De har en söt och saftig smak och är lika näringsrika som de gröna kiwifrukterna. Gul kiwi är rik på C-vitamin, kalium och fiber. Dessutom innehåller de naturliga ämnen som kan hjälpa till att främja matsmältningen och stödja immunsystemet.",
+    "bild": "https://images.pexels.com/photos/14930902/pexels-photo-14930902.jpeg"
+  },
+  {
+    "titel": "Pistaschnötter",
+    "fakta": "Pistaschnötter är en källa till hälsosamma fetter, protein, fiber, vitaminer och mineraler, särskilt vitamin B6, koppar och mangan. De innehåller också antioxidanter och har förknippats med hälsofördelar som att främja hjärthälsa, reglera blodsockernivåer och stödja viktkontroll. Pistaschnötter kan ätas råa, rostade eller användas i olika rätter som desserter och sallader.",
+    "bild": "https://images.pexels.com/photos/1799307/pexels-photo-1799307.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+  },
+  {
+    "titel": "Småcitrus clementin mandarin tangerin satsumas",
+    "fakta": "Småcitrus inkluderar flera varianter som clementiner, mandariner, tangeriner och satsumas. Dessa citrusfrukter är kända för sin sötma och saftighet. De är rika på vitamin C, fiber och antioxidanter. Småcitrus är ett populärt mellanmål och används ofta i sallader, desserter och juicer.",
+    "bild": "https://images.pexels.com/photos/5735600/pexels-photo-5735600.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+  },
+  {
+    "titel": "Fikon",
+    "fakta": "Fikon är en näringsrik frukt med en söt smak och mjuk textur. De är rika på kostfiber, vitaminer (särskilt vitamin B6 och K), mineraler som kalium och magnesium samt antioxidanter. Fikon kan ätas färska eller torkade och används i en mängd olika rätter, inklusive bakverk och sallader.",
+    "bild": "https://images.pexels.com/photos/33791/fig-sliced-plate-wooden-table.jpg"
+  },
+  {
+    "titel": "Kaktusfikon",
+    "fakta": "Kaktusfikon, även kända som prickly pears, är frukter från olika arter av kaktus. De har en söt och något syrlig smak och är rika på vitamin C, magnesium och kalium. Kaktusfikon används ofta i sylt, geléer, sallader och drycker.",
+    "bild": "https://images.pexels.com/photos/13643138/pexels-photo-13643138.jpeg"
+  },
+  {
+    "titel": "Vinbär svarta",
+    "fakta": "Svarta vinbär är små, mörklila bär som är rika på vitamin C, kalium och antioxidanter. De har en syrlig smak och används ofta i sylt, geléer, saft och bakverk. Svarta vinbär har också antiinflammatoriska egenskaper.",
+    "bild": "https://images.pexels.com/photos/4980219/pexels-photo-4980219.jpeg"
+  },
+  {
+    "titel": "Vindruvor",
+    "fakta": "Vindruvor är saftiga bär som kan vara gröna, röda eller svarta. De är rika på vitaminer (särskilt vitamin K och C), antioxidanter och naturliga sockerarter. Vindruvor kan ätas färska, torkade som russin eller användas i juice och vinproduktion.",
+    "bild": "https://images.pexels.com/photos/708777/pexels-photo-708777.jpeg"
+  },
+  {
+    "titel": "Cashewnötter rostade u. salt",
+    "fakta": "Cashewnötter är näringsrika och har en krämig konsistens. Rostade cashewnötter utan salt är rika på protein, hälsosamma fetter, vitaminer (särskilt E och B6) och mineraler som magnesium och järn. De används i matlagning, bakning och som snacks.",
+    "bild": "https://media.istockphoto.com/id/153730788/photo/cashew-nuts.jpg?b=1&s=612x612&w=0&k=20&c=nXNepTiez2E06UcAOmK0nHSiH5CHEbM47Srx3SJFk9Y="
+  },
+  {
+    "titel": "Hasselnötter",
+    "fakta": "Hasselnötter är rika på hälsosamma fetter, protein, fiber, vitaminer (särskilt E) och mineraler som magnesium och koppar. De har en söt och mild smak och används ofta i bakverk, choklad och som snacks.",
+    "bild": "https://images.pexels.com/photos/68483/hazelnuts-brown-nuts-open-68483.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+  },
+  {
+    "titel": "Jordnötter torkade",
+    "fakta": "Torkade jordnötter är rika på protein, hälsosamma fetter, fiber och flera vitaminer och mineraler, inklusive niacin och magnesium. De används ofta som snacks eller i matlagning och bakning.",
+    "bild": "https://images.pexels.com/photos/41185/almond-brown-close-up-dry-41185.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+  },
+  {
+    "titel": "Jordnötter rostade",
+    "fakta": "Rostade jordnötter har en rikare smak jämfört med råa jordnötter. De är rika på protein, hälsosamma fetter och fiber samt vitaminer och mineraler som niacin och magnesium. Rostade jordnötter används ofta som snacks eller i matlagning.",
+    "bild": "https://images.pexels.com/photos/18388613/pexels-photo-18388613/free-photo-of-man-holding-pan-filled-with-roasted-peanuts-in-shells.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+  },
+  {
+    "titel": "Kastanjer",
+    "fakta": "Kastanjer är rika på kolhydrater, fiber, vitaminer (särskilt C och B6) och mineraler som kalium och magnesium. De har en söt och mild smak och används ofta i matlagning, bakning och som rostade snacks.",
+    "bild": "../static/images/placeholder.png"
+  },
+  {
+    "titel": "Kokosflingor",
+    "fakta": "Kokosflingor är torkade och strimlade bitar av kokosnötkött. De är rika på fiber, hälsosamma fetter och mineraler som mangan och koppar. Kokosflingor används i bakning, matlagning och som topping på desserter och frukostprodukter.",
+    "bild": "../static/images/placeholder.png"
+  },
+  {
+    "titel": "Kokosnöt",
+    "fakta": "Kokosnöt är en näringsrik frukt som är rik på fiber, hälsosamma fetter och mineraler som mangan och koppar. Kokosnötköttet kan ätas färskt eller torkat, och kokosmjölk används i många matlagningsrecept.",
+    "bild": "https://images.pexels.com/photos/240526/pexels-photo-240526.jpeg"
+  },
+  {
+    "titel": "Linfrö hela",
+    "fakta": "Hela linfrön är rika på fiber, omega-3 fettsyror och lignaner. De har hälsofrämjande egenskaper, inklusive förbättrad matsmältning och hjärthälsa. Linfrön används ofta i bakning, smoothies och som topping på frukostprodukter.",
+    "bild": "../static/images/placeholder.png"
+  },
+  {
+    "titel": "Paranötter",
+    "fakta": "Paranötter är rika på selen, hälsosamma fetter, protein, vitaminer och mineraler. De har en mild och krämig smak och används ofta som snacks eller i matlagning och bakning.",
+    "bild": "../static/images/placeholder.png"
+  },
+  {
+    "titel": "Pekannötter",
+    "fakta": "Pekannötter är rika på hälsosamma fetter, protein, fiber, vitaminer (särskilt E) och mineraler som magnesium och zink. De har en söt och smörig smak och används ofta i bakverk, desserter och som snacks.",
+    "bild": "https://images.pexels.com/photos/4753638/pexels-photo-4753638.jpeg"
+  },
+  {
+    "titel": "Pumpafrö",
+    "fakta": "Pumpafrön är rika på protein, hälsosamma fetter, fiber, vitaminer och mineraler som magnesium och zink. De har en mild och nötaktig smak och används ofta som snacks eller i matlagning och bakning.",
+    "bild": "https://images.pexels.com/photos/4753633/pexels-photo-4753633.jpeg?cs=srgb&dl=pexels-shkrabaanthony-4753633.jpg&fm=jpg"
+  },
+  {
+    "titel": "Chiafrö",
+    "fakta": "Chiafrön är rika på fiber, omega-3 fettsyror, protein och antioxidanter. De har många hälsofördelar, inklusive förbättrad matsmältning och hjärthälsa. Chiafrön används ofta i smoothies, puddingar och bakning.",
+    "bild": "../static/images/placeholder.png"
+  },
+  {
+    "titel": "Hampafrö m. skal",
+    "fakta": "Hampafrön med skal är rika på protein, omega-3 och omega-6 fettsyror, fiber och mineraler som magnesium och järn. De har en mild, nötaktig smak och används ofta i smoothies, bakning och som topping på sallader och frukostprodukter.",
+    "bild": "../static/images/placeholder.png"
+  },
+  {
+    "titel": "Hampafrö u. skal",
+    "fakta": "Skalade hampafrön är rika på protein, omega-3 och omega-6 fettsyror samt mineraler som magnesium och järn. De har en mild, nötaktig smak och används ofta i smoothies, bakning och som topping på sallader och frukostprodukter.",
+    "bild": "https://images.pexels.com/photos/5425020/pexels-photo-5425020.jpeg"
+  },
+  {
+    "titel": "Vallmofrö",
+    "fakta": "Vallmofrön är rika på protein, fiber, hälsosamma fetter och mineraler som kalcium och magnesium. De har en mild och nötaktig smak och används ofta i bakning och matlagning, särskilt i bröd och bakverk.",
+    "bild": "../static/images/placeholder.png"
+  },
+  {
+    "titel": "Vindruvor gröna",
+    "fakta": "Gröna vindruvor är rika på vitaminer (särskilt K och C), antioxidanter och naturliga sockerarter. De har en söt och saftig smak och används ofta som snacks, i sallader och i vinproduktion.",
+    "bild": "../static/images/placeholder.png"
+  },
+  {
+    "titel": "Vindruvor röda",
+    "fakta": "Röda vindruvor är rika på vitaminer (särskilt K och C), antioxidanter och naturliga sockerarter. De har en söt och saftig smak och används ofta som snacks, i sallader och i vinproduktion.",
+    "bild": "../static/images/placeholder.png"
+  },
+  {
+    "titel": "Mullbär",
+    "fakta": "Mullbär är små, näringsrika bär som är rika på vitamin C, järn och antioxidanter. De har en söt och mild smak och används ofta torkade som snacks eller i bakning och matlagning.",
+    "bild": "../static/images/placeholder.png"
+  },
+  {
+    "titel": "Wasabirot",
+    "fakta": "Wasabirot är känd för sin starka, skarpa smak och används ofta som krydda till sushi och andra japanska rätter. Den har antibakteriella egenskaper och är rik på antioxidanter.",
+    "bild": "../static/images/placeholder.png"
+  },
+  {
+    "titel": "Macadamianötter",
+    "fakta": "Macadamianötter är rika på hälsosamma fetter, fiber, vitaminer (särskilt B1) och mineraler som magnesium och mangan. De har en smörig smak och används ofta i bakverk, desserter och som snacks.",
+    "bild": "../static/images/placeholder.png"
+  },
+  {
+    "titel": "Shiitakesvamp",
+    "fakta": "Shiitakesvamp är rik på B-vitaminer, mineraler och antioxidanter. Den har en köttig konsistens och en rik, umamismak. Shiitakesvamp används ofta i asiatiska rätter, soppor och såser.",
+    "bild": "../static/images/placeholder.png"
+  },
+  {
+    "titel": "Ostronskivling",
+    "fakta": "Ostronskivling är en näringsrik svamp som är rik på protein, fiber, B-vitaminer och antioxidanter. Den har en mild smak och en köttig konsistens och används ofta i matlagning, särskilt i vegetariska rätter.",
+    "bild": "../static/images/placeholder.png"
+  },
+  {
+    "titel": "Blåbär amerikanska",
+    "fakta": "Amerikanska blåbär är rika på vitaminer (särskilt C och K), antioxidanter och kostfiber. De har en söt och saftig smak och används ofta i bakning, smoothies och som snacks.",
+    "bild": "../static/images/placeholder.png"
+  },
+  {
+    "titel": "Ärtskott",
+    "fakta": "Ärtskott är unga ärtväxter som är rika på vitaminer (särskilt C och K), mineraler och antioxidanter. De har en mild, söt smak och används ofta i sallader, smörgåsar och som garnering.",
+    "bild": "../static/images/placeholder.png"
+  }
+]
