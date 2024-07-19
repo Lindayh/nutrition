@@ -1037,7 +1037,7 @@ veg_fruit_info = [
   },
   {
     "titel": "Paradisäpple",
-    "fakta": "Paradisäpple, även känt som annanas, är en tropisk frukt med saftigt gult kött och taggiga skal. Den har en söt och syrlig smak och används färsk i sallader, smoothies och desserter.",
+    "fakta": "Paradisiäpplen är ofta ganska sura och bittra, vilket gör dem mindre lämpliga att äta råa. Istället används de ofta för att göra gelé, sylt och cider. Dessa äpplen är rika på antioxidanter, vitaminer som vitamin C, och mineraler som kalium.",
     "bild": "../static/images/res/paradisäpple_img.jpg"
   },
   {
