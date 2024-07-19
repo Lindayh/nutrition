@@ -46,28 +46,6 @@ mineral_mapping = {
 
 nutrient_mapping = {**mineral_mapping, **vitamin_mapping}
 
-def fetch_img_API(search):
-    API_KEY = os.getenv('API_KEY')
-    SEARCH_ENGINE_ID = os.getenv('SEARCH_ENGINE_ID')
-
-    translator = Translator()
-    translated_search = translator.translate(search).text
-
-    q = f'{translated_search} -products'
-
-    url = f"https://www.googleapis.com/customsearch/v1?key={API_KEY}&cx={SEARCH_ENGINE_ID}&q={q}&searchType=image&safe=active"
-
-    response = requests.get(url).json()
-
-    print( f'Translated search: {translated_search} | original query: {search}\n Json response: {response}', flush=True )
-
-    if 'items' in response:
-        img = response['items'][0]['link']
-    else:
-        img = '../static/images/placeholder.png'
-
-    return img
-
 @app.route("/")
 def home():
     return render_template("index.html")
@@ -198,13 +176,12 @@ def item_page(item):
         del query['_sa_instance_state']
         del query['Namn']
 
-        img = fetch_img_API(item)
-
 
         for index,key in enumerate(veg_fruit_info):
             name = veg_fruit_info[index]['titel']
             if name == item:
-                fact = veg_fruit_info[index]['fakta']
+                fact = veg_fruit_info[index]['fakta'] 
+                img = veg_fruit_info[index]['bild']
 
         data = { 'name' : item,
                 'object' : query,
@@ -215,7 +192,6 @@ def item_page(item):
                 }
 
         return render_template("search.html", searched_page=data)
-
 
 @app.route("/team")
 def team():
@@ -228,6 +204,12 @@ def about():
 @app.route("/kontakt")
 def kontakt():
     return render_template("kontakt.html")
+
+
+@app.route('/img_dump')
+def imgs():
+
+    return render_template('__.html', _dict = veg_fruit_info)
 
 if __name__ == "__main__":
     app.run(debug=True)
