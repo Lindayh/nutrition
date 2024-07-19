@@ -963,7 +963,7 @@ veg_fruit_info = [
   {
     "titel": "Äpple Ingrid Marie rött",
     "fakta": "Ingrid Marie är en populär svensk äppelsort som är rik på antioxidanter och fiber. Det har en söt, saftig smak och används ofta i sallader och desserter. Ingrid Marie-äpplen kan bidra till hjärthälsa och god matsmältning.",
-    "bild": "../static/images/placeholder.png"
+    "bild": "../static/images/res/äpple_ingrid_marie_rött_img.jpg"
   },
   {
     "titel": "Äpple Frida",
@@ -1038,7 +1038,7 @@ veg_fruit_info = [
   {
     "titel": "Paradisäpple",
     "fakta": "Paradisäpple, även känt som annanas, är en tropisk frukt med saftigt gult kött och taggiga skal. Den har en söt och syrlig smak och används färsk i sallader, smoothies och desserter.",
-    "bild": "../static/images/placeholder.png"
+    "bild": "../static/images/res/paradisäpple_img.jpg"
   },
   {
     "titel": "Passionsfrukt",
@@ -1133,12 +1133,12 @@ veg_fruit_info = [
   {
     "titel": "Kastanjer",
     "fakta": "Kastanjer är rika på kolhydrater, fiber, vitaminer (särskilt C och B6) och mineraler som kalium och magnesium. De har en söt och mild smak och används ofta i matlagning, bakning och som rostade snacks.",
-    "bild": "../static/images/placeholder.png"
+    "bild": "../static/images/res/kastanjer_img.jpg"
   },
   {
     "titel": "Kokosflingor",
     "fakta": "Kokosflingor är torkade och strimlade bitar av kokosnötkött. De är rika på fiber, hälsosamma fetter och mineraler som mangan och koppar. Kokosflingor används i bakning, matlagning och som topping på desserter och frukostprodukter.",
-    "bild": "../static/images/placeholder.png"
+    "bild": "../static/images/res/kokosflingor_img.jpg"
   },
   {
     "titel": "Kokosnöt",
@@ -1148,12 +1148,12 @@ veg_fruit_info = [
   {
     "titel": "Linfrö hela",
     "fakta": "Hela linfrön är rika på fiber, omega-3 fettsyror och lignaner. De har hälsofrämjande egenskaper, inklusive förbättrad matsmältning och hjärthälsa. Linfrön används ofta i bakning, smoothies och som topping på frukostprodukter.",
-    "bild": "../static/images/placeholder.png"
+    "bild": "../static/images/res/linfrö_hela_img.jpg"
   },
   {
     "titel": "Paranötter",
     "fakta": "Paranötter är rika på selen, hälsosamma fetter, protein, vitaminer och mineraler. De har en mild och krämig smak och används ofta som snacks eller i matlagning och bakning.",
-    "bild": "../static/images/placeholder.png"
+    "bild": "../static/images/res/paranötter_img.jpg"
   },
   {
     "titel": "Pekannötter",
@@ -1168,12 +1168,12 @@ veg_fruit_info = [
   {
     "titel": "Chiafrö",
     "fakta": "Chiafrön är rika på fiber, omega-3 fettsyror, protein och antioxidanter. De har många hälsofördelar, inklusive förbättrad matsmältning och hjärthälsa. Chiafrön används ofta i smoothies, puddingar och bakning.",
-    "bild": "../static/images/placeholder.png"
+    "bild": "../static/images/res/chiafrö_img.jpg"
   },
   {
     "titel": "Hampafrö m. skal",
     "fakta": "Hampafrön med skal är rika på protein, omega-3 och omega-6 fettsyror, fiber och mineraler som magnesium och järn. De har en mild, nötaktig smak och används ofta i smoothies, bakning och som topping på sallader och frukostprodukter.",
-    "bild": "../static/images/placeholder.png"
+    "bild": "../static/images/res/hampafrö_m._skal_img.jpg"
   },
   {
     "titel": "Hampafrö u. skal",
@@ -1183,51 +1183,51 @@ veg_fruit_info = [
   {
     "titel": "Vallmofrö",
     "fakta": "Vallmofrön är rika på protein, fiber, hälsosamma fetter och mineraler som kalcium och magnesium. De har en mild och nötaktig smak och används ofta i bakning och matlagning, särskilt i bröd och bakverk.",
-    "bild": "../static/images/placeholder.png"
+    "bild": "../static/images/res/vallmofrö_img.jpg"
   },
   {
     "titel": "Vindruvor gröna",
     "fakta": "Gröna vindruvor är rika på vitaminer (särskilt K och C), antioxidanter och naturliga sockerarter. De har en söt och saftig smak och används ofta som snacks, i sallader och i vinproduktion.",
-    "bild": "../static/images/placeholder.png"
+    "bild": "../static/images/res/vindruvor_gröna_img.jpg"
   },
   {
     "titel": "Vindruvor röda",
     "fakta": "Röda vindruvor är rika på vitaminer (särskilt K och C), antioxidanter och naturliga sockerarter. De har en söt och saftig smak och används ofta som snacks, i sallader och i vinproduktion.",
-    "bild": "../static/images/placeholder.png"
+    "bild": "../static/images/res/vindruvor_röda_img.jpg"
   },
   {
     "titel": "Mullbär",
     "fakta": "Mullbär är små, näringsrika bär som är rika på vitamin C, järn och antioxidanter. De har en söt och mild smak och används ofta torkade som snacks eller i bakning och matlagning.",
-    "bild": "../static/images/placeholder.png"
+    "bild": "../static/images/res/mullbär_img.jpg"
   },
   {
     "titel": "Wasabirot",
     "fakta": "Wasabirot är känd för sin starka, skarpa smak och används ofta som krydda till sushi och andra japanska rätter. Den har antibakteriella egenskaper och är rik på antioxidanter.",
-    "bild": "../static/images/placeholder.png"
+    "bild": "../static/images/res/wasabirot_img.jpg"
   },
   {
     "titel": "Macadamianötter",
     "fakta": "Macadamianötter är rika på hälsosamma fetter, fiber, vitaminer (särskilt B1) och mineraler som magnesium och mangan. De har en smörig smak och används ofta i bakverk, desserter och som snacks.",
-    "bild": "../static/images/placeholder.png"
+    "bild": "../static/images/res/macadamianötter_img.jpg"
   },
   {
     "titel": "Shiitakesvamp",
     "fakta": "Shiitakesvamp är rik på B-vitaminer, mineraler och antioxidanter. Den har en köttig konsistens och en rik, umamismak. Shiitakesvamp används ofta i asiatiska rätter, soppor och såser.",
-    "bild": "../static/images/placeholder.png"
+    "bild": "../static/images/res/shiitakesvamp_img.jpg"
   },
   {
     "titel": "Ostronskivling",
     "fakta": "Ostronskivling är en näringsrik svamp som är rik på protein, fiber, B-vitaminer och antioxidanter. Den har en mild smak och en köttig konsistens och används ofta i matlagning, särskilt i vegetariska rätter.",
-    "bild": "../static/images/placeholder.png"
+    "bild": "../static/images/res/ostronskivling_img.jpg"
   },
   {
     "titel": "Blåbär amerikanska",
     "fakta": "Amerikanska blåbär är rika på vitaminer (särskilt C och K), antioxidanter och kostfiber. De har en söt och saftig smak och används ofta i bakning, smoothies och som snacks.",
-    "bild": "../static/images/placeholder.png"
+    "bild": "../static/images/res/blåbär_amerikanska_img.jpg"
   },
   {
     "titel": "Ärtskott",
     "fakta": "Ärtskott är unga ärtväxter som är rika på vitaminer (särskilt C och K), mineraler och antioxidanter. De har en mild, söt smak och används ofta i sallader, smörgåsar och som garnering.",
-    "bild": "../static/images/placeholder.png"
+    "bild": "../static/images/res/ärtskott_img.jpg"
   }
 ]
