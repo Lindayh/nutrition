@@ -206,10 +206,9 @@ def kontakt():
     return render_template("kontakt.html")
 
 
-@app.route('/img_dump')
-def imgs():
-
-    return render_template('__.html', _dict = veg_fruit_info)
+# @app.route('/img_dump')
+# def imgs_test():
+#     return render_template('__.html', _dict = veg_fruit_info)
 
 if __name__ == "__main__":
     app.run(debug=True)
