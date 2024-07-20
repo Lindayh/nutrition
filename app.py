@@ -1,10 +1,8 @@
 from flask import Flask, render_template, request, redirect
 from models import db, Fruit
 from info import RDI_list_vit, RDI_list_min, minerals_info, vitamins_info, veg_fruit_info
-from googletrans import Translator
 import requests
 import os
-from dotenv import load_dotenv
 
 
 app = Flask(__name__)
@@ -12,7 +10,6 @@ app.config['SQLALCHEMY_DATABASE_URI']='sqlite:///fruit_and_veg.db'
 db.init_app(app)
 
 project_folder = os.path.expanduser('~/nutrition')
-load_dotenv(os.path.join(project_folder, '.env'))
 
 vitamins_list = ["Vitamin A", "Vitamin C", "Vitamin D", "Vitamin E", "Folat", "Vitamin K", "Niacin", "Riboflavin", "Tiamin", "Vitamin B6", "Vitamin B12"]
 
