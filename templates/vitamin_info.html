@@ -39,7 +39,7 @@
             {% for item in top_10 %}
             {% if item.vitamin_value > 0 %}
             <tr>
-              <td><a href="/{{item.name}}"> {{ item.name }} </a></td>
+              <td>{{ item.name }}</td>
               <td>{{ item.vitamin_value }} </td>
             </tr>
             {% endif %}

@@ -1,6 +1,6 @@
 {% extends "base.html"%}
 
-{% block title %}Search{% endblock %}
+{% block title %}find{% endblock %}
 
 {% block content %}
 <div class="info-page-container">
@@ -12,125 +12,62 @@
                 <button><i class="fa-solid fa-magnifying-glass"></i></button>
             </form>
         </div>
- 
-        <section class="search-section">          
-            <article class="info-article">
-
-            {% if searched_page %}
-                <h1> {{searched_page['name']}} </h1>
-
-                <img src="{{ searched_page['img'] }}">
-                {% if api_image %}
-                <img src="{{ api_image }}">
-                {% endif %}
-
-                <div class="api-info">
-                <p><strong> Fakta: </strong> {{ searched_page['fact'] }}</p>
-            </div>                
-            {% endif %}
-
+        {% if results %}
+            <section class="search-section">          
+                <article class="info-article">
+                    <h1>{{ query_name }}</h1>
+                    {% if img %}
+                    <img src="{{ img }}">
+                    {% elif api_image %}
+                    <img src="{{ api_image }}">
+                    {% endif %}
+                    <div class="api-info">
+                        <p><strong>Fakta: </strong>{{ fact }}</p>
+                    </div>
                 </article>
                 <article class="table-article">
                     <div class="table-container">
-                        <!-- <div class="container-search"> -->
+                        <div class="container-search">
                             <div class="nutrition-info">
-                                {% if results %}
-                                {% set results_list = results|list %}
-                                <table class="container-search center-table">
+                                <table>
                                     <thead>
-                                        <th>Sökträffar</th>
+                                        <tr>
+                                            <th>Vitamin/Mineral</th>
+                                            <th>per 100g</th>
+                                        </tr>
                                     </thead>
                                     <tbody>
-                                        {% for item in results_list %}
-                                        <tr>
-                                            <td>
-                                                <a href="/{{item.Namn}}">{{item.Namn}} </a>
-                                            </td>
-                                        </tr>
-                                        {% endfor %} 
+                                        {% for nutrient, values in results.items() %}
+                                            <tr>
+                                                <td>{{ nutrient }}</td>
+                                                <td>
+                                                    {% for value in values %}
+                                                        {% if nutrient in ["Jod", "Selen", "Vitamin A", "Vitamin D", "Folat", "Vitamin K"] %}
+                                                            {{ value }}<span style="font-size: 0.9em; padding-left: 2px;">&micro;g</span>
+                                                        {% else %}
+                                                            {{ value }}<span style="font-size: 0.9em; padding-left: 2px;">mg</span>
+                                                        {% endif %}
+                                                    {% endfor %}
+                                                </td>
+                                            </tr>
+                                        {% endfor %}
                                     </tbody>
-                                    {% if results.pages %}   
-                                    <tfoot>
-                                        <td class="page-nav">
-                                            <a href="{{ url_for('search', search=search, page=page-1)}}">
-                                                {% if results.has_prev %}
-                                                < Prev
-                                                {% endif %}
-                                            </a>
-                                            {% if results.has_next %}
-                                            <a href="{{ url_for('search', search=search, page=page+1)}}">Next ></a>
-                                            {% endif %}
-                                        </td>
-                                    </tfoot>
-                                    {% endif %}
                                 </table>
-                                
-
-                                {% endif %}
-
-        {% if searched_page %}
-            {# <h2> {{ searched_page['name'] }} </h2> #}
-            <table class="container-search">
-                <thead>
-                        <th>Vitaminer</th>
-                        <th>Per 100g</th>
-                </thead>
-                <tbody>
-                    {% for key in searched_page['object'] %}
-                        
-                    {% if searched_page['object'][key] > 0 and key in (searched_page['vitamins'].keys()|list)   %}
-                    {% set unit = key.split("_")[-1] %}
-                    <tr>
-                        <td> {{ searched_page['vitamins'][key] }} </td>
-                        <td> {{ searched_page['object'][key] }} {{unit}} </td>
-                    </tr>
-                    {% endif %}
-                    {% endfor %}  
-                </tbody>
-            </table>
-
-            <table class="container-search">
-                <thead>
-                        <th>Mineraler</th>
-                        <th>Per 100g</th>
-                </thead>
-                <tbody>
-                    {% for key in searched_page['object'] %}
-                        
-                    {% if searched_page['object'][key] > 0 and key in (searched_page['minerals'].keys()|list)  %}
-                    {% set unit = key.split("_")[-1] %}
-                    <tr>
-                        <td> {{ searched_page['minerals'][key] }}  </td>
-                        <td> {{ searched_page['object'][key] }} {{ unit }} </td>
-                    </tr>
-                    {% endif %}
-                    {% endfor %}  
-                </tbody>
-            </table>
-        {% endif %}
-
                             </div>
+                        </div>
                     </div>
                 </article>
             </section>
-            
-        {% if not searched_page and results==False %}
-        <div id="default-section">
-            <h2>Sökfunktionen</h2>
-            <p>Genom att använda sökrutan kan du snabbt och enkelt få mer detaljerad 
-                information om frukt och grönt från vår databas. 
-                Skriv in namnet på den frukt eller grönsak du är intresserad av, 
-                och du kommer att få tillgång till detaljerade fakta, näringsvärden.</p>
-        </div> 
+        {% elif message %}
+            <div id="default-section">       
+                <h2>{{ message }}</h2>            
+            </div>
         {% endif %}
-
-        {% if results_list is iterable and results_list|length==0 and not searched_page 
-            and results!=False %}
-            {% if not_page %}
-                <h2>Sidan existerar inte.</h2>
-            {% else %}
-                <h2>Ingen sökträff hittades</h2>   
-            {% endif %}
+        {% if not results and not message %}
+            <div id="default-section">
+                <h2>Sökfunktionen</h2>
+                <p>Genom att använda sökrutan kan du snabbt och enkelt få mer detaljerad information om frukt och grönt från vår omfattande databas. Skriv in namnet på den frukt eller grönsak du är intresserad av, och du kommer att få tillgång till detaljerade fakta, näringsvärden.</p>
+            </div>
         {% endif %}
     </div>
 </div>
