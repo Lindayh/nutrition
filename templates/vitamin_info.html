@@ -39,14 +39,14 @@
             {% for item in top_10 %}
             {% if item.vitamin_value > 0 %}
             <tr>
-              <td>{{ item.name }}</td>
+              <td><a href="/{{item.name}}"> {{ item.name }} </a></td>
               <td>{{ item.vitamin_value }} </td>
             </tr>
             {% endif %}
             {% endfor %}
           </tbody>
         </table>
-        <p>*Källa; Livsmedelsverkets livsmedelsdatabas version 2023-06-13</p>
+        <p>*Källa: Livsmedelsverkets livsmedelsdatabas version 2023-06-13</p>
         {% endif %}
       </div>
         </div>
