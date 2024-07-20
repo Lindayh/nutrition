@@ -21,10 +21,12 @@
 ## About The Project
 
 This project was developed as a group activity for the Agile development class during the AI development course at Jensen Yrkeshögskola. <br>
-Agile methodologies and principles were applied throughout the whole development, from the initial brainstorming of different product ideas to final working website. <br>
-Group 3 version branch: ...
-
-
+Agile methodologies and principles were applied throughout the whole development, from the initial brainstorming of different product ideas to final working website. <br><br>
+The branch Group3_version is what was achieved as a group effort at the end of the class. <br>
+Main branch has extra fixes and adjustments that I thought would further improve the project:
+  - Improved search function
+  - Better curated images
+  - Minor fixes on responsivity
 
 
 ### Built With
