@@ -822,6 +822,7 @@ footer p {
   .info-article {
     width: 100%;
     text-align: center;
+    overflow-wrap: break-word;
   }
 
   .info-article img {
